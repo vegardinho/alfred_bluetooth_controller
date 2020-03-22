@@ -2,6 +2,10 @@
 A powerful toolkit for managing your bluetooth connections.
 
 # Installation
+## Summary
+Install [blueutil](http://www.frederikseiffert.de/blueutil/), Python 3, and open alfred configuration file!
+
+## Instructions
 1. Install [blueutil](http://www.frederikseiffert.de/blueutil/): 
 
 Using package manager [Homebrew](https://brew.sh/):
