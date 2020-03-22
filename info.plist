@@ -817,7 +817,29 @@ echo -n $(/usr/local/bin/blueutil --power)</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>INSTALLATION:
+
+1. Install blueutil. Easily done with Homebrew: run "brew install blueutil" in Terminal.
+2. Check if Python 3 installed (run "python3 --version" in Terminal). Also easily installed with Homebrew.
+
+
+
+This workflow lets you do the following:
+
+- Toggle bluetooth on and off by using the keyword "bt"
+- Turn bluetooth on by using the keyword "bton"
+- Turn bluetooth off by using the keyword "btoff"
+
+- Toggle connection to device by using the keyword "btd" + device name. By typing an argument, the workflow will automatically search through all devices paired with the computer.
+
+- Set favorite device for quick toggle connection, with keyword "btsetfavorite"
+- Toggle connection to favorite device, by typing keyword "btx".
+
+
+
+Please notify me of any bugs
+
+Enjoy!</string>
 	<key>uidata</key>
 	<dict>
 		<key>0493455D-D221-499B-B2B0-CDCBC39CF57A</key>
@@ -968,6 +990,8 @@ echo -n $(/usr/local/bin/blueutil --power)</string>
 			<integer>135</integer>
 		</dict>
 	</dict>
+	<key>version</key>
+	<string>1.0</string>
 	<key>webaddress</key>
 	<string></string>
 </dict>
