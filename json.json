@@ -1,0 +1,82 @@
+[
+  {
+    "address" : "cc-44-63-cc-a7-04",
+    "recentAccessDate" : "2020-03-02T11:17:42+01:00",
+    "favourite" : false,
+    "name" : "iPad de Vegard",
+    "connected" : false,
+    "paired" : false
+  },
+  {
+    "address" : "16-12-15-30-07-15",
+    "recentAccessDate" : "2019-08-15T15:24:57+02:00",
+    "favourite" : false,
+    "name" : "920541",
+    "connected" : false,
+    "paired" : true
+  },
+  {
+    "address" : "ac-89-95-f7-9c-34",
+    "recentAccessDate" : "2019-12-13T22:23:41+01:00",
+    "favourite" : false,
+    "name" : "Beoplay M5_28008752",
+    "connected" : false,
+    "paired" : true
+  },
+  {
+    "address" : "58-40-4e-c5-7a-74",
+    "recentAccessDate" : "2020-03-03T14:00:04+01:00",
+    "favourite" : false,
+    "name" : "Vegards iPhone",
+    "connected" : false,
+    "paired" : false
+  },
+  {
+    "address" : "2c-41-a1-03-07-b1",
+    "recentAccessDate" : "2019-03-01T11:31:43+01:00",
+    "favourite" : false,
+    "name" : "Bose QC35 II",
+    "connected" : false,
+    "paired" : true
+  },
+  {
+    "address" : "f0-24-75-df-3e-5f",
+    "recentAccessDate" : "2015-07-26T14:53:44+02:00",
+    "favourite" : true,
+    "name" : "Hjems iPhone",
+    "connected" : false,
+    "paired" : true
+  },
+  {
+    "address" : "b8-f6-53-10-f2-b5",
+    "recentAccessDate" : "2020-03-21T20:58:41+01:00",
+    "favourite" : false,
+    "name" : "JBL Flip 5",
+    "connected" : false,
+    "paired" : true
+  },
+  {
+    "address" : "5c-eb-68-48-eb-bb",
+    "recentAccessDate" : "2020-03-21T11:17:18+01:00",
+    "favourite" : false,
+    "name" : "Plattan 2 BT",
+    "connected" : false,
+    "paired" : true
+  },
+  {
+    "address" : "00-11-67-a4-a9-67",
+    "recentAccessDate" : "2019-01-04T14:38:51+01:00",
+    "favourite" : false,
+    "name" : "SBTREC11E",
+    "connected" : false,
+    "paired" : true
+  },
+  {
+    "address" : "84-fc-ac-ef-2e-fc",
+    "recentAccessDate" : "2017-04-15T20:40:33+02:00",
+    "favourite" : false,
+    "name" : "Vegard sin Apple Watch",
+    "connected" : false,
+    "paired" : false
+  }
+]
