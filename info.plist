@@ -317,7 +317,7 @@ echo "{query}"</string>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
@@ -457,7 +457,7 @@ end run</string>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
@@ -475,7 +475,7 @@ end run</string>
 				<key>script</key>
 				<string>python3 ./return_device_json.py "Connect to device"</string>
 				<key>scriptargtype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
@@ -821,6 +821,7 @@ echo -n $(/usr/local/bin/blueutil --power)</string>
 
 1. Install blueutil. Easily done with Homebrew: run "brew install blueutil" in Terminal.
 2. Check if Python 3 installed (run "python3 --version" in Terminal). Also easily installed with Homebrew.
+3. Open alfred installation file, and all is set!
 
 
 
@@ -836,8 +837,8 @@ This workflow lets you do the following:
 - Toggle connection to favorite device, by typing keyword "btx".
 
 
-
-Please notify me of any bugs
+More information available at my github repo.
+Please notify me of any bugs.
 
 Enjoy!</string>
 	<key>uidata</key>
@@ -990,9 +991,11 @@ Enjoy!</string>
 			<integer>135</integer>
 		</dict>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
 	<string>1.0</string>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/vegardinho/alfred_bluetooth_controller</string>
 </dict>
 </plist>
