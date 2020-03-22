@@ -37,9 +37,8 @@ port uninstall blueutil
 python3 --version
 ```
 
-*Install:*
 
-Using package manager [Homebrew](https://brew.sh/):
+Install using package manager [Homebrew](https://brew.sh/):
 
 ```sh
 # install
@@ -54,7 +53,7 @@ brew remove python3
 ```
 
 
-Using package manager [MacPorts](https://www.macports.org/):
+Install using package manager [MacPorts](https://www.macports.org/):
 
 ```sh
 # install
@@ -69,9 +68,10 @@ port uninstall python3
 ```
 
 
-3. Open alfred installation file, and all is set!
+3. Open alfred installation file!
 
-# How to
+
+# Usage
 
 ## Manage bluetooth
 - Toggle bluetooth on and off: `bt`
@@ -80,7 +80,7 @@ port uninstall python3
 
 ## Toggle device connections
 - Connect/disconnect from device: `btd` + `device name`
-- By typing an argument, the workflow will automatically search through all devices paired with the computer.
+- By typing an argument, the workflow will automatically search through all devices prevously paired with the computer.
 
 ## Manage favorite device
 - Set favorite device: `btsetfavorite` + `device name`
