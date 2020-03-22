@@ -77,6 +77,8 @@ port uninstall python3
 
 # Usage
 
+![usage snippet]("alfred_bluetooth_long.gif" "Usage snippet")
+
 ## Manage bluetooth
 - Toggle bluetooth on and off: `bt`
 - Turn bluetooth on: `bton`
