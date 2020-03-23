@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string></string>
+	<string>com.vegardlandsverk.bluetoothcontroller</string>
 	<key>category</key>
 	<string>Tools</string>
 	<key>connections</key>
@@ -264,7 +264,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Bluetooth Controller - BACKUP</string>
+	<string>Bluetooth Controller</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -470,7 +470,7 @@ return device_id</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>baaa</string>
+				<string>btd</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -633,7 +633,7 @@ if returnValue is equal to "1" then	return 0else	return 1end if</string>
 readonly remote_info_plist='https://raw.githubusercontent.com/vegardinho/alfred_bluetooth_controller/master/info.plist'
 readonly workflow_url='vegardinho/alfred_bluetooth_controller'
 readonly download_type='github_release'
-readonly frequency_check='0'
+readonly frequency_check='4'
 
 # FROM HERE ON, CODE SHOULD BE LEFT UNTOUCHED!
 function abort {
@@ -1117,7 +1117,7 @@ Enjoy!</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.2</string>
+	<string>1.2.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/vegardinho/alfred_bluetooth_controller</string>
 </dict>
