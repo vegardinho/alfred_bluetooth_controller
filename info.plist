@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.vegardlandsverk.bluetoothcontroller</string>
+	<string></string>
 	<key>category</key>
 	<string>Tools</string>
 	<key>connections</key>
@@ -49,6 +49,16 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>1606E8FA-C53A-4C0B-981A-CC6219F1CE70</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>B588AE59-92A5-41C6-9044-413C9E119F29</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -250,11 +260,11 @@
 	<key>createdby</key>
 	<string>Vegard Landsverk</string>
 	<key>description</key>
-	<string>Toggle bluetooth with "bt", and connect easily to your devices with "btd"</string>
+	<string>Toggle bluetooth with "bt", and connect to your devices with "btd"</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Bluetooth Controller</string>
+	<string>Bluetooth Controller - BACKUP</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -357,27 +367,6 @@ echo "{query}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>Successfully connected to bluetooth device</string>
-				<key>title</key>
-				<string>Successfully CONNECTED</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>8B188343-B4DB-4F94-94E8-01E42AE5DA39</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -447,6 +436,27 @@ return device_id</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Successfully connected to bluetooth device</string>
+				<key>title</key>
+				<string>Successfully CONNECTED</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>8B188343-B4DB-4F94-94E8-01E42AE5DA39</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -460,7 +470,7 @@ return device_id</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>btd</string>
+				<string>baaa</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -593,6 +603,118 @@ if returnValue is equal to "1" then	return 0else	return 1end if</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Make sure the device is turned on and within range, and try again</string>
+				<key>title</key>
+				<string>Failed to connect to bluetooth device</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>95DBB927-AE3A-4721-9E5C-3BE88EBBE5B6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string># THESE VARIABLES MUST BE SET. SEE THE ONEUPDATER README FOR AN EXPLANATION OF EACH.
+readonly remote_info_plist='https://raw.githubusercontent.com/vegardinho/alfred_bluetooth_controller/master/info.plist'
+readonly workflow_url='vegardinho/alfred_bluetooth_controller'
+readonly download_type='github_release'
+readonly frequency_check='0'
+
+# FROM HERE ON, CODE SHOULD BE LEFT UNTOUCHED!
+function abort {
+  echo "${1}" &gt;&amp;2
+  exit 1
+}
+
+function url_exists {
+  curl --silent --location --output /dev/null --fail --range 0-0 "${1}"
+}
+
+function notification {
+  local -r notificator="$(find . -type d -name 'Notificator.app')"
+  if [[ -n "${notificator}" ]]; then
+    "${notificator}/Contents/Resources/Scripts/notificator" --message "${1}" --title "${alfred_workflow_name}" --subtitle 'A new version is available'
+    return
+  fi
+
+  local -r terminal_notifier="$(find . -type f -name 'terminal-notifier')"
+  if [[ -n "${terminal_notifier}" ]]; then
+    "${terminal_notifier}" -title "${alfred_workflow_name}" -subtitle 'A new version is available' -message "${1}"
+    return
+  fi
+
+  osascript -e "display notification \"${1}\" with title \"${alfred_workflow_name}\" subtitle \"A new version is available\""
+}
+
+# Local sanity checks
+readonly local_info_plist='info.plist'
+readonly local_version="$(/usr/libexec/PlistBuddy -c 'print version' "${local_info_plist}")"
+
+[[ -n "${local_version}" ]] || abort 'You need to set a workflow version in the configuration sheet.'
+[[ "${download_type}" =~ ^(direct|page|github_release)$ ]] || abort "'download_type' (${download_type}) needs to be one of 'direct', 'page', or 'github_release'."
+[[ "${frequency_check}" =~ ^[0-9]+$ ]] || abort "'frequency_check' (${frequency_check}) needs to be a number."
+
+# Check for updates
+if [[ $(find "${local_info_plist}" -mtime +"${frequency_check}"d) ]]; then
+  if ! url_exists "${remote_info_plist}"; then abort "'remote_info_plist' (${remote_info_plist}) appears to not be reachable."; fi # Remote sanity check
+
+  readonly tmp_file="$(mktemp)"
+  curl --silent --location --output "${tmp_file}" "${remote_info_plist}"
+  readonly remote_version="$(/usr/libexec/PlistBuddy -c 'print version' "${tmp_file}")"
+
+  if [[ "${local_version}" == "${remote_version}" ]]; then
+    touch "${local_info_plist}" # Reset timer by touching local file
+    exit 0
+  fi
+
+  if [[ "${download_type}" == 'page' ]]; then
+    notification 'Opening download page…'
+    open "${workflow_url}"
+    exit 0
+  fi
+
+  download_url="$([[ "${download_type}" == 'github_release' ]] &amp;&amp; curl --silent "https://api.github.com/repos/${workflow_url}/releases/latest" | grep 'browser_download_url' | head -1 | sed -E 's/.*browser_download_url": "(.*)"/\1/' || echo "${workflow_url}")"
+
+  if url_exists "${download_url}"; then
+    notification 'Downloading and installing…'
+    curl --silent --location --output "${HOME}/Downloads/${alfred_workflow_name}.alfredworkflow" "${download_url}"
+    open "${HOME}/Downloads/${alfred_workflow_name}.alfredworkflow"
+  else
+    abort "'workflow_url' (${download_url}) appears to not be reachable."
+  fi
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>B588AE59-92A5-41C6-9044-413C9E119F29</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -634,27 +756,6 @@ echo -n 0</string>
 			<string>86D0A863-4EB9-4723-811F-7660C092EF51</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>Make sure the device is turned on and within range, and try again</string>
-				<key>title</key>
-				<string>Failed to connect to bluetooth device</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>95DBB927-AE3A-4721-9E5C-3BE88EBBE5B6</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -738,13 +839,13 @@ echo -n 1</string>
 						<key>matchstring</key>
 						<string>1</string>
 						<key>outputlabel</key>
-						<string>PÅ</string>
+						<string>ON</string>
 						<key>uid</key>
 						<string>906ED09B-25E9-4D6A-9A2B-6D6D8600314F</string>
 					</dict>
 				</array>
 				<key>elselabel</key>
-				<string>AV</string>
+				<string>OFF</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -864,31 +965,35 @@ Enjoy!</string>
 		</dict>
 		<key>1606E8FA-C53A-4C0B-981A-CC6219F1CE70</key>
 		<dict>
+			<key>note</key>
+			<string>Connect to device id</string>
 			<key>xpos</key>
-			<integer>590</integer>
+			<integer>585</integer>
 			<key>ypos</key>
-			<integer>385</integer>
+			<integer>505</integer>
 		</dict>
 		<key>2055BADE-BB0D-4496-B3ED-B1B048523CAA</key>
 		<dict>
+			<key>note</key>
+			<string>Search through and select device</string>
 			<key>xpos</key>
 			<integer>150</integer>
 			<key>ypos</key>
-			<integer>385</integer>
+			<integer>505</integer>
 		</dict>
 		<key>3675BC91-848E-4397-BF0D-31EF7B0B12D3</key>
 		<dict>
 			<key>xpos</key>
 			<integer>955</integer>
 			<key>ypos</key>
-			<integer>390</integer>
+			<integer>510</integer>
 		</dict>
 		<key>417FCDBF-53B1-40DB-96BE-FE74C08E0CA0</key>
 		<dict>
 			<key>xpos</key>
 			<integer>1145</integer>
 			<key>ypos</key>
-			<integer>385</integer>
+			<integer>505</integer>
 		</dict>
 		<key>5DB0B8E2-8AF2-4144-A953-67E90B07A55A</key>
 		<dict>
@@ -907,68 +1012,81 @@ Enjoy!</string>
 		<key>86609129-DBF1-4FCE-AB86-911D85C6644D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>955</integer>
+			<integer>950</integer>
 			<key>ypos</key>
-			<integer>560</integer>
+			<integer>870</integer>
 		</dict>
 		<key>86D0A863-4EB9-4723-811F-7660C092EF51</key>
 		<dict>
 			<key>xpos</key>
-			<integer>590</integer>
+			<integer>585</integer>
 			<key>ypos</key>
-			<integer>505</integer>
+			<integer>815</integer>
 		</dict>
 		<key>8B188343-B4DB-4F94-94E8-01E42AE5DA39</key>
 		<dict>
 			<key>xpos</key>
 			<integer>1145</integer>
 			<key>ypos</key>
-			<integer>260</integer>
+			<integer>380</integer>
 		</dict>
 		<key>95DBB927-AE3A-4721-9E5C-3BE88EBBE5B6</key>
 		<dict>
 			<key>xpos</key>
 			<integer>1145</integer>
 			<key>ypos</key>
-			<integer>510</integer>
+			<integer>630</integer>
 		</dict>
 		<key>A511F269-0FF0-40C5-937E-2CB57DA97959</key>
 		<dict>
 			<key>xpos</key>
-			<integer>150</integer>
+			<integer>145</integer>
 			<key>ypos</key>
-			<integer>505</integer>
+			<integer>815</integer>
 		</dict>
 		<key>A87A8745-AAA0-4433-8950-7B6551E1C1D3</key>
 		<dict>
 			<key>xpos</key>
-			<integer>150</integer>
+			<integer>145</integer>
 			<key>ypos</key>
-			<integer>625</integer>
+			<integer>935</integer>
 		</dict>
 		<key>AC1FC842-4676-4A7C-AFFF-57E4C3090C3D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>810</integer>
+			<integer>805</integer>
 			<key>ypos</key>
-			<integer>645</integer>
+			<integer>955</integer>
 		</dict>
 		<key>AFB72AEF-52DF-406C-AB8C-31EEFF69F714</key>
 		<dict>
 			<key>xpos</key>
-			<integer>150</integer>
+			<integer>145</integer>
 			<key>ypos</key>
-			<integer>745</integer>
+			<integer>1055</integer>
+		</dict>
+		<key>B588AE59-92A5-41C6-9044-413C9E119F29</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>12</integer>
+			<key>note</key>
+			<string>OneUpdater</string>
+			<key>xpos</key>
+			<integer>585</integer>
+			<key>ypos</key>
+			<integer>645</integer>
 		</dict>
 		<key>C588528A-F157-401D-BB24-FA1DCDB1BAFC</key>
 		<dict>
 			<key>xpos</key>
-			<integer>590</integer>
+			<integer>585</integer>
 			<key>ypos</key>
-			<integer>625</integer>
+			<integer>935</integer>
 		</dict>
 		<key>CF3FA9E1-82CA-4A70-89E5-C3DC08DE781A</key>
 		<dict>
+			<key>note</key>
+			<string>Get device id</string>
 			<key>xpos</key>
 			<integer>380</integer>
 			<key>ypos</key>
@@ -977,16 +1095,16 @@ Enjoy!</string>
 		<key>D78FB640-A1AA-4551-8695-D7F91D56FB7D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>955</integer>
+			<integer>950</integer>
 			<key>ypos</key>
-			<integer>690</integer>
+			<integer>1000</integer>
 		</dict>
 		<key>F22E0C2D-173E-4B6F-981B-2B1F7EFAB54B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>590</integer>
+			<integer>585</integer>
 			<key>ypos</key>
-			<integer>745</integer>
+			<integer>1055</integer>
 		</dict>
 		<key>F43C5D17-E1DC-440F-8983-565ED7077E2C</key>
 		<dict>
@@ -999,7 +1117,7 @@ Enjoy!</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/vegardinho/alfred_bluetooth_controller</string>
 </dict>
