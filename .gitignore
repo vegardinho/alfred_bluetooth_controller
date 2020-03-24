@@ -1,0 +1,5 @@
+#Ignore output file created by python
+*.json
+
+#Ignore git image showing features
+alfred_bluetooth_long.gif
