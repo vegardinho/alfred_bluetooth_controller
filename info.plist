@@ -116,6 +116,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>B588AE59-92A5-41C6-9044-413C9E119F29</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>86D0A863-4EB9-4723-811F-7660C092EF51</key>
 		<array>
@@ -134,6 +144,16 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
+				<string>B588AE59-92A5-41C6-9044-413C9E119F29</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>86D0A863-4EB9-4723-811F-7660C092EF51</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -145,6 +165,16 @@
 		</array>
 		<key>A87A8745-AAA0-4433-8950-7B6551E1C1D3</key>
 		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B588AE59-92A5-41C6-9044-413C9E119F29</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 			<dict>
 				<key>destinationuid</key>
 				<string>C588528A-F157-401D-BB24-FA1DCDB1BAFC</string>
@@ -183,6 +213,16 @@
 		</array>
 		<key>AFB72AEF-52DF-406C-AB8C-31EEFF69F714</key>
 		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B588AE59-92A5-41C6-9044-413C9E119F29</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 			<dict>
 				<key>destinationuid</key>
 				<string>F22E0C2D-173E-4B6F-981B-2B1F7EFAB54B</string>
@@ -296,11 +336,9 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>#!/bin/bash
+				<string>security add-generic-password -a "alfred-bluetooth-device" -s "alfred-bluetooth-device" -w "{query}" -C "note" -U
 
-security add-generic-password -a "alfred-bluetooth-device" -s "alfred-bluetooth-device" -w "{query}" -C "note" -U
-
-echo "{query}"</string>
+echo {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -482,7 +520,7 @@ return device_id</string>
 				<key>runningsubtext</key>
 				<string>Searching for previously paired devices. Please wait...</string>
 				<key>script</key>
-				<string>python3 ./return_device_json.py "Connect to device" {query}</string>
+				<string>./return_device_json.py "Connect to device" {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -966,7 +1004,7 @@ Enjoy!</string>
 		<key>1606E8FA-C53A-4C0B-981A-CC6219F1CE70</key>
 		<dict>
 			<key>note</key>
-			<string>Connect to device id</string>
+			<string>Connect via device id</string>
 			<key>xpos</key>
 			<integer>585</integer>
 			<key>ypos</key>
@@ -1005,7 +1043,7 @@ Enjoy!</string>
 		<key>7502003D-DCA4-47B9-965B-A5E6B32AB52A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>775</integer>
+			<integer>770</integer>
 			<key>ypos</key>
 			<integer>265</integer>
 		</dict>
@@ -1070,11 +1108,11 @@ Enjoy!</string>
 			<key>colorindex</key>
 			<integer>12</integer>
 			<key>note</key>
-			<string>OneUpdater</string>
+			<string>OneUpdater. Check for update on received input, every x days.</string>
 			<key>xpos</key>
-			<integer>585</integer>
+			<integer>380</integer>
 			<key>ypos</key>
-			<integer>645</integer>
+			<integer>650</integer>
 		</dict>
 		<key>C588528A-F157-401D-BB24-FA1DCDB1BAFC</key>
 		<dict>
@@ -1114,10 +1152,8 @@ Enjoy!</string>
 			<integer>135</integer>
 		</dict>
 	</dict>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
-	<string>1.2.2</string>
+	<string>1.2.3</string>
 	<key>webaddress</key>
 	<string>https://github.com/vegardinho/alfred_bluetooth_controller</string>
 </dict>
