@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from subprocess import Popen, PIPE
 import json
 import sys
