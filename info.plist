@@ -1117,7 +1117,7 @@ Enjoy!</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.2.1</string>
+	<string>1.2.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/vegardinho/alfred_bluetooth_controller</string>
 </dict>
