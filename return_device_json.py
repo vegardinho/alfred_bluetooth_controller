@@ -25,7 +25,7 @@ for device in devices:
     device_name = device['name']
     
     for i in range(2, num_arg):
-        if (sys.argv[i].lower() not in device_name.lower()):
+        if (device_name != None and sys.argv[i].lower() not in device_name.lower()):
             treff = False
             break;
     if (treff == False):
