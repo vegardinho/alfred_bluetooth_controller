@@ -574,7 +574,7 @@ echo {query}</string>
 				<key>text</key>
 				<string>Please wait...</string>
 				<key>title</key>
-				<string>Connecting to {var:device_name}</string>
+				<string>Toggling connection with {var:device_name}</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
@@ -709,7 +709,7 @@ return dev_name</string>
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>set connected to do shell script "/usr/local/bin/blueutil --is-connected \"{query}\"; echo $?"if connected is equal to "1" then	do shell script "/usr/local/bin/blueutil --disconnect \"{query}\""	return 2
+				<string>set connected to do shell script "echo $(/usr/local/bin/blueutil --is-connected \"{query}\")"if connected is equal to "1" then	do shell script "/usr/local/bin/blueutil --disconnect \"{query}\""	return -1
 end if
 	
 set power to do shell script "/usr/local/bin/blueutil --power"
@@ -718,7 +718,7 @@ if power equals "0" then
 end if
 
 set returnValue to do shell script "/usr/local/bin/blueutil --connect \"{query}\""
-if returnValue is equal to "1" then	return 1else	return 0end if</string>
+if returnValue is equal to "1" then	return 1end ifreturn 0</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -830,7 +830,7 @@ if returnValue is equal to "1" then	return 1else	return 0end if</string>
 						<key>matchmode</key>
 						<integer>4</integer>
 						<key>matchstring</key>
-						<string>2</string>
+						<string>-1</string>
 						<key>outputlabel</key>
 						<string>DISCONNECTED</string>
 						<key>uid</key>
@@ -1663,7 +1663,7 @@ Enjoy!</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.4</string>
+	<string>1.4.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/vegardinho/alfred_bluetooth_controller</string>
 </dict>
