@@ -57,7 +57,7 @@ def to_json_str(device_name, sub_text, device_id):
                     "title": "{}",
                     "subtitle": "{}",
                     "arg": "{}",
-                    "autocomplete": "{}\"""".format(name_lower, name, sub, dev_id, name) + "},"
+                    "autocomplete": "{}\"""".format(name_lower, name, sub, name, name) + "},"
     return string
 
 def get_args(sub):
@@ -65,7 +65,7 @@ def get_args(sub):
 
     cmd_args = ["/usr/local/bin/blueutil"]
     if subtitle == "Pair with device":
-        cmd_args.extend(["--inquiry", "5"])
+        cmd_args.extend(["--inquiry", "3"])
     else:
         cmd_args.extend(["--paired"])
     cmd_args.extend(["--format", "json"])
