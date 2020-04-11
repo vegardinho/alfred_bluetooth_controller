@@ -8,9 +8,12 @@ def main():
     subtitle = sys.argv[1]
     num_arg = len(sys.argv)
 
+
+# Open pipe to bash, run command, read output, and convert json to list, if first call (no extra
+# parameters). Read from file otherwise
     if num_arg == 2:
-# Open pipe to bash, run command, read output, and convert json to list.
-        p = Popen(["/usr/local/bin/blueutil", "--paired", "--format" ,"json"], stdin=PIPE, stdout=PIPE, stderr=PIPE)
+        cmd_args = get_args(subtitle)
+        p = Popen(cmd_args, stdin=PIPE, stdout=PIPE, stderr=PIPE)
         output, err = p.communicate(b"input data that is passed to subprocess' stdin")
         text_json = output.decode('utf-8')
         open("devices.json", "w").write(text_json)
@@ -18,8 +21,11 @@ def main():
     else:
         devices = json.loads(open("devices.json", "r").read())
 
+    # print(devices)
+
 # Create json manually from content in list (and argument), and print to alfred
     items = """{"items": ["""
+    items_len = len(items)
 
     for device in devices:
         device_name = device['name']
@@ -31,18 +37,40 @@ def main():
             if match == False:
                 continue
 
-        items += ("{" + """
+        items += to_json_str(device_name, subtitle, device['address'])
+
+
+    if items_len == len(items):
+        items += to_json_str("No Devices Found", "Make sure the device is in search mode and within range, and try again", "")
+    items = items[:-1] + "]}"""
+
+    print(items)
+
+def to_json_str(device_name, sub_text, device_id):
+    name_lower = device_name.lower()
+    name = device_name
+    dev_id = device_id
+    sub = sub_text
+
+    string = "{" + """
                     "uid": "{}",
                     "title": "{}",
                     "subtitle": "{}",
                     "arg": "{}",
-                    "autocomplete": "{}\""""
-                    .format(device_name.lower(), device_name, subtitle, 
-                        device['address'], device_name) + "},")
+                    "autocomplete": "{}\"""".format(name_lower, name, sub, dev_id, name) + "},"
+    return string
 
-    items = items[:-1] + "]}"
+def get_args(sub):
+    subtitle = sub
 
-    print(items)
+    cmd_args = ["/usr/local/bin/blueutil"]
+    if subtitle == "Pair with device":
+        cmd_args.extend(["--inquiry", "5"])
+    else:
+        cmd_args.extend(["--paired"])
+    cmd_args.extend(["--format", "json"])
+
+    return cmd_args
 
 def check_if_match(num_arg, device_name):
     for i in range(2, num_arg):
