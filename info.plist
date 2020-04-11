@@ -215,6 +215,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>A70E0B03-61A8-4842-8296-93EDFCC23479</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>008A1FEA-E890-4782-9D5C-12CDD78DAF0D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>A87A8745-AAA0-4433-8950-7B6551E1C1D3</key>
 		<array>
 			<dict>
@@ -341,7 +354,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>008A1FEA-E890-4782-9D5C-12CDD78DAF0D</string>
+				<string>A70E0B03-61A8-4842-8296-93EDFCC23479</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -580,9 +593,9 @@ echo {query}</string>
 				<key>script</key>
 				<string>--attempt to retrieve name of bluetooth device
 
-set device_id to do shell script "perl -e 'use strict; use warnings; my $device =`security find-generic-password -w -s \"alfred-bluetooth-device\"`; chomp $device; print $device;'"if length of device_name = 0 then	display alert "Bluetooth device not set" message "It appears that device has not been set. Please run 'btset \"device name\"' and try again." as criticalend if
+set dev_name to do shell script "perl -e 'use strict; use warnings; my $device =`security find-generic-password -w -s \"alfred-bluetooth-device\"`; chomp $device; print $device;'"if length of dev_name = 0 then	display alert "Bluetooth device not set" message "It appears that device has not been set. Please run 'btset \"device name\"' and try again." as criticalend if
 
-return device_name</string>
+return dev_name</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -614,6 +627,27 @@ return device_name</string>
 			<string>008A1FEA-E890-4782-9D5C-12CDD78DAF0D</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>1</integer>
+				<key>matchstring</key>
+				<string>\n</string>
+				<key>regexcaseinsensitive</key>
+				<false/>
+				<key>regexmultiline</key>
+				<false/>
+				<key>replacestring</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>A70E0B03-61A8-4842-8296-93EDFCC23479</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -675,7 +709,7 @@ return device_name</string>
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>set connected to do shell script "echo $(/usr/local/bin/blueutil --is-connected \"{query}\")"if connected is equal to "1" then	do shell script "/usr/local/bin/blueutil --disconnect \"{query}\""	return 2
+				<string>set connected to do shell script "/usr/local/bin/blueutil --is-connected \"{query}\"; echo $?"if connected is equal to "1" then	do shell script "/usr/local/bin/blueutil --disconnect \"{query}\""	return 2
 end if
 	
 set power to do shell script "/usr/local/bin/blueutil --power"
@@ -1376,7 +1410,7 @@ Enjoy!</string>
 		<key>008A1FEA-E890-4782-9D5C-12CDD78DAF0D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>540</integer>
+			<integer>580</integer>
 			<key>ypos</key>
 			<integer>350</integer>
 		</dict>
@@ -1519,6 +1553,13 @@ Enjoy!</string>
 			<key>ypos</key>
 			<integer>1450</integer>
 		</dict>
+		<key>A70E0B03-61A8-4842-8296-93EDFCC23479</key>
+		<dict>
+			<key>xpos</key>
+			<integer>515</integer>
+			<key>ypos</key>
+			<integer>350</integer>
+		</dict>
 		<key>A87A8745-AAA0-4433-8950-7B6551E1C1D3</key>
 		<dict>
 			<key>xpos</key>
@@ -1600,7 +1641,7 @@ Enjoy!</string>
 		<key>E9F3FA71-8F4D-41A4-A4D2-2E40481FF41D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>540</integer>
+			<integer>525</integer>
 			<key>ypos</key>
 			<integer>695</integer>
 		</dict>
@@ -1619,6 +1660,8 @@ Enjoy!</string>
 			<integer>135</integer>
 		</dict>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
 	<string>1.4</string>
 	<key>webaddress</key>
