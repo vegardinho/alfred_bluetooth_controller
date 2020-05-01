@@ -1,6 +1,5 @@
 #Ignore output file created by python
 *.json
 
-#Ignore image files
+#Ignore gif files
 *.gif
-*.png

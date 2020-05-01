@@ -1396,12 +1396,13 @@ echo -n $(/usr/local/bin/blueutil --power)</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>NEW IN THIS EDITION (1.4):
-- Ability to pair with device ("btp")
-- Name of device in notifications
+	<string>NEW IN THIS EDITION (1.5):
+- Compatibility with every macOS (thanks to deanishe)
 
 
 FOR INSTALLATION AND MANUAL, SEE GITHUB REPO
+https://github.com/vegardinho/alfred_bluetooth_controller
+
 Please notify me of any bugs.
 
 Enjoy!</string>
@@ -1661,7 +1662,7 @@ Enjoy!</string>
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>1.4.2</string>
+	<string>1.5</string>
 	<key>webaddress</key>
 	<string>https://github.com/vegardinho/alfred_bluetooth_controller</string>
 </dict>
