@@ -1,5 +1,6 @@
 #Ignore output file created by python
 *.json
 
-#Ignore git image showing features
+#Ignore image files
 *.gif
+*.png
