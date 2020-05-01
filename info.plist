@@ -520,7 +520,7 @@ echo {query}</string>
 				<key>runningsubtext</key>
 				<string>Searching for previously paired devices. Please wait...</string>
 				<key>script</key>
-				<string>python3 ./return_device_json.py "Set as favorite"</string>
+				<string>./return_device_json.py "Set as favorite"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -761,9 +761,9 @@ if returnValue is equal to "1" then	return 1end ifreturn 0</string>
 				<key>runningsubtext</key>
 				<string>Searching for previously paired devices. Please wait...</string>
 				<key>script</key>
-				<string>./return_device_json.py "Connect to device" {query}</string>
+				<string>./return_device_json.py "Connect to device" "$1"</string>
 				<key>scriptargtype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
@@ -964,7 +964,7 @@ if returnValue is equal to "0" then	return 0else	return 1end if</string>
 				<key>runningsubtext</key>
 				<string>Searching for devices. Please wait (5 seconds)...</string>
 				<key>script</key>
-				<string>./return_device_json.py "Pair with device" {query}</string>
+				<string>./return_device_json.py "Pair with device" "$1"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -1660,10 +1660,8 @@ Enjoy!</string>
 			<integer>135</integer>
 		</dict>
 	</dict>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
-	<string>1.4.1</string>
+	<string>1.4.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/vegardinho/alfred_bluetooth_controller</string>
 </dict>
