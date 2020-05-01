@@ -4,7 +4,7 @@ A powerful toolkit for managing your bluetooth connections.
 ## Installation
 
 ### Summary
-Install [blueutil](http://www.frederikseiffert.de/blueutil/) and [Alfred workflow](https://github.com/vegardinho/alfred_bluetooth_controller/releases/tag/1.4.1)!
+Install [blueutil](http://www.frederikseiffert.de/blueutil/) and [Alfred workflow](https://github.com/vegardinho/alfred_bluetooth_controller/releases/latest)!
 
 ### Instructions
 1. Install [blueutil](http://www.frederikseiffert.de/blueutil/): 
@@ -37,7 +37,7 @@ port upgrade blueutil
 port uninstall blueutil
 ```
 
-2. Download the [Alfred workflow](https://github.com/vegardinho/alfred_bluetooth_controller/releases/tag/1.4.1) and double-click to install!
+2. Download the [Alfred workflow](https://github.com/vegardinho/alfred_bluetooth_controller/releases/latest) and double-click to install!
 
 
 ## Usage
@@ -56,3 +56,7 @@ port uninstall blueutil
 ### Manage favorite device
 - Set favorite device: `btsetfavorite` + `device name`
 - Toggle connection to favorite device: `btx`
+
+### Pair new device
+- `btp` + `device name`
+- Wait 5 seconds for results to show up
