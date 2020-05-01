@@ -2,4 +2,4 @@
 *.json
 
 #Ignore git image showing features
-alfred_bluetooth_long.gif
+*.gif
