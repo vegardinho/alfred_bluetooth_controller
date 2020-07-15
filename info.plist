@@ -106,6 +106,42 @@
 				<false/>
 			</dict>
 		</array>
+		<key>2812FFF0-4C82-41FC-B7D6-87F6C60285E4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B52E431A-FCAB-4519-B19A-9550030B37FD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>2EEA7C90-E237-4A00-8AEC-35BACC86AE45</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2812FFF0-4C82-41FC-B7D6-87F6C60285E4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>AC1FC842-4676-4A7C-AFFF-57E4C3090C3D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>3675BC91-848E-4397-BF0D-31EF7B0B12D3</key>
 		<array>
 			<dict>
@@ -135,6 +171,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>95DBB927-AE3A-4721-9E5C-3BE88EBBE5B6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>4F020A04-5667-4F1C-A47A-234969D276DA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2EEA7C90-E237-4A00-8AEC-35BACC86AE45</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -304,6 +353,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>0CE3B532-9C31-4D63-96A4-95AD22177380</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B52E431A-FCAB-4519-B19A-9550030B37FD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>AC1FC842-4676-4A7C-AFFF-57E4C3090C3D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -615,6 +677,8 @@ return dev_name</string>
 			<dict>
 				<key>argument</key>
 				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
 				<key>variables</key>
 				<dict>
 					<key>device_name</key>
@@ -852,6 +916,8 @@ if returnValue is equal to "1" then	return 1end ifreturn 0</string>
 			<dict>
 				<key>argument</key>
 				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
 				<key>variables</key>
 				<dict>
 					<key>device_name</key>
@@ -1039,6 +1105,8 @@ if returnValue is equal to "0" then	return 0else	return 1end if</string>
 			<dict>
 				<key>argument</key>
 				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
 				<key>variables</key>
 				<dict>
 					<key>device_name</key>
@@ -1106,7 +1174,7 @@ if returnValue is equal to "0" then	return 0else	return 1end if</string>
 readonly remote_info_plist='https://raw.githubusercontent.com/vegardinho/alfred_bluetooth_controller/master/info.plist'
 readonly workflow_url='vegardinho/alfred_bluetooth_controller'
 readonly download_type='github_release'
-readonly frequency_check='4'
+readonly frequency_check='1'
 
 # FROM HERE ON, CODE SHOULD BE LEFT UNTOUCHED!
 function abort {
@@ -1184,6 +1252,88 @@ fi</string>
 			<string>B588AE59-92A5-41C6-9044-413C9E119F29</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>/usr/local/bin/blueutil --power 1
+echo -n 1</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>B52E431A-FCAB-4519-B19A-9550030B37FD</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>btr</string>
+				<key>subtext</key>
+				<string>Turn off, wait 1.5s, turn on</string>
+				<key>text</key>
+				<string>Reset bluetooth connection</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>4F020A04-5667-4F1C-A47A-234969D276DA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>/usr/local/bin/blueutil --power 0
+echo -n 0</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>2EEA7C90-E237-4A00-8AEC-35BACC86AE45</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>seconds</key>
+				<string>1.5</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.delay</string>
+			<key>uid</key>
+			<string>2812FFF0-4C82-41FC-B7D6-87F6C60285E4</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1396,11 +1546,7 @@ echo -n $(/usr/local/bin/blueutil --power)</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>NEW IN THIS EDITION (1.5):
-- Compatibility with every macOS (thanks to deanishe)
-
-
-FOR INSTALLATION AND MANUAL, SEE GITHUB REPO
+	<string>FOR INSTALLATION, CHANGE LOG, AND MANUAL, SEE:
 https://github.com/vegardinho/alfred_bluetooth_controller
 
 Please notify me of any bugs.
@@ -1482,6 +1628,20 @@ Enjoy!</string>
 			<key>ypos</key>
 			<integer>665</integer>
 		</dict>
+		<key>2812FFF0-4C82-41FC-B7D6-87F6C60285E4</key>
+		<dict>
+			<key>xpos</key>
+			<integer>770</integer>
+			<key>ypos</key>
+			<integer>1550</integer>
+		</dict>
+		<key>2EEA7C90-E237-4A00-8AEC-35BACC86AE45</key>
+		<dict>
+			<key>xpos</key>
+			<integer>610</integer>
+			<key>ypos</key>
+			<integer>1520</integer>
+		</dict>
 		<key>3675BC91-848E-4397-BF0D-31EF7B0B12D3</key>
 		<dict>
 			<key>xpos</key>
@@ -1495,6 +1655,13 @@ Enjoy!</string>
 			<integer>1150</integer>
 			<key>ypos</key>
 			<integer>665</integer>
+		</dict>
+		<key>4F020A04-5667-4F1C-A47A-234969D276DA</key>
+		<dict>
+			<key>xpos</key>
+			<integer>170</integer>
+			<key>ypos</key>
+			<integer>1520</integer>
 		</dict>
 		<key>5DB0B8E2-8AF2-4144-A953-67E90B07A55A</key>
 		<dict>
@@ -1522,16 +1689,16 @@ Enjoy!</string>
 		<key>86609129-DBF1-4FCE-AB86-911D85C6644D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>970</integer>
+			<integer>975</integer>
 			<key>ypos</key>
-			<integer>1505</integer>
+			<integer>1700</integer>
 		</dict>
 		<key>86D0A863-4EB9-4723-811F-7660C092EF51</key>
 		<dict>
 			<key>xpos</key>
-			<integer>605</integer>
+			<integer>610</integer>
 			<key>ypos</key>
-			<integer>1450</integer>
+			<integer>1645</integer>
 		</dict>
 		<key>8B188343-B4DB-4F94-94E8-01E42AE5DA39</key>
 		<dict>
@@ -1550,9 +1717,9 @@ Enjoy!</string>
 		<key>A511F269-0FF0-40C5-937E-2CB57DA97959</key>
 		<dict>
 			<key>xpos</key>
-			<integer>165</integer>
+			<integer>170</integer>
 			<key>ypos</key>
-			<integer>1450</integer>
+			<integer>1645</integer>
 		</dict>
 		<key>A70E0B03-61A8-4842-8296-93EDFCC23479</key>
 		<dict>
@@ -1564,23 +1731,23 @@ Enjoy!</string>
 		<key>A87A8745-AAA0-4433-8950-7B6551E1C1D3</key>
 		<dict>
 			<key>xpos</key>
-			<integer>165</integer>
+			<integer>170</integer>
 			<key>ypos</key>
-			<integer>1570</integer>
+			<integer>1765</integer>
 		</dict>
 		<key>AC1FC842-4676-4A7C-AFFF-57E4C3090C3D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>825</integer>
+			<integer>830</integer>
 			<key>ypos</key>
-			<integer>1590</integer>
+			<integer>1785</integer>
 		</dict>
 		<key>AFB72AEF-52DF-406C-AB8C-31EEFF69F714</key>
 		<dict>
 			<key>xpos</key>
-			<integer>165</integer>
+			<integer>170</integer>
 			<key>ypos</key>
-			<integer>1690</integer>
+			<integer>1885</integer>
 		</dict>
 		<key>B2A13B8C-EA8D-4560-BA46-E18198CD3B77</key>
 		<dict>
@@ -1591,12 +1758,19 @@ Enjoy!</string>
 			<key>ypos</key>
 			<integer>985</integer>
 		</dict>
+		<key>B52E431A-FCAB-4519-B19A-9550030B37FD</key>
+		<dict>
+			<key>xpos</key>
+			<integer>850</integer>
+			<key>ypos</key>
+			<integer>1520</integer>
+		</dict>
 		<key>B588AE59-92A5-41C6-9044-413C9E119F29</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>12</integer>
 			<key>note</key>
-			<string>OneUpdater. Check for update on received input, every 4 days.</string>
+			<string>OneUpdater. Check for update on received input, every 1 days.</string>
 			<key>xpos</key>
 			<integer>385</integer>
 			<key>ypos</key>
@@ -1612,9 +1786,9 @@ Enjoy!</string>
 		<key>C588528A-F157-401D-BB24-FA1DCDB1BAFC</key>
 		<dict>
 			<key>xpos</key>
-			<integer>605</integer>
+			<integer>610</integer>
 			<key>ypos</key>
-			<integer>1570</integer>
+			<integer>1765</integer>
 		</dict>
 		<key>CF3FA9E1-82CA-4A70-89E5-C3DC08DE781A</key>
 		<dict>
@@ -1628,9 +1802,9 @@ Enjoy!</string>
 		<key>D78FB640-A1AA-4551-8695-D7F91D56FB7D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>970</integer>
+			<integer>975</integer>
 			<key>ypos</key>
-			<integer>1635</integer>
+			<integer>1830</integer>
 		</dict>
 		<key>E1E47383-CE28-4BAE-8F26-70DA46F1F573</key>
 		<dict>
@@ -1649,9 +1823,9 @@ Enjoy!</string>
 		<key>F22E0C2D-173E-4B6F-981B-2B1F7EFAB54B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>605</integer>
+			<integer>610</integer>
 			<key>ypos</key>
-			<integer>1690</integer>
+			<integer>1885</integer>
 		</dict>
 		<key>F43C5D17-E1DC-440F-8983-565ED7077E2C</key>
 		<dict>
@@ -1662,7 +1836,7 @@ Enjoy!</string>
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>1.5</string>
+	<string>1.6</string>
 	<key>webaddress</key>
 	<string>https://github.com/vegardinho/alfred_bluetooth_controller</string>
 </dict>
