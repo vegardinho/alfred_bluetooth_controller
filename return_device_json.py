@@ -7,6 +7,7 @@ import json
 import os
 from subprocess import check_output
 import sys
+import xml.etree.ElementTree as ET
 
 # Workflow's cache directory for machine-specific data
 CACHE_DIR = os.getenv("alfred_workflow_cache")
@@ -45,6 +46,11 @@ def main():
         if query and not query.lower() in device_name.lower():
             continue
 
+        # Check if custom name
+        display_name = get_display_name(device["address"])
+        if display_name:
+            device_name = display_name
+            
         items.append(device_item(device_name, subtitle, device["address"]))
 
     if not items:
@@ -53,6 +59,21 @@ def main():
                                  "and within range, and try again"))
 
     json.dump({"items": items}, sys.stdout)
+
+
+def get_display_name(address):
+    try:
+        xml = check_output("plutil -extract DeviceCache.{}.displayName xml1 /Library/Preferences/com.apple.Bluetooth.plist -o -".format(address).split())
+    except Exception:
+        return None
+    return ET.fromstring(xml).find('string').text
+
+def get_original_name(display_name):
+    try:
+        xml = check_output("plutil -extract DeviceCache.{}.displayName xml1 /Library/Preferences/com.apple.Bluetooth.plist -o -".format(address).split())
+    except Exception:
+        return None
+    return ET.fromstring(xml).find('string').text
 
 
 def device_item(device_name, subtitle, device_id=None):
@@ -64,6 +85,7 @@ def device_item(device_name, subtitle, device_id=None):
 
     if device_id:
         d["uid"] = device_id
+        d["variables"] = dict(uid=device_id)
 
     return d
 
@@ -72,7 +94,7 @@ def get_args(subtitle):
     """Make ``blueutil`` command based on subtitle."""
     cmd_args = ["/usr/local/bin/blueutil", "--format", "json"]
     if subtitle == "Pair with device":
-        cmd_args.extend(["--inquiry", "3"])
+        cmd_args.extend(["--inquiry", "5"])
     else:
         cmd_args.extend(["--paired"])
 

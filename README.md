@@ -48,7 +48,6 @@ port uninstall blueutil
 - Toggle bluetooth on and off: `bt`
 - Turn bluetooth on: `bton`
 - Turn bluetooth off: `btoff`
-- Reset bluetooth connection `btr`
 
 ### Toggle device connections
 - Connect/disconnect from device: `btd` + `device name`
@@ -61,3 +60,18 @@ port uninstall blueutil
 ### Pair new device
 - `btp` + `device name`
 - Wait 5 seconds for results to show up
+
+### Toggle bluetooth status
+- `btt` 
+
+### Turn on bluetooth
+- `bton` 
+
+### Turn off bluetooth
+- `btoff` 
+
+### Safely toggle bluetooth status
+- Prompt confirmation before toggle: `btts` 
+
+### Safely turn off bluetooth
+- Prompt confirmation before turning off: `btos` 
