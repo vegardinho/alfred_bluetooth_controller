@@ -107,34 +107,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>32075892-B6C3-4113-A5FE-E171CDB9EDE1</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>062465D0-44F1-4FF7-9F84-6979BEC4DF88</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>BF23AE93-9F02-4809-9426-A0FBFD5EC0A0</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>3566B163-5E0F-46CE-9C25-94638F4D8855</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>F22E0C2D-173E-4B6F-981B-2B1F7EFAB54B</string>
+				<string>86D0A863-4EB9-4723-811F-7660C092EF51</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -332,6 +309,31 @@
 				<false/>
 			</dict>
 		</array>
+		<key>969F32E4-6C96-4FD2-BB05-8A9687B2CF96</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>86D0A863-4EB9-4723-811F-7660C092EF51</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>B2CD7A72-7C80-45C4-8EDD-D7BE7D01E1D2</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>062465D0-44F1-4FF7-9F84-6979BEC4DF88</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>9F22F821-4107-4DF8-AF14-6322BACCE389</key>
 		<array>
 			<dict>
@@ -359,7 +361,7 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>86D0A863-4EB9-4723-811F-7660C092EF51</string>
+				<string>969F32E4-6C96-4FD2-BB05-8A9687B2CF96</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -404,8 +406,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>A9DC77EB-FA3D-41EA-A2C0-C1D84E3EDCB4</key>
-		<array/>
 		<key>AC1FC842-4676-4A7C-AFFF-57E4C3090C3D</key>
 		<array>
 			<dict>
@@ -458,7 +458,32 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
+				<string>B0D7B171-71E1-432D-BB6E-2D14066CB49F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B0D7B171-71E1-432D-BB6E-2D14066CB49F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
 				<string>F22E0C2D-173E-4B6F-981B-2B1F7EFAB54B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>B2CD7A72-7C80-45C4-8EDD-D7BE7D01E1D2</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>9F22F821-4107-4DF8-AF14-6322BACCE389</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -630,7 +655,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>86D0A863-4EB9-4723-811F-7660C092EF51</string>
+				<string>F22E0C2D-173E-4B6F-981B-2B1F7EFAB54B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -659,29 +684,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>AC1FC842-4676-4A7C-AFFF-57E4C3090C3D</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>F266498E-9849-4C55-8B93-22254D24E8B6</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>9F22F821-4107-4DF8-AF14-6322BACCE389</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>A9DC77EB-FA3D-41EA-A2C0-C1D84E3EDCB4</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1767,21 +1769,21 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>btoff</string>
-				<key>subtext</key>
+				<key>argument</key>
 				<string></string>
-				<key>text</key>
-				<string>Turn off bluetooth</string>
-				<key>withspace</key>
-				<true/>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>triggerid</key>
+				<string>Bluetooth-off</string>
+				<key>triggername</key>
+				<string>Bluetooth off</string>
+				<key>workflowonly</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.trigger.remote</string>
 			<key>uid</key>
-			<string>A511F269-0FF0-40C5-937E-2CB57DA97959</string>
+			<string>C6BA9A45-F520-4BFB-A1C9-4612340B6F5D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1812,6 +1814,114 @@ echo -n 0</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>btoff</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Turn off bluetooth</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>A511F269-0FF0-40C5-937E-2CB57DA97959</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:confirm}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>false</string>
+						<key>outputlabel</key>
+						<string>skip</string>
+						<key>uid</key>
+						<string>B2CD7A72-7C80-45C4-8EDD-D7BE7D01E1D2</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>confirm</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>969F32E4-6C96-4FD2-BB05-8A9687B2CF96</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>fixedorder</key>
+				<true/>
+				<key>items</key>
+				<string>[{"title":"Yes","arg":"yes","subtitle":"Turn off bluetooth"},{"title":"No","arg":"no","subtitle":"Don't turn off bluetooth"}]</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Your mouse and/or keyboard might disconnect from your mac.</string>
+				<key>title</key>
+				<string>Are you sure you want to toggle bluetooth?</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>062465D0-44F1-4FF7-9F84-6979BEC4DF88</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>yes</string>
+						<key>outputlabel</key>
+						<string>yes</string>
+						<key>uid</key>
+						<string>BE74FDBE-7ED8-46D7-8E29-52904BF43033</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>3566B163-5E0F-46CE-9C25-94638F4D8855</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -1829,73 +1939,6 @@ echo -n 0</string>
 			<string>86609129-DBF1-4FCE-AB86-911D85C6644D</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>triggerid</key>
-				<string>Bluetooth-off</string>
-				<key>triggername</key>
-				<string>Bluetooth off</string>
-				<key>workflowonly</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.remote</string>
-			<key>uid</key>
-			<string>C6BA9A45-F520-4BFB-A1C9-4612340B6F5D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>bton</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Turn on bluetooth</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>A87A8745-AAA0-4433-8950-7B6551E1C1D3</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>/usr/local/bin/blueutil --power 1
-
-echo -n 1</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>C588528A-F157-401D-BB24-FA1DCDB1BAFC</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1972,21 +2015,67 @@ echo -n 1</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/usr/local/bin/blueutil --power 1
+
+echo -n 1</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>C588528A-F157-401D-BB24-FA1DCDB1BAFC</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
-				<string>btt</string>
+				<string>bton</string>
 				<key>subtext</key>
-				<string>Turns on if turned off, and vice versa</string>
+				<string></string>
 				<key>text</key>
-				<string>Toggle bluetooth</string>
+				<string>Turn on bluetooth</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>AFB72AEF-52DF-406C-AB8C-31EEFF69F714</string>
+			<string>A87A8745-AAA0-4433-8950-7B6551E1C1D3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>triggerid</key>
+				<string>Bluetooth Toggle</string>
+				<key>triggername</key>
+				<string>Bluetooth Toggle</string>
+				<key>workflowonly</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.remote</string>
+			<key>uid</key>
+			<string>70EC49E3-72D0-4EDE-B1DD-44C296BA5263</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2018,21 +2107,51 @@ echo -n $(/usr/local/bin/blueutil --power)</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string></string>
 				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>triggerid</key>
-				<string>Bluetooth Toggle</string>
-				<key>triggername</key>
-				<string>Bluetooth Toggle</string>
-				<key>workflowonly</key>
-				<false/>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>btt</string>
+				<key>subtext</key>
+				<string>Turns on if turned off, and vice versa</string>
+				<key>text</key>
+				<string>Toggle bluetooth</string>
+				<key>withspace</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.remote</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>70EC49E3-72D0-4EDE-B1DD-44C296BA5263</string>
+			<string>AFB72AEF-52DF-406C-AB8C-31EEFF69F714</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:confirm}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>false</string>
+						<key>outputlabel</key>
+						<string>skip</string>
+						<key>uid</key>
+						<string>B2CD7A72-7C80-45C4-8EDD-D7BE7D01E1D2</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>confirm</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>B0D7B171-71E1-432D-BB6E-2D14066CB49F</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2046,7 +2165,7 @@ echo -n $(/usr/local/bin/blueutil --power)</string>
 				<key>fixedorder</key>
 				<true/>
 				<key>items</key>
-				<string>[{"title":"Yes","arg":"yes","subtitle":"Turn off bluetooth"},{"title":"No","arg":"no","subtitle":"Don't turn off bluetooth"}]</string>
+				<string>[{"title":"Yes","arg":"yes","subtitle":"Toggle bluetooth"},{"title":"No","arg":"no","subtitle":"Don't toggle bluetooth"}]</string>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>subtext</key>
@@ -2060,27 +2179,6 @@ echo -n $(/usr/local/bin/blueutil --power)</string>
 			<string>alfred.workflow.input.listfilter</string>
 			<key>uid</key>
 			<string>9F22F821-4107-4DF8-AF14-6322BACCE389</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>btos</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Turn off bluetooth safely</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>F266498E-9849-4C55-8B93-22254D24E8B6</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2114,150 +2212,10 @@ echo -n $(/usr/local/bin/blueutil --power)</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alignment</key>
-				<integer>0</integer>
-				<key>backgroundcolor</key>
-				<string></string>
-				<key>fadespeed</key>
-				<integer>0</integer>
-				<key>fillmode</key>
-				<integer>0</integer>
-				<key>font</key>
-				<string></string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>largetypetext</key>
-				<string>Are you sure you want to toggle bluetooth?
-Your mouse and/or keyboard might disconnect from your mac.</string>
-				<key>textcolor</key>
-				<string></string>
-				<key>wrapat</key>
-				<integer>50</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.largetype</string>
-			<key>uid</key>
-			<string>A9DC77EB-FA3D-41EA-A2C0-C1D84E3EDCB4</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>fixedorder</key>
-				<true/>
-				<key>items</key>
-				<string>[{"title":"Yes","arg":"yes","subtitle":"Toggle bluetooth"},{"title":"No","arg":"no","subtitle":"Don't toggle bluetooth"}]</string>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Your mouse and/or keyboard might disconnect from your mac.</string>
-				<key>title</key>
-				<string>Are you sure you want to toggle bluetooth?</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
-			<key>uid</key>
-			<string>062465D0-44F1-4FF7-9F84-6979BEC4DF88</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>btts</string>
-				<key>subtext</key>
-				<string>Turns on if turned off, and vice versa</string>
-				<key>text</key>
-				<string>Toggle bluetooth safely</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>32075892-B6C3-4113-A5FE-E171CDB9EDE1</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>yes</string>
-						<key>outputlabel</key>
-						<string>yes</string>
-						<key>uid</key>
-						<string>BE74FDBE-7ED8-46D7-8E29-52904BF43033</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>else</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>3566B163-5E0F-46CE-9C25-94638F4D8855</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alignment</key>
-				<integer>0</integer>
-				<key>backgroundcolor</key>
-				<string></string>
-				<key>fadespeed</key>
-				<integer>0</integer>
-				<key>fillmode</key>
-				<integer>0</integer>
-				<key>font</key>
-				<string></string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>largetypetext</key>
-				<string>Are you sure you want to toggle bluetooth?
-Your mouse and/or keyboard might disconnect from your mac.</string>
-				<key>textcolor</key>
-				<string></string>
-				<key>wrapat</key>
-				<integer>50</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.largetype</string>
-			<key>uid</key>
-			<string>BF23AE93-9F02-4809-9426-A0FBFD5EC0A0</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
 	</array>
 	<key>readme</key>
-	<string>NEW IN THIS EDITION (2.0):
-- Remote triggers (by chrisgrieser)
-- Custom device names* (thanks to a-rock-lobster for help along the way)
-- Safe toggle and deactivation (force confirmation)
+	<string>NEW IN THIS EDITION:
+- Removed safe-keywords, and replaced with "confirm"-environment variable for controlling existing commands
 
 
 FOR INSTALLATION AND MANUAL, SEE GITHUB REPO
@@ -2292,9 +2250,9 @@ Enjoy!</string>
 		<key>062465D0-44F1-4FF7-9F84-6979BEC4DF88</key>
 		<dict>
 			<key>xpos</key>
-			<integer>345</integer>
+			<integer>365</integer>
 			<key>ypos</key>
-			<integer>2370</integer>
+			<integer>1700</integer>
 		</dict>
 		<key>0C0071B3-C425-4582-B155-441C6CB2B674</key>
 		<dict>
@@ -2349,19 +2307,12 @@ Enjoy!</string>
 			<key>ypos</key>
 			<integer>805</integer>
 		</dict>
-		<key>32075892-B6C3-4113-A5FE-E171CDB9EDE1</key>
-		<dict>
-			<key>xpos</key>
-			<integer>175</integer>
-			<key>ypos</key>
-			<integer>2370</integer>
-		</dict>
 		<key>3566B163-5E0F-46CE-9C25-94638F4D8855</key>
 		<dict>
 			<key>xpos</key>
-			<integer>495</integer>
+			<integer>515</integer>
 			<key>ypos</key>
-			<integer>2390</integer>
+			<integer>1720</integer>
 		</dict>
 		<key>3675BC91-848E-4397-BF0D-31EF7B0B12D3</key>
 		<dict>
@@ -2428,9 +2379,9 @@ Enjoy!</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>395</integer>
+			<integer>390</integer>
 			<key>ypos</key>
-			<integer>1995</integer>
+			<integer>2115</integer>
 		</dict>
 		<key>7502003D-DCA4-47B9-965B-A5E6B32AB52A</key>
 		<dict>
@@ -2469,16 +2420,16 @@ Enjoy!</string>
 		<key>86609129-DBF1-4FCE-AB86-911D85C6644D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>970</integer>
+			<integer>1120</integer>
 			<key>ypos</key>
-			<integer>1750</integer>
+			<integer>1755</integer>
 		</dict>
 		<key>86D0A863-4EB9-4723-811F-7660C092EF51</key>
 		<dict>
 			<key>xpos</key>
-			<integer>605</integer>
+			<integer>770</integer>
 			<key>ypos</key>
-			<integer>1695</integer>
+			<integer>1635</integer>
 		</dict>
 		<key>8B188343-B4DB-4F94-94E8-01E42AE5DA39</key>
 		<dict>
@@ -2494,19 +2445,26 @@ Enjoy!</string>
 			<key>ypos</key>
 			<integer>930</integer>
 		</dict>
+		<key>969F32E4-6C96-4FD2-BB05-8A9687B2CF96</key>
+		<dict>
+			<key>xpos</key>
+			<integer>245</integer>
+			<key>ypos</key>
+			<integer>1670</integer>
+		</dict>
 		<key>9F22F821-4107-4DF8-AF14-6322BACCE389</key>
 		<dict>
 			<key>xpos</key>
-			<integer>345</integer>
+			<integer>395</integer>
 			<key>ypos</key>
-			<integer>2140</integer>
+			<integer>2290</integer>
 		</dict>
 		<key>A511F269-0FF0-40C5-937E-2CB57DA97959</key>
 		<dict>
 			<key>xpos</key>
-			<integer>165</integer>
+			<integer>45</integer>
 			<key>ypos</key>
-			<integer>1695</integer>
+			<integer>1650</integer>
 		</dict>
 		<key>A70E0B03-61A8-4842-8296-93EDFCC23479</key>
 		<dict>
@@ -2518,23 +2476,16 @@ Enjoy!</string>
 		<key>A87A8745-AAA0-4433-8950-7B6551E1C1D3</key>
 		<dict>
 			<key>xpos</key>
-			<integer>165</integer>
+			<integer>55</integer>
 			<key>ypos</key>
-			<integer>1815</integer>
-		</dict>
-		<key>A9DC77EB-FA3D-41EA-A2C0-C1D84E3EDCB4</key>
-		<dict>
-			<key>xpos</key>
-			<integer>350</integer>
-			<key>ypos</key>
-			<integer>2255</integer>
+			<integer>1945</integer>
 		</dict>
 		<key>AC1FC842-4676-4A7C-AFFF-57E4C3090C3D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>825</integer>
+			<integer>975</integer>
 			<key>ypos</key>
-			<integer>1835</integer>
+			<integer>1840</integer>
 		</dict>
 		<key>AC490F6A-5F3B-4167-89B8-8D13ABD54EE7</key>
 		<dict>
@@ -2548,9 +2499,16 @@ Enjoy!</string>
 		<key>AFB72AEF-52DF-406C-AB8C-31EEFF69F714</key>
 		<dict>
 			<key>xpos</key>
-			<integer>165</integer>
+			<integer>45</integer>
 			<key>ypos</key>
-			<integer>1935</integer>
+			<integer>2215</integer>
+		</dict>
+		<key>B0D7B171-71E1-432D-BB6E-2D14066CB49F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>215</integer>
+			<key>ypos</key>
+			<integer>2235</integer>
 		</dict>
 		<key>B2A13B8C-EA8D-4560-BA46-E18198CD3B77</key>
 		<dict>
@@ -2575,9 +2533,9 @@ Enjoy!</string>
 			<key>note</key>
 			<string>OneUpdater. Check for update on received input, every 4 days.</string>
 			<key>xpos</key>
-			<integer>405</integer>
+			<integer>390</integer>
 			<key>ypos</key>
-			<integer>1405</integer>
+			<integer>1315</integer>
 		</dict>
 		<key>B70DFFFF-A6B5-4D77-AF21-24C11B78ACD4</key>
 		<dict>
@@ -2586,28 +2544,21 @@ Enjoy!</string>
 			<key>ypos</key>
 			<integer>1125</integer>
 		</dict>
-		<key>BF23AE93-9F02-4809-9426-A0FBFD5EC0A0</key>
-		<dict>
-			<key>xpos</key>
-			<integer>350</integer>
-			<key>ypos</key>
-			<integer>2480</integer>
-		</dict>
 		<key>C588528A-F157-401D-BB24-FA1DCDB1BAFC</key>
 		<dict>
 			<key>xpos</key>
-			<integer>605</integer>
+			<integer>775</integer>
 			<key>ypos</key>
-			<integer>1815</integer>
+			<integer>1940</integer>
 		</dict>
 		<key>C6BA9A45-F520-4BFB-A1C9-4612340B6F5D</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>395</integer>
+			<integer>360</integer>
 			<key>ypos</key>
-			<integer>1755</integer>
+			<integer>1565</integer>
 		</dict>
 		<key>CF3FA9E1-82CA-4A70-89E5-C3DC08DE781A</key>
 		<dict>
@@ -2621,16 +2572,16 @@ Enjoy!</string>
 		<key>D78FB640-A1AA-4551-8695-D7F91D56FB7D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>970</integer>
+			<integer>1120</integer>
 			<key>ypos</key>
-			<integer>1880</integer>
+			<integer>1885</integer>
 		</dict>
 		<key>DCBF6499-1523-4AA7-BE63-25524F8C0181</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>395</integer>
+			<integer>375</integer>
 			<key>ypos</key>
 			<integer>1875</integer>
 		</dict>
@@ -2651,9 +2602,9 @@ Enjoy!</string>
 		<key>EE29FA26-7129-4E3D-9084-F402120BF8F1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>480</integer>
+			<integer>530</integer>
 			<key>ypos</key>
-			<integer>2160</integer>
+			<integer>2310</integer>
 		</dict>
 		<key>F10A13F7-DD4A-421E-AB7B-0C87744DEFC9</key>
 		<dict>
@@ -2665,16 +2616,9 @@ Enjoy!</string>
 		<key>F22E0C2D-173E-4B6F-981B-2B1F7EFAB54B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>605</integer>
+			<integer>780</integer>
 			<key>ypos</key>
-			<integer>1935</integer>
-		</dict>
-		<key>F266498E-9849-4C55-8B93-22254D24E8B6</key>
-		<dict>
-			<key>xpos</key>
-			<integer>170</integer>
-			<key>ypos</key>
-			<integer>2140</integer>
+			<integer>2200</integer>
 		</dict>
 		<key>F43C5D17-E1DC-440F-8983-565ED7077E2C</key>
 		<dict>
@@ -2700,8 +2644,13 @@ Enjoy!</string>
 			<integer>640</integer>
 		</dict>
 	</dict>
+	<key>variables</key>
+	<dict>
+		<key>confirm</key>
+		<string>false</string>
+	</dict>
 	<key>version</key>
-	<string>2.0</string>
+	<string>2.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/vegardinho/alfred_bluetooth_controller</string>
 </dict>
