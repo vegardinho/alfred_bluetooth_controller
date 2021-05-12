@@ -2215,7 +2215,7 @@ echo -n $(/usr/local/bin/blueutil --power)</string>
 	</array>
 	<key>readme</key>
 	<string>NEW IN THIS EDITION:
-- Removed safe-keywords, and replaced with "confirm"-environment variable for controlling existing commands
+- Updated documentation
 
 
 FOR INSTALLATION AND MANUAL, SEE GITHUB REPO
@@ -2650,7 +2650,7 @@ Enjoy!</string>
 		<string>false</string>
 	</dict>
 	<key>version</key>
-	<string>2.1</string>
+	<string>2.1.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/vegardinho/alfred_bluetooth_controller</string>
 </dict>

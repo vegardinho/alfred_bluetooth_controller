@@ -72,3 +72,5 @@ Set environment variable `confirm` in workflow to `true` if you want to force us
 ### Turn off bluetooth
 - `btoff` 
 
+### Status
+- See status of bluetooth connection and paired devices: `btstatus`
