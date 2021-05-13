@@ -3,3 +3,7 @@
 
 #Ignore gif files
 *.gif
+
+__pycache__/
+
+*.pyc
