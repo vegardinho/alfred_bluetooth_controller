@@ -10,7 +10,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>786FA6B7-1AA6-4FCE-8279-DF3A658C170F</string>
+				<string>7C07C9C7-F301-45AD-A3C9-BF6D12D997A3</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -99,6 +99,29 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>B588AE59-92A5-41C6-9044-413C9E119F29</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>298B98A7-1DCB-48BE-969A-416373382D4D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7502003D-DCA4-47B9-965B-A5E6B32AB52A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>1606E8FA-C53A-4C0B-981A-CC6219F1CE70</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -262,6 +285,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>F10A13F7-DD4A-421E-AB7B-0C87744DEFC9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>7C07C9C7-F301-45AD-A3C9-BF6D12D997A3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>298B98A7-1DCB-48BE-969A-416373382D4D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -506,28 +542,7 @@
 			</dict>
 		</array>
 		<key>B4BFDE93-304F-415D-8DBE-E66464488ECB</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>7502003D-DCA4-47B9-965B-A5E6B32AB52A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>1606E8FA-C53A-4C0B-981A-CC6219F1CE70</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
+		<array/>
 		<key>B70DFFFF-A6B5-4D77-AF21-24C11B78ACD4</key>
 		<array>
 			<dict>
@@ -952,8 +967,6 @@ echo | blueutil --paired | grep -v '"-"' | cut -d '"' -f 2</string>
 				<key>script</key>
 				<string>security add-generic-password -a "alfred-bluetooth-device-id" -s "alfred-bluetooth-device-id" -w "$uid" -C "note" -U
 
-security add-generic-password -a "alfred-bluetooth-device-name" -s "alfred-bluetooth-device-name" -w "$1" -C "note" -U
-
 echo $uid</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
@@ -988,6 +1001,70 @@ echo $uid</string>
 			<string>6C6F6FCE-0C5C-4ED7-9A43-50FB06C0D2F1</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>device_name</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>B4BFDE93-304F-415D-8DBE-E66464488ECB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>1</integer>
+				<key>matchstring</key>
+				<string>\n</string>
+				<key>regexcaseinsensitive</key>
+				<false/>
+				<key>regexmultiline</key>
+				<false/>
+				<key>replacestring</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>F10A13F7-DD4A-421E-AB7B-0C87744DEFC9</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>return do shell script "perl -e 'use strict; use warnings; my $device =`security find-generic-password -w -s \"alfred-bluetooth-device-name\"`; chomp $device; print $device;'"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>786FA6B7-1AA6-4FCE-8279-DF3A658C170F</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1071,6 +1148,29 @@ return dev_name</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./get_display_name.py $uid</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>7C07C9C7-F301-45AD-A3C9-BF6D12D997A3</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -1088,29 +1188,6 @@ return dev_name</string>
 			<string>7502003D-DCA4-47B9-965B-A5E6B32AB52A</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>return do shell script "perl -e 'use strict; use warnings; my $device =`security find-generic-password -w -s \"alfred-bluetooth-device-name\"`; chomp $device; print $device;'"</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>786FA6B7-1AA6-4FCE-8279-DF3A658C170F</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1169,30 +1246,9 @@ return dev_name</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>B4BFDE93-304F-415D-8DBE-E66464488ECB</string>
+			<string>298B98A7-1DCB-48BE-969A-416373382D4D</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>matchmode</key>
-				<integer>1</integer>
-				<key>matchstring</key>
-				<string>\n</string>
-				<key>regexcaseinsensitive</key>
-				<false/>
-				<key>regexmultiline</key>
-				<false/>
-				<key>replacestring</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
-			<key>uid</key>
-			<string>F10A13F7-DD4A-421E-AB7B-0C87744DEFC9</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1264,7 +1320,7 @@ return dev_name</string>
 				<key>runningsubtext</key>
 				<string>Searching for previously paired devices. Please wait...</string>
 				<key>script</key>
-				<string>./return_device_json.py "Connect to device" "$1"</string>
+				<string>./return_device_json.py "Toggle device connection" "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -2252,7 +2308,7 @@ Enjoy!</string>
 			<key>xpos</key>
 			<integer>365</integer>
 			<key>ypos</key>
-			<integer>1700</integer>
+			<integer>1735</integer>
 		</dict>
 		<key>0C0071B3-C425-4582-B155-441C6CB2B674</key>
 		<dict>
@@ -2307,12 +2363,19 @@ Enjoy!</string>
 			<key>ypos</key>
 			<integer>805</integer>
 		</dict>
+		<key>298B98A7-1DCB-48BE-969A-416373382D4D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>805</integer>
+			<key>ypos</key>
+			<integer>550</integer>
+		</dict>
 		<key>3566B163-5E0F-46CE-9C25-94638F4D8855</key>
 		<dict>
 			<key>xpos</key>
 			<integer>515</integer>
 			<key>ypos</key>
-			<integer>1720</integer>
+			<integer>1755</integer>
 		</dict>
 		<key>3675BC91-848E-4397-BF0D-31EF7B0B12D3</key>
 		<dict>
@@ -2379,9 +2442,9 @@ Enjoy!</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>390</integer>
+			<integer>375</integer>
 			<key>ypos</key>
-			<integer>2115</integer>
+			<integer>2030</integer>
 		</dict>
 		<key>7502003D-DCA4-47B9-965B-A5E6B32AB52A</key>
 		<dict>
@@ -2395,7 +2458,16 @@ Enjoy!</string>
 			<key>note</key>
 			<string>Get device name</string>
 			<key>xpos</key>
-			<integer>645</integer>
+			<integer>1120</integer>
+			<key>ypos</key>
+			<integer>315</integer>
+		</dict>
+		<key>7C07C9C7-F301-45AD-A3C9-BF6D12D997A3</key>
+		<dict>
+			<key>note</key>
+			<string>Get display name</string>
+			<key>xpos</key>
+			<integer>655</integer>
 			<key>ypos</key>
 			<integer>520</integer>
 		</dict>
@@ -2429,7 +2501,7 @@ Enjoy!</string>
 			<key>xpos</key>
 			<integer>770</integer>
 			<key>ypos</key>
-			<integer>1635</integer>
+			<integer>1670</integer>
 		</dict>
 		<key>8B188343-B4DB-4F94-94E8-01E42AE5DA39</key>
 		<dict>
@@ -2450,21 +2522,21 @@ Enjoy!</string>
 			<key>xpos</key>
 			<integer>245</integer>
 			<key>ypos</key>
-			<integer>1670</integer>
+			<integer>1705</integer>
 		</dict>
 		<key>9F22F821-4107-4DF8-AF14-6322BACCE389</key>
 		<dict>
 			<key>xpos</key>
-			<integer>395</integer>
+			<integer>370</integer>
 			<key>ypos</key>
-			<integer>2290</integer>
+			<integer>2205</integer>
 		</dict>
 		<key>A511F269-0FF0-40C5-937E-2CB57DA97959</key>
 		<dict>
 			<key>xpos</key>
 			<integer>45</integer>
 			<key>ypos</key>
-			<integer>1650</integer>
+			<integer>1685</integer>
 		</dict>
 		<key>A70E0B03-61A8-4842-8296-93EDFCC23479</key>
 		<dict>
@@ -2499,16 +2571,16 @@ Enjoy!</string>
 		<key>AFB72AEF-52DF-406C-AB8C-31EEFF69F714</key>
 		<dict>
 			<key>xpos</key>
-			<integer>45</integer>
+			<integer>55</integer>
 			<key>ypos</key>
-			<integer>2215</integer>
+			<integer>2130</integer>
 		</dict>
 		<key>B0D7B171-71E1-432D-BB6E-2D14066CB49F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>215</integer>
+			<integer>225</integer>
 			<key>ypos</key>
-			<integer>2235</integer>
+			<integer>2150</integer>
 		</dict>
 		<key>B2A13B8C-EA8D-4560-BA46-E18198CD3B77</key>
 		<dict>
@@ -2522,9 +2594,9 @@ Enjoy!</string>
 		<key>B4BFDE93-304F-415D-8DBE-E66464488ECB</key>
 		<dict>
 			<key>xpos</key>
-			<integer>845</integer>
+			<integer>1310</integer>
 			<key>ypos</key>
-			<integer>550</integer>
+			<integer>285</integer>
 		</dict>
 		<key>B588AE59-92A5-41C6-9044-413C9E119F29</key>
 		<dict>
@@ -2558,7 +2630,7 @@ Enjoy!</string>
 			<key>xpos</key>
 			<integer>360</integer>
 			<key>ypos</key>
-			<integer>1565</integer>
+			<integer>1600</integer>
 		</dict>
 		<key>CF3FA9E1-82CA-4A70-89E5-C3DC08DE781A</key>
 		<dict>
@@ -2581,7 +2653,7 @@ Enjoy!</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>375</integer>
+			<integer>365</integer>
 			<key>ypos</key>
 			<integer>1875</integer>
 		</dict>
@@ -2602,23 +2674,23 @@ Enjoy!</string>
 		<key>EE29FA26-7129-4E3D-9084-F402120BF8F1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>530</integer>
+			<integer>505</integer>
 			<key>ypos</key>
-			<integer>2310</integer>
+			<integer>2225</integer>
 		</dict>
 		<key>F10A13F7-DD4A-421E-AB7B-0C87744DEFC9</key>
 		<dict>
 			<key>xpos</key>
-			<integer>785</integer>
+			<integer>1250</integer>
 			<key>ypos</key>
-			<integer>550</integer>
+			<integer>285</integer>
 		</dict>
 		<key>F22E0C2D-173E-4B6F-981B-2B1F7EFAB54B</key>
 		<dict>
 			<key>xpos</key>
 			<integer>780</integer>
 			<key>ypos</key>
-			<integer>2200</integer>
+			<integer>2115</integer>
 		</dict>
 		<key>F43C5D17-E1DC-440F-8983-565ED7077E2C</key>
 		<dict>
@@ -2649,6 +2721,8 @@ Enjoy!</string>
 		<key>confirm</key>
 		<string>false</string>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
 	<string>2.1.1</string>
 	<key>webaddress</key>
