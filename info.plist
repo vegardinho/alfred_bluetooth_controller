@@ -280,19 +280,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>786FA6B7-1AA6-4FCE-8279-DF3A658C170F</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>F10A13F7-DD4A-421E-AB7B-0C87744DEFC9</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>7C07C9C7-F301-45AD-A3C9-BF6D12D997A3</key>
 		<array>
 			<dict>
@@ -480,29 +467,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>AFB72AEF-52DF-406C-AB8C-31EEFF69F714</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B588AE59-92A5-41C6-9044-413C9E119F29</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>B0D7B171-71E1-432D-BB6E-2D14066CB49F</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>B0D7B171-71E1-432D-BB6E-2D14066CB49F</key>
 		<array>
 			<dict>
@@ -541,8 +505,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>B4BFDE93-304F-415D-8DBE-E66464488ECB</key>
-		<array/>
 		<key>B70DFFFF-A6B5-4D77-AF21-24C11B78ACD4</key>
 		<array>
 			<dict>
@@ -560,6 +522,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>172C2156-A750-4850-BAFF-37AA803E373D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C41B7C5B-0454-4794-AE15-E9BDD792A53F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B0D7B171-71E1-432D-BB6E-2D14066CB49F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -677,19 +652,6 @@
 				<string></string>
 				<key>sourceoutputuid</key>
 				<string>BE74FDBE-7ED8-46D7-8E29-52904BF43033</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>F10A13F7-DD4A-421E-AB7B-0C87744DEFC9</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B4BFDE93-304F-415D-8DBE-E66464488ECB</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -1001,70 +963,6 @@ echo $uid</string>
 			<string>6C6F6FCE-0C5C-4ED7-9A43-50FB06C0D2F1</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>{query}</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>device_name</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>B4BFDE93-304F-415D-8DBE-E66464488ECB</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>matchmode</key>
-				<integer>1</integer>
-				<key>matchstring</key>
-				<string>\n</string>
-				<key>regexcaseinsensitive</key>
-				<false/>
-				<key>regexmultiline</key>
-				<false/>
-				<key>replacestring</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
-			<key>uid</key>
-			<string>F10A13F7-DD4A-421E-AB7B-0C87744DEFC9</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>return do shell script "perl -e 'use strict; use warnings; my $device =`security find-generic-password -w -s \"alfred-bluetooth-device-name\"`; chomp $device; print $device;'"</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>786FA6B7-1AA6-4FCE-8279-DF3A658C170F</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2163,23 +2061,51 @@ echo -n $(/usr/local/bin/blueutil --power)</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
 				<key>keyword</key>
 				<string>btt</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Getting status...</string>
+				<key>script</key>
+				<string>./toggle.py</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>subtext</key>
 				<string>Turns on if turned off, and vice versa</string>
-				<key>text</key>
-				<string>Toggle bluetooth</string>
+				<key>title</key>
+				<string>Toggle bluetooth status</string>
+				<key>type</key>
+				<integer>0</integer>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>AFB72AEF-52DF-406C-AB8C-31EEFF69F714</string>
+			<string>C41B7C5B-0454-4794-AE15-E9BDD792A53F</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2271,7 +2197,7 @@ echo -n $(/usr/local/bin/blueutil --power)</string>
 	</array>
 	<key>readme</key>
 	<string>NEW IN THIS EDITION:
-- Updated documentation
+- Fixes a bug caused by custom device name set/changed after setting as favorite device. Now finds name dynamically.
 
 
 FOR INSTALLATION AND MANUAL, SEE GITHUB REPO
@@ -2453,15 +2379,6 @@ Enjoy!</string>
 			<key>ypos</key>
 			<integer>520</integer>
 		</dict>
-		<key>786FA6B7-1AA6-4FCE-8279-DF3A658C170F</key>
-		<dict>
-			<key>note</key>
-			<string>Get device name</string>
-			<key>xpos</key>
-			<integer>1120</integer>
-			<key>ypos</key>
-			<integer>315</integer>
-		</dict>
 		<key>7C07C9C7-F301-45AD-A3C9-BF6D12D997A3</key>
 		<dict>
 			<key>note</key>
@@ -2568,13 +2485,6 @@ Enjoy!</string>
 			<key>ypos</key>
 			<integer>255</integer>
 		</dict>
-		<key>AFB72AEF-52DF-406C-AB8C-31EEFF69F714</key>
-		<dict>
-			<key>xpos</key>
-			<integer>55</integer>
-			<key>ypos</key>
-			<integer>2130</integer>
-		</dict>
 		<key>B0D7B171-71E1-432D-BB6E-2D14066CB49F</key>
 		<dict>
 			<key>xpos</key>
@@ -2590,13 +2500,6 @@ Enjoy!</string>
 			<integer>160</integer>
 			<key>ypos</key>
 			<integer>1105</integer>
-		</dict>
-		<key>B4BFDE93-304F-415D-8DBE-E66464488ECB</key>
-		<dict>
-			<key>xpos</key>
-			<integer>1310</integer>
-			<key>ypos</key>
-			<integer>285</integer>
 		</dict>
 		<key>B588AE59-92A5-41C6-9044-413C9E119F29</key>
 		<dict>
@@ -2615,6 +2518,13 @@ Enjoy!</string>
 			<integer>820</integer>
 			<key>ypos</key>
 			<integer>1125</integer>
+		</dict>
+		<key>C41B7C5B-0454-4794-AE15-E9BDD792A53F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>55</integer>
+			<key>ypos</key>
+			<integer>2130</integer>
 		</dict>
 		<key>C588528A-F157-401D-BB24-FA1DCDB1BAFC</key>
 		<dict>
@@ -2678,13 +2588,6 @@ Enjoy!</string>
 			<key>ypos</key>
 			<integer>2225</integer>
 		</dict>
-		<key>F10A13F7-DD4A-421E-AB7B-0C87744DEFC9</key>
-		<dict>
-			<key>xpos</key>
-			<integer>1250</integer>
-			<key>ypos</key>
-			<integer>285</integer>
-		</dict>
 		<key>F22E0C2D-173E-4B6F-981B-2B1F7EFAB54B</key>
 		<dict>
 			<key>xpos</key>
@@ -2719,12 +2622,10 @@ Enjoy!</string>
 	<key>variables</key>
 	<dict>
 		<key>confirm</key>
-		<string>false</string>
+		<string>true</string>
 	</dict>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
-	<string>2.1.1</string>
+	<string>2.1.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/vegardinho/alfred_bluetooth_controller</string>
 </dict>

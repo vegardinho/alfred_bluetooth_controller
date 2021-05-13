@@ -40,22 +40,25 @@ def main():
     for device in devices:
         device_name = device["name"]
         if device_name is None:
-            continue
-
-        # Filter device name against user query if present
-        if query and not query.lower() in device_name.lower():
-            continue
+            continue        
 
         # Check if custom name
         display_name = get_display_name(device["address"])
         if display_name:
             device_name = display_name
+
+        # Filter device name against user query if present
+        if query and not query.lower() in device_name.lower():
+            continue
+
+
             
-        items.append(device_item(device_name, subtitle, device["address"]))
+        items.append(device_item(device_name, subtitle, device))
 
     if not items:
-        items.append(device_item("No Devices Found",
-                                 "Make sure the device is in search mode "
+        items.append(
+            dict(title="No Devices Found",
+                subtitle = "Make sure the device is in search mode "
                                  "and within range, and try again"))
 
     json.dump({"items": items}, sys.stdout)
@@ -68,24 +71,19 @@ def get_display_name(address):
         return None
     return ET.fromstring(xml).find('string').text
 
-def get_original_name(display_name):
-    try:
-        xml = check_output("plutil -extract DeviceCache.{}.displayName xml1 /Library/Preferences/com.apple.Bluetooth.plist -o -".format(address).split())
-    except Exception:
-        return None
-    return ET.fromstring(xml).find('string').text
 
-
-def device_item(device_name, subtitle, device_id=None):
+def device_item(device_name, subtitle, device):
     """Return an Alfred feedback ``dict`` for device/message."""
+    is_connected = device["connected"]
     d = dict(title=device_name,
-             subtitle=subtitle,
+             subtitle="Disconnect" if is_connected else "Connect",
              arg=device_name,
-             autocomplete=device_name)
+             autocomplete=device_name,
+             icon=dict(path= "./icons/bt_icon_" + ("green" if is_connected else "blue") + ".png"))
 
-    if device_id:
-        d["uid"] = device_id
-        d["variables"] = dict(uid=device_id)
+    if device["address"]:
+        d["uid"] = device["address"]
+        d["variables"] = dict(uid=device["address"])
 
     return d
 
