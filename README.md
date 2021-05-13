@@ -1,5 +1,5 @@
 # Alfred Workflow: Bluetooth Controller
-A powerful toolkit for managing your bluetooth connections.
+A powerful toolkit for managing your bluetooth connections. Includes Remote Trigger, to manage your Bluetooth devices on the big screen.
 
 ## Installation
 
@@ -75,4 +75,6 @@ port uninstall blueutil
 - See status of bluetooth connection and paired devices: `btstatus`
 
 ### Safe mode
-Set environment variable `confirm` in workflow to `true` if you want to force user confirmation on toggle and deactivation commands.
+Set environment variable `confirm` in workflow to `true` if you want to force user confirmation on toggle and deactivation commands. (Useful for iMacs and Mac Minis who that would have trouble turning Bluetooth on again without any input devices.)
+
+_All the listed commands have their own Remote Trigger._
