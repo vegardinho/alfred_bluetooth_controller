@@ -71,6 +71,9 @@ port uninstall blueutil
 ### Turn off bluetooth
 - `btoff` 
 
+### Reset bluetooth connection
+- Disables bluetooth, waits 1.5 seconds, enables: `btr`
+
 ### Status
 - See status of bluetooth connection and paired devices: `btstatus`
 

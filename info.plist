@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.vegardlandsverk.bluetoothcontroller</string>
+	<string>com.vegardlandsverk.bluetoothcontroller2</string>
 	<key>connections</key>
 	<dict>
 		<key>008A1FEA-E890-4782-9D5C-12CDD78DAF0D</key>
@@ -76,6 +76,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>3675BC91-848E-4397-BF0D-31EF7B0B12D3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>1BD2BA41-6738-437C-84B1-BEAB7178F162</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>56F791A2-43F6-4F0B-8213-5E0452BFB324</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -208,6 +221,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>56F791A2-43F6-4F0B-8213-5E0452BFB324</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DD5E38D4-0E31-438C-9DFD-E6256D0CA329</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>5C6B182C-932C-4A4B-8DF0-253342B60A10</key>
 		<array>
 			<dict>
@@ -320,6 +346,19 @@
 			</dict>
 		</array>
 		<key>86D0A863-4EB9-4723-811F-7660C092EF51</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>AC1FC842-4676-4A7C-AFFF-57E4C3090C3D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>87BC3F97-62CD-4C5F-BC5B-A01B74EF65E0</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -587,6 +626,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>C588528A-F157-401D-BB24-FA1DCDB1BAFC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DD5E38D4-0E31-438C-9DFD-E6256D0CA329</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>87BC3F97-62CD-4C5F-BC5B-A01B74EF65E0</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1969,6 +2021,27 @@ echo -n 0</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>bton</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Turn on bluetooth</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>A87A8745-AAA0-4433-8950-7B6551E1C1D3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -1990,27 +2063,6 @@ echo -n 1</string>
 			<string>C588528A-F157-401D-BB24-FA1DCDB1BAFC</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>bton</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Turn on bluetooth</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>A87A8745-AAA0-4433-8950-7B6551E1C1D3</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2194,6 +2246,88 @@ echo -n $(/usr/local/bin/blueutil --power)</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>/usr/local/bin/blueutil --power 0
+echo -n 0</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>56F791A2-43F6-4F0B-8213-5E0452BFB324</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>btr</string>
+				<key>subtext</key>
+				<string>Turn off, wait 1.5s, turn on</string>
+				<key>text</key>
+				<string>Reset bluetooth connection</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>1BD2BA41-6738-437C-84B1-BEAB7178F162</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>/usr/local/bin/blueutil --power 1
+echo -n 1</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>87BC3F97-62CD-4C5F-BC5B-A01B74EF65E0</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>seconds</key>
+				<string>1.5</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.delay</string>
+			<key>uid</key>
+			<string>DD5E38D4-0E31-438C-9DFD-E6256D0CA329</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>NEW IN THIS EDITION:
@@ -2280,6 +2414,13 @@ Enjoy!</string>
 			<key>ypos</key>
 			<integer>1050</integer>
 		</dict>
+		<key>1BD2BA41-6738-437C-84B1-BEAB7178F162</key>
+		<dict>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>2360</integer>
+		</dict>
 		<key>2055BADE-BB0D-4496-B3ED-B1B048523CAA</key>
 		<dict>
 			<key>note</key>
@@ -2341,6 +2482,13 @@ Enjoy!</string>
 			<integer>145</integer>
 			<key>ypos</key>
 			<integer>125</integer>
+		</dict>
+		<key>56F791A2-43F6-4F0B-8213-5E0452BFB324</key>
+		<dict>
+			<key>xpos</key>
+			<integer>240</integer>
+			<key>ypos</key>
+			<integer>2360</integer>
 		</dict>
 		<key>5C6B182C-932C-4A4B-8DF0-253342B60A10</key>
 		<dict>
@@ -2420,6 +2568,13 @@ Enjoy!</string>
 			<key>ypos</key>
 			<integer>1670</integer>
 		</dict>
+		<key>87BC3F97-62CD-4C5F-BC5B-A01B74EF65E0</key>
+		<dict>
+			<key>xpos</key>
+			<integer>470</integer>
+			<key>ypos</key>
+			<integer>2360</integer>
+		</dict>
 		<key>8B188343-B4DB-4F94-94E8-01E42AE5DA39</key>
 		<dict>
 			<key>xpos</key>
@@ -2465,9 +2620,9 @@ Enjoy!</string>
 		<key>A87A8745-AAA0-4433-8950-7B6551E1C1D3</key>
 		<dict>
 			<key>xpos</key>
-			<integer>55</integer>
+			<integer>50</integer>
 			<key>ypos</key>
-			<integer>1945</integer>
+			<integer>1940</integer>
 		</dict>
 		<key>AC1FC842-4676-4A7C-AFFF-57E4C3090C3D</key>
 		<dict>
@@ -2566,6 +2721,13 @@ Enjoy!</string>
 			<integer>365</integer>
 			<key>ypos</key>
 			<integer>1875</integer>
+		</dict>
+		<key>DD5E38D4-0E31-438C-9DFD-E6256D0CA329</key>
+		<dict>
+			<key>xpos</key>
+			<integer>390</integer>
+			<key>ypos</key>
+			<integer>2390</integer>
 		</dict>
 		<key>E1E47383-CE28-4BAE-8F26-70DA46F1F573</key>
 		<dict>
