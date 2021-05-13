@@ -44,7 +44,6 @@ port uninstall blueutil
 
 ![usage snippet](alfred_bluetooth_long.gif "Usage snippet")
 
-Set environment variable `confirm` in workflow to `true` if you want to force user confirmation on toggle and deactivation commands.
 
 ### Manage bluetooth
 - Toggle bluetooth on and off: `bt`
@@ -74,3 +73,6 @@ Set environment variable `confirm` in workflow to `true` if you want to force us
 
 ### Status
 - See status of bluetooth connection and paired devices: `btstatus`
+
+### Safe mode
+Set environment variable `confirm` in workflow to `true` if you want to force user confirmation on toggle and deactivation commands.
