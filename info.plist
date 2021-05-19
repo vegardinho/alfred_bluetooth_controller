@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.vegardlandsverk.bluetoothcontroller2</string>
+	<string>com.vegardlandsverk.bluetoothcontroller</string>
 	<key>connections</key>
 	<dict>
 		<key>008A1FEA-E890-4782-9D5C-12CDD78DAF0D</key>
@@ -239,29 +239,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>FB911535-8B2A-4E19-A075-AF191500B3AD</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>B588AE59-92A5-41C6-9044-413C9E119F29</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>5DB0B8E2-8AF2-4144-A953-67E90B07A55A</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>CF3FA9E1-82CA-4A70-89E5-C3DC08DE781A</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -561,19 +538,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>172C2156-A750-4850-BAFF-37AA803E373D</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>C41B7C5B-0454-4794-AE15-E9BDD792A53F</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B0D7B171-71E1-432D-BB6E-2D14066CB49F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -935,7 +899,7 @@ echo | blueutil --paired | grep -v '"-"' | cut -d '"' -f 2</string>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>Toggle device later by using keyword "btx"</string>
+				<string>Toggle device later by using selected hotkey (ctrl-option-cmd-x by default)</string>
 				<key>title</key>
 				<string>Set favorite bluetooth device</string>
 				<key>type</key>
@@ -1019,54 +983,6 @@ echo $uid</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>btx</string>
-				<key>subtext</key>
-				<string>Connects if disconnected, and vice versa</string>
-				<key>text</key>
-				<string>Toggle favorite bluetooth device</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>5DB0B8E2-8AF2-4144-A953-67E90B07A55A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>--attempt to retrieve name of bluetooth device
-
-set dev_name to do shell script "perl -e 'use strict; use warnings; my $device =`security find-generic-password -w -s \"alfred-bluetooth-device-id\"`; chomp $device; print $device;'"if length of dev_name = 0 then	display alert "Bluetooth device not set" message "It appears that device has not been set. Please run 'btset \"device name\"' and try again." as criticalend if
-
-return dev_name</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>CF3FA9E1-82CA-4A70-89E5-C3DC08DE781A</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -1092,6 +1008,33 @@ return dev_name</string>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
 			<string>00AA6D41-B74C-413D-AA91-22CB23A8A328</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>--attempt to retrieve name of bluetooth device
+
+set dev_name to do shell script "perl -e 'use strict; use warnings; my $device =`security find-generic-password -w -s \"alfred-bluetooth-device-id\"`; chomp $device; print $device;'"if length of dev_name = 0 then	display alert "Bluetooth device not set" message "It appears that device has not been set. Please run 'btset \"device name\"' and try again." as criticalend if
+
+return dev_name</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>CF3FA9E1-82CA-4A70-89E5-C3DC08DE781A</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -2113,55 +2056,6 @@ echo -n $(/usr/local/bin/blueutil --power)</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<false/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>btt</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Getting status...</string>
-				<key>script</key>
-				<string>./toggle.py</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Turns on if turned off, and vice versa</string>
-				<key>title</key>
-				<string>Toggle bluetooth status</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>C41B7C5B-0454-4794-AE15-E9BDD792A53F</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
@@ -2331,7 +2225,10 @@ echo -n 1</string>
 	</array>
 	<key>readme</key>
 	<string>NEW IN THIS EDITION:
-- Fixes a bug caused by custom device name set/changed after setting as favorite device. Now finds name dynamically.
+- Removed "btx" and "btt" functions to reduce amount of menu items
+- Dynamic logo color based on device connectivity (idea from @tilmanginzel and @BenjaminVanRyseghem, and the Alfred Bluetooth Workflow)
+- Re-added "btr" (reset) function after accidental removal in v2.0
+- Device search now correctly sorts on customized name
 
 
 FOR INSTALLATION AND MANUAL, SEE GITHUB REPO
@@ -2354,7 +2251,7 @@ Enjoy!</string>
 			<key>xpos</key>
 			<integer>150</integer>
 			<key>ypos</key>
-			<integer>520</integer>
+			<integer>470</integer>
 		</dict>
 		<key>0493455D-D221-499B-B2B0-CDCBC39CF57A</key>
 		<dict>
@@ -2497,13 +2394,6 @@ Enjoy!</string>
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
-		<key>5DB0B8E2-8AF2-4144-A953-67E90B07A55A</key>
-		<dict>
-			<key>xpos</key>
-			<integer>150</integer>
-			<key>ypos</key>
-			<integer>395</integer>
-		</dict>
 		<key>6C6F6FCE-0C5C-4ED7-9A43-50FB06C0D2F1</key>
 		<dict>
 			<key>xpos</key>
@@ -2516,7 +2406,7 @@ Enjoy!</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>375</integer>
+			<integer>365</integer>
 			<key>ypos</key>
 			<integer>2030</integer>
 		</dict>
@@ -2674,13 +2564,6 @@ Enjoy!</string>
 			<key>ypos</key>
 			<integer>1125</integer>
 		</dict>
-		<key>C41B7C5B-0454-4794-AE15-E9BDD792A53F</key>
-		<dict>
-			<key>xpos</key>
-			<integer>55</integer>
-			<key>ypos</key>
-			<integer>2130</integer>
-		</dict>
 		<key>C588528A-F157-401D-BB24-FA1DCDB1BAFC</key>
 		<dict>
 			<key>xpos</key>
@@ -2778,16 +2661,16 @@ Enjoy!</string>
 			<key>xpos</key>
 			<integer>150</integer>
 			<key>ypos</key>
-			<integer>640</integer>
+			<integer>590</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
 	<dict>
 		<key>confirm</key>
-		<string>true</string>
+		<string>false</string>
 	</dict>
 	<key>version</key>
-	<string>2.1.2</string>
+	<string>2.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/vegardinho/alfred_bluetooth_controller</string>
 </dict>

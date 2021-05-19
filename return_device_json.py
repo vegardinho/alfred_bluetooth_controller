@@ -66,8 +66,9 @@ def main():
 
 def get_display_name(address):
     try:
-        xml = check_output("plutil -extract DeviceCache.{}.displayName xml1 /Library/Preferences/com.apple.Bluetooth.plist -o -".format(address).split())
-    except Exception:
+        plist_cmd = "plutil -extract DeviceCache.{}.displayName xml1 /Library/Preferences/com.apple.Bluetooth.plist -o -".format(address)
+        xml = check_output(plist_cmd.split())
+    except Exception as e:
         return None
     return ET.fromstring(xml).find('string').text
 
