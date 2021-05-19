@@ -46,9 +46,9 @@ port uninstall blueutil
 
 
 ### Manage bluetooth
-- Toggle bluetooth on and off: `bt`
 - Turn bluetooth on: `bton`
 - Turn bluetooth off: `btoff`
+- Reset (disable, wait 1.5 seconds, enable: `btr`
 
 ### Toggle device connections
 - Connect/disconnect from device: `btd` + `device name`
@@ -56,23 +56,11 @@ port uninstall blueutil
 
 ### Manage favorite device
 - Set favorite device: `btsetfavorite` + `device name`
-- Toggle connection to favorite device: `btx`
+- Connect to favorite device with hotkey (`cmd-ctr-option-x` by default)
 
 ### Pair new device
 - `btp` + `device name`
 - Wait 5 seconds for results to show up
-
-### Toggle bluetooth status
-- `btt` 
-
-### Turn on bluetooth
-- `bton` 
-
-### Turn off bluetooth
-- `btoff` 
-
-### Reset bluetooth connection
-- Disables bluetooth, waits 1.5 seconds, enables: `btr`
 
 ### Status
 - See status of bluetooth connection and paired devices: `btstatus`
