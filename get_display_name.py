@@ -13,8 +13,8 @@ def main():
 	dev_name = get_display_name(dev_id)
 	if not dev_name:
 		dev_info = check_output(["./blueutil", "--format", "json", "--info", dev_id])
-		dev_name = json.load(dev_info)["name"]
-	print(dev_name)
+		dev_name = json.loads(dev_info.read())["name"]
+	sys.stdout.write(dev_name)
 
 if __name__ == "__main__":
     main()
