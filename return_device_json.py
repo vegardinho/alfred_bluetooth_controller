@@ -84,7 +84,7 @@ def device_item(device_name, subtitle, device):
         else:
             subtitle = "Set as favorite"
     else:
-        subtitle = "Disconnect" if is_connected else "Connect",
+        subtitle = "Disconnect" if is_connected else "Connect"
 
     d = dict(title=device_name,
              arg=device_name,
