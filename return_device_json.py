@@ -9,10 +9,13 @@ from subprocess import check_output
 import sys
 import xml.etree.ElementTree as ET
 
+from get_favorite import get_fav_dev
+
 # Workflow's cache directory for machine-specific data
 CACHE_DIR = os.getenv("alfred_workflow_cache")
 DEVICES_PATH = os.path.join(CACHE_DIR, "devices.json")
 
+FAV_DEV_ID = get_fav_dev()
 
 def main():
     """Run script."""
@@ -51,8 +54,6 @@ def main():
         if query and not query.lower() in device_name.lower():
             continue
 
-
-            
         items.append(device_item(device_name, subtitle, device))
 
     if not items:
@@ -65,6 +66,7 @@ def main():
 
 
 def get_display_name(address):
+    """Check cache file for custom file name"""
     try:
         plist_cmd = "plutil -extract DeviceCache.{}.displayName xml1 /Library/Preferences/com.apple.Bluetooth.plist -o -".format(address)
         xml = check_output(plist_cmd.split())
@@ -76,16 +78,23 @@ def get_display_name(address):
 def device_item(device_name, subtitle, device):
     """Return an Alfred feedback ``dict`` for device/message."""
     is_connected = device["connected"]
+    if subtitle == "Set as favorite":
+        if device["address"] == FAV_DEV_ID:
+            subtitle = "Current favorite"
+        else:
+            subtitle = "Set as favorite"
+    else:
+        subtitle = "Disconnect" if is_connected else "Connect",
+
     d = dict(title=device_name,
-             subtitle="Disconnect" if is_connected else "Connect",
              arg=device_name,
+             subtitle=subtitle,
              autocomplete=device_name,
              icon=dict(path= "./icons/bt_icon_" + ("green" if is_connected else "blue") + ".png"))
 
     if device["address"]:
         d["uid"] = device["address"]
         d["variables"] = dict(uid=device["address"])
-
     return d
 
 
