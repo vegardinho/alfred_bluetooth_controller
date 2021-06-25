@@ -23,7 +23,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>CF3FA9E1-82CA-4A70-89E5-C3DC08DE781A</string>
+				<string>0F508806-8A63-4AD8-BFD0-463BA675A860</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -63,6 +63,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>E1E47383-CE28-4BAE-8F26-70DA46F1F573</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>0F508806-8A63-4AD8-BFD0-463BA675A860</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>299C41EB-28BE-4ABA-B886-3F89416F13AA</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -143,6 +156,31 @@
 				<false/>
 			</dict>
 		</array>
+		<key>299C41EB-28BE-4ABA-B886-3F89416F13AA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>EAF018CA-4D37-4174-87B2-67B37702E94E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>6081FA66-4964-4E38-9229-F12A1EFE2C0E</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>008A1FEA-E890-4782-9D5C-12CDD78DAF0D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>3566B163-5E0F-46CE-9C25-94638F4D8855</key>
 		<array>
 			<dict>
@@ -212,7 +250,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>FB911535-8B2A-4E19-A075-AF191500B3AD</string>
+				<string>AD8F68B5-C846-4020-A3BB-3C230C1F9798</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -223,6 +261,16 @@
 		</array>
 		<key>56F791A2-43F6-4F0B-8213-5E0452BFB324</key>
 		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>AC1FC842-4676-4A7C-AFFF-57E4C3090C3D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 			<dict>
 				<key>destinationuid</key>
 				<string>DD5E38D4-0E31-438C-9DFD-E6256D0CA329</string>
@@ -238,7 +286,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>FB911535-8B2A-4E19-A075-AF191500B3AD</string>
+				<string>AD8F68B5-C846-4020-A3BB-3C230C1F9798</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -409,19 +457,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>A70E0B03-61A8-4842-8296-93EDFCC23479</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>008A1FEA-E890-4782-9D5C-12CDD78DAF0D</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>A87A8745-AAA0-4433-8950-7B6551E1C1D3</key>
 		<array>
 			<dict>
@@ -475,6 +510,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>0C0071B3-C425-4582-B155-441C6CB2B674</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>AD8F68B5-C846-4020-A3BB-3C230C1F9798</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3AF9664E-126E-42DA-B7C4-8B08FAAA38F9</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -546,6 +594,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>C028DDD9-1776-467A-B92F-44790785141B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0F508806-8A63-4AD8-BFD0-463BA675A860</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>C588528A-F157-401D-BB24-FA1DCDB1BAFC</key>
 		<array>
 			<dict>
@@ -559,37 +620,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>C6B69FEC-E01D-4DA2-B2FA-54C73578B6C4</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>CF3FA9E1-82CA-4A70-89E5-C3DC08DE781A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>C6BA9A45-F520-4BFB-A1C9-4612340B6F5D</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>86D0A863-4EB9-4723-811F-7660C092EF51</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>CF3FA9E1-82CA-4A70-89E5-C3DC08DE781A</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>A70E0B03-61A8-4842-8296-93EDFCC23479</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -711,24 +746,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>FB911535-8B2A-4E19-A075-AF191500B3AD</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>3AF9664E-126E-42DA-B7C4-8B08FAAA38F9</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>FC4168F1-6FF0-4CAE-B825-F380A2E06EC8</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>CF3FA9E1-82CA-4A70-89E5-C3DC08DE781A</string>
+				<string>0F508806-8A63-4AD8-BFD0-463BA675A860</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -751,41 +773,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>export PATH=/usr/local/bin:$PATH
-
-echo "POWER"
-echo | blueutil --power
-echo ""
-echo "DISCOVERABLE"
-echo | blueutil --discoverable
-echo ""
-echo "CONNECTED"
-echo | blueutil --connected | cut -d '"' -f 2
-echo ""
-echo "PAIRED"
-echo | blueutil --paired | grep -v '"-"' | cut -d '"' -f 2</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>FB911535-8B2A-4E19-A075-AF191500B3AD</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
@@ -803,6 +790,29 @@ echo | blueutil --paired | grep -v '"-"' | cut -d '"' -f 2</string>
 			<string>5C6B182C-932C-4A4B-8DF0-253342B60A10</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./large_type.zsh</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>AD8F68B5-C846-4020-A3BB-3C230C1F9798</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -996,77 +1006,6 @@ echo $uid</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>btx</string>
-				<key>subtext</key>
-				<string>Connects if disconnected, and vice versa</string>
-				<key>text</key>
-				<string>Toggle favorite bluetooth device</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>C6B69FEC-E01D-4DA2-B2FA-54C73578B6C4</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>--attempt to retrieve name of bluetooth device
-
-set dev_name to do shell script "perl -e 'use strict; use warnings; my $device =`security find-generic-password -w -s \"alfred-bluetooth-device-id\"`; chomp $device; print $device;'"if length of dev_name = 0 then	display alert "Bluetooth device not set" message "It appears that device has not been set. Please run 'btset \"device name\"' and try again." as criticalend if
-
-return dev_name</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>CF3FA9E1-82CA-4A70-89E5-C3DC08DE781A</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./get_display_name.py $uid</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>7C07C9C7-F301-45AD-A3C9-BF6D12D997A3</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -1074,14 +1013,14 @@ return dev_name</string>
 				<key>removeextension</key>
 				<false/>
 				<key>text</key>
-				<string>Please wait...</string>
+				<string>It appears that device has not been set. Please run 'btset' command and try again.</string>
 				<key>title</key>
-				<string>Toggling connection with {var:device_name}</string>
+				<string>Bluetooth device not set</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>7502003D-DCA4-47B9-965B-A5E6B32AB52A</string>
+			<string>EAF018CA-4D37-4174-87B2-67B37702E94E</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1119,23 +1058,120 @@ return dev_name</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>matchmode</key>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./get_favorite.py</string>
+				<key>scriptargtype</key>
 				<integer>1</integer>
-				<key>matchstring</key>
-				<string>\n</string>
-				<key>regexcaseinsensitive</key>
-				<false/>
-				<key>regexmultiline</key>
-				<false/>
-				<key>replacestring</key>
+				<key>scriptfile</key>
 				<string></string>
+				<key>type</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>A70E0B03-61A8-4842-8296-93EDFCC23479</string>
+			<string>0F508806-8A63-4AD8-BFD0-463BA675A860</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Please wait...</string>
+				<key>title</key>
+				<string>Toggling connection with {var:device_name}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>7502003D-DCA4-47B9-965B-A5E6B32AB52A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>btx</string>
+				<key>subtext</key>
+				<string>Connects if disconnected, and vice versa</string>
+				<key>text</key>
+				<string>Toggle favorite bluetooth device</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>C028DDD9-1776-467A-B92F-44790785141B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./get_display_name.py $uid</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>7C07C9C7-F301-45AD-A3C9-BF6D12D997A3</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{query}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>^$</string>
+						<key>outputlabel</key>
+						<string>not found</string>
+						<key>uid</key>
+						<string>6081FA66-4964-4E38-9229-F12A1EFE2C0E</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>299C41EB-28BE-4ABA-B886-3F89416F13AA</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1292,38 +1328,6 @@ return dev_name</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>set connected to do shell script "echo $(/usr/local/bin/blueutil --is-connected \"$uid\")"if connected is equal to "1" then	do shell script "/usr/local/bin/blueutil --disconnect \"$uid\""	return -1
-end if
-	
-set power to do shell script "/usr/local/bin/blueutil --power"
-if power equals "0" then
-	do shell script "/usr/local/bin/blueutil --power 1; sleep 1"
-end if
-
-set returnValue to do shell script "/usr/local/bin/blueutil --connect \"$uid\""
-if returnValue is equal to "1" then	return 1end ifreturn 0</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>1606E8FA-C53A-4C0B-981A-CC6219F1CE70</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -1341,6 +1345,45 @@ if returnValue is equal to "1" then	return 1end ifreturn 0</string>
 			<string>417FCDBF-53B1-40DB-96BE-FE74C08E0CA0</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>set connected to do shell script "echo $(./blueutil --is-connected \"$uid\")"
+if connected is equal to "1" then
+	do shell script "./blueutil --disconnect \"$uid\""
+	return -1
+end if
+	
+set power to do shell script "./blueutil --power"
+if power equals "0" then
+	do shell script "./blueutil --power 1; sleep 1"
+end if
+
+set returnValue to do shell script "./blueutil --connect \"$uid\""
+if returnValue is equal to "1" then
+	return 1
+end if
+
+return 0</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>1606E8FA-C53A-4C0B-981A-CC6219F1CE70</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1477,13 +1520,17 @@ if returnValue is equal to "1" then	return 1end ifreturn 0</string>
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>set power to do shell script "/usr/local/bin/blueutil --power"
+				<string>set power to do shell script "./blueutil --power"
 if power equals "0" then
-	do shell script "/usr/local/bin/blueutil --power 1; sleep 1"
+	do shell script "./blueutil --power 1; sleep 1"
 end if
 
-set returnValue to do shell script "/usr/local/bin/blueutil --pair \"{query}\"; echo $?"
-if returnValue is equal to "0" then	return 0else	return 1end if</string>
+set returnValue to do shell script "./blueutil --pair \"{query}\"; echo $?"
+if returnValue is equal to "0" then
+	return 0
+else
+	return 1
+end if</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -1778,7 +1825,7 @@ fi</string>
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>/usr/local/bin/blueutil --power 0
+				<string>./blueutil --power 0
 echo -n 0</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
@@ -2024,7 +2071,7 @@ echo -n 0</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/usr/local/bin/blueutil --power 1
+				<string>./blueutil --power 1
 
 echo -n 1</string>
 				<key>scriptargtype</key>
@@ -2070,9 +2117,9 @@ echo -n 1</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/usr/local/bin/blueutil --power toggle
+				<string>./blueutil --power toggle
 
-echo -n $(/usr/local/bin/blueutil --power)</string>
+echo -n $(./blueutil --power)</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -2182,7 +2229,7 @@ echo -n $(/usr/local/bin/blueutil --power)</string>
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>/usr/local/bin/blueutil --power 0
+				<string>./blueutil --power 0
 echo -n 0</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
@@ -2227,7 +2274,7 @@ echo -n 0</string>
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>/usr/local/bin/blueutil --power 1
+				<string>./blueutil --power 1
 echo -n 1</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
@@ -2259,10 +2306,13 @@ echo -n 1</string>
 	</array>
 	<key>readme</key>
 	<string>NEW IN THIS EDITION:
-- Removed "btx" and "btt" functions to reduce amount of menu items
-- Dynamic logo color based on device connectivity (idea from @tilmanginzel and @BenjaminVanRyseghem, and the Alfred Bluetooth Workflow)
-- Re-added "btr" (reset) function after accidental removal in v2.0
-- Device search now correctly sorts on customized name
+- Binary blueutil included, removes need for external installation.
+- Current favorite now stated in btset list.
+- Re-added 'btx' keyword.
+- Some scripts made alfred-direcrtory external.
+- Improved notification on attempt to trigger non-existing favorite device.
+- Fix 'btr' notification to notify both when turning off and on.
+
 
 
 FOR INSTALLATION AND MANUAL, SEE GITHUB REPO
@@ -2276,16 +2326,16 @@ Enjoy!</string>
 		<key>008A1FEA-E890-4782-9D5C-12CDD78DAF0D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>585</integer>
+			<integer>660</integer>
 			<key>ypos</key>
-			<integer>550</integer>
+			<integer>560</integer>
 		</dict>
 		<key>00AA6D41-B74C-413D-AA91-22CB23A8A328</key>
 		<dict>
 			<key>xpos</key>
 			<integer>155</integer>
 			<key>ypos</key>
-			<integer>535</integer>
+			<integer>405</integer>
 		</dict>
 		<key>0493455D-D221-499B-B2B0-CDCBC39CF57A</key>
 		<dict>
@@ -2321,6 +2371,15 @@ Enjoy!</string>
 			<integer>325</integer>
 			<key>ypos</key>
 			<integer>1135</integer>
+		</dict>
+		<key>0F508806-8A63-4AD8-BFD0-463BA675A860</key>
+		<dict>
+			<key>note</key>
+			<string>Get device id</string>
+			<key>xpos</key>
+			<integer>395</integer>
+			<key>ypos</key>
+			<integer>520</integer>
 		</dict>
 		<key>1606E8FA-C53A-4C0B-981A-CC6219F1CE70</key>
 		<dict>
@@ -2364,9 +2423,16 @@ Enjoy!</string>
 		<key>298B98A7-1DCB-48BE-969A-416373382D4D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>805</integer>
+			<integer>915</integer>
 			<key>ypos</key>
+			<integer>560</integer>
+		</dict>
+		<key>299C41EB-28BE-4ABA-B886-3F89416F13AA</key>
+		<dict>
+			<key>xpos</key>
 			<integer>550</integer>
+			<key>ypos</key>
+			<integer>540</integer>
 		</dict>
 		<key>3566B163-5E0F-46CE-9C25-94638F4D8855</key>
 		<dict>
@@ -2385,9 +2451,9 @@ Enjoy!</string>
 		<key>3AF9664E-126E-42DA-B7C4-8B08FAAA38F9</key>
 		<dict>
 			<key>xpos</key>
-			<integer>500</integer>
+			<integer>605</integer>
 			<key>ypos</key>
-			<integer>10</integer>
+			<integer>70</integer>
 		</dict>
 		<key>417FCDBF-53B1-40DB-96BE-FE74C08E0CA0</key>
 		<dict>
@@ -2456,9 +2522,9 @@ Enjoy!</string>
 			<key>note</key>
 			<string>Get display name</string>
 			<key>xpos</key>
-			<integer>655</integer>
+			<integer>745</integer>
 			<key>ypos</key>
-			<integer>520</integer>
+			<integer>530</integer>
 		</dict>
 		<key>8199FF70-93AD-4574-A2C5-DD0DA0CC0705</key>
 		<dict>
@@ -2534,13 +2600,6 @@ Enjoy!</string>
 			<key>ypos</key>
 			<integer>1685</integer>
 		</dict>
-		<key>A70E0B03-61A8-4842-8296-93EDFCC23479</key>
-		<dict>
-			<key>xpos</key>
-			<integer>520</integer>
-			<key>ypos</key>
-			<integer>550</integer>
-		</dict>
 		<key>A87A8745-AAA0-4433-8950-7B6551E1C1D3</key>
 		<dict>
 			<key>xpos</key>
@@ -2563,6 +2622,13 @@ Enjoy!</string>
 			<integer>10</integer>
 			<key>ypos</key>
 			<integer>255</integer>
+		</dict>
+		<key>AD8F68B5-C846-4020-A3BB-3C230C1F9798</key>
+		<dict>
+			<key>xpos</key>
+			<integer>400</integer>
+			<key>ypos</key>
+			<integer>70</integer>
 		</dict>
 		<key>B0D7B171-71E1-432D-BB6E-2D14066CB49F</key>
 		<dict>
@@ -2598,19 +2664,19 @@ Enjoy!</string>
 			<key>ypos</key>
 			<integer>1125</integer>
 		</dict>
+		<key>C028DDD9-1776-467A-B92F-44790785141B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>150</integer>
+			<key>ypos</key>
+			<integer>520</integer>
+		</dict>
 		<key>C588528A-F157-401D-BB24-FA1DCDB1BAFC</key>
 		<dict>
 			<key>xpos</key>
 			<integer>775</integer>
 			<key>ypos</key>
 			<integer>1940</integer>
-		</dict>
-		<key>C6B69FEC-E01D-4DA2-B2FA-54C73578B6C4</key>
-		<dict>
-			<key>xpos</key>
-			<integer>155</integer>
-			<key>ypos</key>
-			<integer>415</integer>
 		</dict>
 		<key>C6BA9A45-F520-4BFB-A1C9-4612340B6F5D</key>
 		<dict>
@@ -2620,15 +2686,6 @@ Enjoy!</string>
 			<integer>360</integer>
 			<key>ypos</key>
 			<integer>1600</integer>
-		</dict>
-		<key>CF3FA9E1-82CA-4A70-89E5-C3DC08DE781A</key>
-		<dict>
-			<key>note</key>
-			<string>Get device id</string>
-			<key>xpos</key>
-			<integer>385</integer>
-			<key>ypos</key>
-			<integer>520</integer>
 		</dict>
 		<key>D78FB640-A1AA-4551-8695-D7F91D56FB7D</key>
 		<dict>
@@ -2667,6 +2724,13 @@ Enjoy!</string>
 			<key>ypos</key>
 			<integer>835</integer>
 		</dict>
+		<key>EAF018CA-4D37-4174-87B2-67B37702E94E</key>
+		<dict>
+			<key>xpos</key>
+			<integer>745</integer>
+			<key>ypos</key>
+			<integer>400</integer>
+		</dict>
 		<key>EE29FA26-7129-4E3D-9084-F402120BF8F1</key>
 		<dict>
 			<key>xpos</key>
@@ -2688,13 +2752,6 @@ Enjoy!</string>
 			<key>ypos</key>
 			<integer>255</integer>
 		</dict>
-		<key>FB911535-8B2A-4E19-A075-AF191500B3AD</key>
-		<dict>
-			<key>xpos</key>
-			<integer>320</integer>
-			<key>ypos</key>
-			<integer>10</integer>
-		</dict>
 		<key>FC4168F1-6FF0-4CAE-B825-F380A2E06EC8</key>
 		<dict>
 			<key>colorindex</key>
@@ -2702,7 +2759,7 @@ Enjoy!</string>
 			<key>xpos</key>
 			<integer>150</integer>
 			<key>ypos</key>
-			<integer>650</integer>
+			<integer>635</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
@@ -2711,7 +2768,7 @@ Enjoy!</string>
 		<string>false</string>
 	</dict>
 	<key>version</key>
-	<string>2.2.1</string>
+	<string>2.3</string>
 	<key>webaddress</key>
 	<string>https://github.com/vegardinho/alfred_bluetooth_controller</string>
 </dict>
