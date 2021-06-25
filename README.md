@@ -1,44 +1,9 @@
 # Alfred Workflow: Bluetooth Controller
 A powerful toolkit for managing your bluetooth connections. Includes Remote Trigger, to manage your Bluetooth devices on the big screen.
 
-## Installation
-
 ### Summary
-Install [blueutil](http://www.frederikseiffert.de/blueutil/) and [Alfred workflow](https://github.com/vegardinho/alfred_bluetooth_controller/releases/latest)!
 
-### Instructions
-1. Install [blueutil](http://www.frederikseiffert.de/blueutil/): 
-
-Using package manager [Homebrew](https://brew.sh/):
-
-```sh
-# install
-brew install blueutil
-
-# update
-brew update
-brew upgrade blueutil
-
-# uninstall
-brew remove blueutil
-```
-
-Using package manager [MacPorts](https://www.macports.org/):
-
-```sh
-# install
-port install blueutil
-
-# update
-port selfupdate
-port upgrade blueutil
-
-# uninstall
-port uninstall blueutil
-```
-
-2. Download the [Alfred workflow](https://github.com/vegardinho/alfred_bluetooth_controller/releases/latest) and double-click to install!
-
+Download the [Alfred workflow](https://github.com/vegardinho/alfred_bluetooth_controller/releases/latest) and double-click to install!
 
 ## Usage
 

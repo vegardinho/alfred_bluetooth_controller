@@ -1021,7 +1021,10 @@ echo $uid</string>
 				<key>script</key>
 				<string>--attempt to retrieve name of bluetooth device
 
-set dev_name to do shell script "perl -e 'use strict; use warnings; my $device =`security find-generic-password -w -s \"alfred-bluetooth-device-id\"`; chomp $device; print $device;'"if length of dev_name = 0 then	display alert "Bluetooth device not set" message "It appears that device has not been set. Please run 'btset \"device name\"' and try again." as criticalend if
+set dev_name to do shell script "perl -e 'use strict; use warnings; my $device =`security find-generic-password -w -s \"alfred-bluetooth-device-id\"`; chomp $device; print $device;'"
+if length of dev_name = 0 then
+	display alert "Bluetooth device not set" message "It appears that device has not been set. Please run 'btset \"device name\"' and try again." as critical
+end if
 
 return dev_name</string>
 				<key>scriptargtype</key>
@@ -1284,16 +1287,23 @@ return dev_name</string>
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>set connected to do shell script "echo $(/usr/local/bin/blueutil --is-connected \"$uid\")"if connected is equal to "1" then	do shell script "/usr/local/bin/blueutil --disconnect \"$uid\""	return -1
+				<string>set connected to do shell script "echo $(./blueutil --is-connected \"$uid\")"
+if connected is equal to "1" then
+	do shell script "./blueutil --disconnect \"$uid\""
+	return -1
 end if
 	
-set power to do shell script "/usr/local/bin/blueutil --power"
+set power to do shell script "./blueutil --power"
 if power equals "0" then
-	do shell script "/usr/local/bin/blueutil --power 1; sleep 1"
+	do shell script "./blueutil --power 1; sleep 1"
 end if
 
-set returnValue to do shell script "/usr/local/bin/blueutil --connect \"$uid\""
-if returnValue is equal to "1" then	return 1end ifreturn 0</string>
+set returnValue to do shell script "./blueutil --connect \"$uid\""
+if returnValue is equal to "1" then
+	return 1
+end if
+
+return 0</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1443,13 +1453,17 @@ if returnValue is equal to "1" then	return 1end ifreturn 0</string>
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>set power to do shell script "/usr/local/bin/blueutil --power"
+				<string>set power to do shell script "./blueutil --power"
 if power equals "0" then
-	do shell script "/usr/local/bin/blueutil --power 1; sleep 1"
+	do shell script "./blueutil --power 1; sleep 1"
 end if
 
-set returnValue to do shell script "/usr/local/bin/blueutil --pair \"{query}\"; echo $?"
-if returnValue is equal to "0" then	return 0else	return 1end if</string>
+set returnValue to do shell script "./blueutil --pair \"{query}\"; echo $?"
+if returnValue is equal to "0" then
+	return 0
+else
+	return 1
+end if</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -1744,7 +1758,7 @@ fi</string>
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>/usr/local/bin/blueutil --power 0
+				<string>./blueutil --power 0
 echo -n 0</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
@@ -1990,7 +2004,7 @@ echo -n 0</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/usr/local/bin/blueutil --power 1
+				<string>./blueutil --power 1
 
 echo -n 1</string>
 				<key>scriptargtype</key>
@@ -2036,9 +2050,9 @@ echo -n 1</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/usr/local/bin/blueutil --power toggle
+				<string>./blueutil --power toggle
 
-echo -n $(/usr/local/bin/blueutil --power)</string>
+echo -n $(./blueutil --power)</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -2148,7 +2162,7 @@ echo -n $(/usr/local/bin/blueutil --power)</string>
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>/usr/local/bin/blueutil --power 0
+				<string>./blueutil --power 0
 echo -n 0</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
@@ -2193,7 +2207,7 @@ echo -n 0</string>
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>/usr/local/bin/blueutil --power 1
+				<string>./blueutil --power 1
 echo -n 1</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>

@@ -91,7 +91,7 @@ def device_item(device_name, subtitle, device):
 
 def get_args(subtitle):
     """Make ``blueutil`` command based on subtitle."""
-    cmd_args = ["/usr/local/bin/blueutil", "--format", "json"]
+    cmd_args = ["./blueutil", "--format", "json"]
     if subtitle == "Pair with device":
         cmd_args.extend(["--inquiry", "5"])
     else:

@@ -12,7 +12,7 @@ def main():
 	dev_id = sys.argv[1].decode("utf-8")
 	dev_name = get_display_name(dev_id)
 	if not dev_name:
-		dev_info = check_output(["/usr/local/bin/blueutil", "--format", "json", "--info", dev_id])
+		dev_info = check_output(["./blueutil", "--format", "json", "--info", dev_id])
 		dev_name = json.load(dev_info)["name"]
 	print(dev_name)
 
