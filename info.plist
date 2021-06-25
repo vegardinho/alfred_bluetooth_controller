@@ -559,6 +559,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>C6B69FEC-E01D-4DA2-B2FA-54C73578B6C4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CF3FA9E1-82CA-4A70-89E5-C3DC08DE781A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>C6BA9A45-F520-4BFB-A1C9-4612340B6F5D</key>
 		<array>
 			<dict>
@@ -983,33 +996,23 @@ echo $uid</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>7</integer>
-				<key>hotmod</key>
-				<integer>1835008</integer>
-				<key>hotstring</key>
-				<string>X</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>btx</string>
+				<key>subtext</key>
+				<string>Connects if disconnected, and vice versa</string>
+				<key>text</key>
+				<string>Toggle favorite bluetooth device</string>
+				<key>withspace</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>00AA6D41-B74C-413D-AA91-22CB23A8A328</string>
+			<string>C6B69FEC-E01D-4DA2-B2FA-54C73578B6C4</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1081,6 +1084,37 @@ return dev_name</string>
 			<string>7502003D-DCA4-47B9-965B-A5E6B32AB52A</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>7</integer>
+				<key>hotmod</key>
+				<integer>1835008</integer>
+				<key>hotstring</key>
+				<string>X</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>00AA6D41-B74C-413D-AA91-22CB23A8A328</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1258,27 +1292,6 @@ return dev_name</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>Bluetooth device successfully disconnected</string>
-				<key>title</key>
-				<string>Disconnected from {var:device_name}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>417FCDBF-53B1-40DB-96BE-FE74C08E0CA0</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -1307,6 +1320,27 @@ if returnValue is equal to "1" then	return 1end ifreturn 0</string>
 			<string>1606E8FA-C53A-4C0B-981A-CC6219F1CE70</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Bluetooth device successfully disconnected</string>
+				<key>title</key>
+				<string>Disconnected from {var:device_name}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>417FCDBF-53B1-40DB-96BE-FE74C08E0CA0</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2249,9 +2283,9 @@ Enjoy!</string>
 		<key>00AA6D41-B74C-413D-AA91-22CB23A8A328</key>
 		<dict>
 			<key>xpos</key>
-			<integer>150</integer>
+			<integer>155</integer>
 			<key>ypos</key>
-			<integer>470</integer>
+			<integer>535</integer>
 		</dict>
 		<key>0493455D-D221-499B-B2B0-CDCBC39CF57A</key>
 		<dict>
@@ -2571,6 +2605,13 @@ Enjoy!</string>
 			<key>ypos</key>
 			<integer>1940</integer>
 		</dict>
+		<key>C6B69FEC-E01D-4DA2-B2FA-54C73578B6C4</key>
+		<dict>
+			<key>xpos</key>
+			<integer>155</integer>
+			<key>ypos</key>
+			<integer>415</integer>
+		</dict>
 		<key>C6BA9A45-F520-4BFB-A1C9-4612340B6F5D</key>
 		<dict>
 			<key>colorindex</key>
@@ -2661,7 +2702,7 @@ Enjoy!</string>
 			<key>xpos</key>
 			<integer>150</integer>
 			<key>ypos</key>
-			<integer>590</integer>
+			<integer>650</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
@@ -2670,7 +2711,7 @@ Enjoy!</string>
 		<string>false</string>
 	</dict>
 	<key>version</key>
-	<string>2.2</string>
+	<string>2.2.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/vegardinho/alfred_bluetooth_controller</string>
 </dict>
