@@ -18,6 +18,7 @@ DEVICES_PATH = os.path.join(CACHE_DIR, "devices.json")
 FAV_DEV_ID = get_fav_dev()
 
 def main():
+
     """Run script."""
     # Script command
     subtitle = sys.argv[1].decode("utf-8")
@@ -28,12 +29,14 @@ def main():
     if not os.path.exists(CACHE_DIR):
         os.makedirs(CACHE_DIR)
 
+
     if not query:  # Get devices from blueutil
         cmd_args = get_args(subtitle)
         js = check_output(cmd_args)
         with open(DEVICES_PATH, "w") as fp:
             fp.write(js)
         devices = json.loads(js)
+
     else:  # Read cached list of devices
         with open(DEVICES_PATH) as fp:
             devices = json.load(fp)
