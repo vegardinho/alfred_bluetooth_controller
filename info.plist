@@ -4,6 +4,8 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.vegardlandsverk.bluetoothcontroller</string>
+	<key>category</key>
+	<string>Tools</string>
 	<key>connections</key>
 	<dict>
 		<key>008A1FEA-E890-4782-9D5C-12CDD78DAF0D</key>
@@ -799,7 +801,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>./large_type.zsh</string>
+				<string>./scripts/large_type.zsh</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -916,7 +918,7 @@
 				<key>runningsubtext</key>
 				<string>Searching for previously paired devices. Please wait...</string>
 				<key>script</key>
-				<string>./return_device_json.py "Set as favorite"</string>
+				<string>./scripts/return_device_json.py "Set as favorite"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1063,7 +1065,7 @@ echo $uid</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>./get_favorite.py</string>
+				<string>./scripts/get_favorite.py</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1128,7 +1130,7 @@ echo $uid</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>./get_display_name.py $uid</string>
+				<string>./scripts/get_display_name.py $uid</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1283,7 +1285,7 @@ echo $uid</string>
 				<key>runningsubtext</key>
 				<string>Searching for previously paired devices. Please wait...</string>
 				<key>script</key>
-				<string>./return_device_json.py "Toggle device connection" "$1"</string>
+				<string>./scripts/return_device_json.py "Toggle device connection" "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1352,31 +1354,15 @@ echo $uid</string>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>68</integer>
+				<integer>102</integer>
 				<key>script</key>
-				<string>set connected to do shell script "echo $(./blueutil --is-connected \"$uid\")"
-if connected is equal to "1" then
-	do shell script "./blueutil --disconnect \"$uid\""
-	return -1
-end if
-	
-set power to do shell script "./blueutil --power"
-if power equals "0" then
-	do shell script "./blueutil --power 1; sleep 1"
-end if
-
-set returnValue to do shell script "./blueutil --connect \"$uid\""
-if returnValue is equal to "1" then
-	return 1
-end if
-
-return 0</string>
+				<string>./scripts/connect.osa</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>./scripts/connect.osa</string>
 				<key>type</key>
-				<integer>6</integer>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -1534,7 +1520,7 @@ end if</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>./scripts/pair.osa</string>
 				<key>type</key>
 				<integer>6</integer>
 			</dict>
@@ -1549,11 +1535,11 @@ end if</string>
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
-				<true/>
+				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>2</integer>
 				<key>argumenttreatemptyqueryasnil</key>
-				<false/>
+				<true/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -1573,9 +1559,10 @@ end if</string>
 				<key>runningsubtext</key>
 				<string>Searching for devices. Please wait (5 seconds)...</string>
 				<key>script</key>
-				<string>./return_device_json.py "Pair with device" "$1"</string>
+				<string>./blueutil --power 1; wait 1;
+./scripts/return_device_json.py "Pair with device" "$1"</string>
 				<key>scriptargtype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
@@ -2306,12 +2293,8 @@ echo -n 1</string>
 	</array>
 	<key>readme</key>
 	<string>NEW IN THIS EDITION:
-- Binary blueutil included, removes need for external installation.
-- Current favorite now stated in btset list.
-- Re-added 'btx' keyword.
-- Some scripts made alfred-direcrtory external.
-- Improved notification on attempt to trigger non-existing favorite device.
-- Fix 'btr' notification to notify both when turning off and on.
+- Fixed bug where pair would not work if bluetooth turned off.
+- Externalized connect-script.
 
 
 
@@ -2768,7 +2751,7 @@ Enjoy!</string>
 		<string>false</string>
 	</dict>
 	<key>version</key>
-	<string>2.3</string>
+	<string>2.3.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/vegardinho/alfred_bluetooth_controller</string>
 </dict>

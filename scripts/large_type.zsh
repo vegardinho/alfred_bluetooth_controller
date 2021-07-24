@@ -1,4 +1,4 @@
-t a#!/bin/zsh
+#!/bin/zsh
 
 echo "POWER"
 echo | ./blueutil --power
