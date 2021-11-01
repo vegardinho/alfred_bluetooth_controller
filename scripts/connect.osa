@@ -2,7 +2,7 @@
 
 set connected to do shell script "echo $(./blueutil --is-connected \"$uid\")"
 if connected is equal to "1" then
-	do shell script "./blueutil --disconnect \"$uid\""
+	do shell script "./blueutil --disconnect \"$uid\" --info \"$uid\""
 	return -1
 end if
 
