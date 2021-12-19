@@ -1330,27 +1330,6 @@ echo $uid</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>Bluetooth device successfully disconnected</string>
-				<key>title</key>
-				<string>Disconnected from {var:device_name}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>417FCDBF-53B1-40DB-96BE-FE74C08E0CA0</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -1370,6 +1349,27 @@ echo $uid</string>
 			<string>1606E8FA-C53A-4C0B-981A-CC6219F1CE70</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Bluetooth device successfully disconnected</string>
+				<key>title</key>
+				<string>Disconnected from {var:device_name}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>417FCDBF-53B1-40DB-96BE-FE74C08E0CA0</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1512,6 +1512,7 @@ if power equals "0" then
 end if
 
 set returnValue to do shell script "./blueutil --pair \"{query}\"; echo $?"
+return returnValue
 if returnValue is equal to "0" then
 	return 0
 else
@@ -1622,6 +1623,8 @@ end if</string>
 				<dict>
 					<key>device_name</key>
 					<string>{query}</string>
+					<key>query</key>
+					<string>{uid}</string>
 				</dict>
 			</dict>
 			<key>type</key>
@@ -2293,8 +2296,7 @@ echo -n 1</string>
 	</array>
 	<key>readme</key>
 	<string>NEW IN THIS EDITION:
-- Fixed bug where pair would not work if bluetooth turned off.
-- Externalized connect-script.
+- Fixed bug where unable to disconnect device on MacOS Monterey.
 
 
 
@@ -2750,8 +2752,12 @@ Enjoy!</string>
 		<key>confirm</key>
 		<string>false</string>
 	</dict>
+	<key>variablesdontexport</key>
+	<array>
+		<string>confirm</string>
+	</array>
 	<key>version</key>
-	<string>2.3.1</string>
+	<string>2.3.4</string>
 	<key>webaddress</key>
 	<string>https://github.com/vegardinho/alfred_bluetooth_controller</string>
 </dict>
