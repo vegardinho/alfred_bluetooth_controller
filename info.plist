@@ -2296,7 +2296,7 @@ echo -n 1</string>
 	</array>
 	<key>readme</key>
 	<string>NEW IN THIS EDITION:
-- Fixed bug where unable to disconnect device on MacOS Monterey.
+- Fixed bug that prohibited successfull pairing.
 
 
 
@@ -2757,7 +2757,7 @@ Enjoy!</string>
 		<string>confirm</string>
 	</array>
 	<key>version</key>
-	<string>2.3.4</string>
+	<string>2.3.3</string>
 	<key>webaddress</key>
 	<string>https://github.com/vegardinho/alfred_bluetooth_controller</string>
 </dict>
