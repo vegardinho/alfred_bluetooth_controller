@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # encoding: utf-8
 
 import subprocess
@@ -10,7 +10,8 @@ def main():
     stdout.write(get_fav_dev())
 
 def get_fav_dev():
-    return subprocess.check_output(CMD, shell=True)
+    fav_dev = subprocess.check_output(CMD, shell=True)
+    return fav_dev.decode()
 
 if __name__ == '__main__':
     main()
