@@ -1,7 +1,5 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # encoding: utf-8
-
-from __future__ import print_function, absolute_import
 
 import json
 import os
@@ -21,9 +19,9 @@ def main():
 
     """Run script."""
     # Script command
-    subtitle = sys.argv[1].decode("utf-8")
+    subtitle = sys.argv[1]
     # User search query
-    query = sys.argv[2].decode("utf-8") if len(sys.argv) > 2 else None
+    query = sys.argv[2] if len(sys.argv) > 2 else None
 
     # Ensure cache directory exists
     if not os.path.exists(CACHE_DIR):
@@ -32,7 +30,8 @@ def main():
 
     if not query:  # Get devices from blueutil
         cmd_args = get_args(subtitle)
-        js = check_output(cmd_args)
+        js_bytes = check_output(cmd_args)
+        js = js_bytes.decode()
         with open(DEVICES_PATH, "w") as fp:
             fp.write(js)
         devices = json.loads(js)
@@ -46,7 +45,7 @@ def main():
     for device in devices:
         device_name = device["name"]
         if device_name is None:
-            continue        
+            continue
 
         # Check if custom name
         display_name = get_display_name(device["address"])
