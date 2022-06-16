@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!./python3
 
 from subprocess import check_output
 import json
