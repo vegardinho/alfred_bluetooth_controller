@@ -85,7 +85,7 @@ def device_item(device_name, subtitle, device):
             subtitle = "Current favorite"
         else:
             subtitle = "Set as favorite"
-    else:
+    elif subtitle != "Unpair":
         subtitle = "Disconnect" if is_connected else "Connect"
 
     d = dict(title=device_name,
