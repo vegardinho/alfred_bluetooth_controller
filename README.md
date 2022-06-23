@@ -27,6 +27,9 @@ Download the [Alfred workflow](https://github.com/vegardinho/alfred_bluetooth_co
 - `btp` + `device name`
 - Wait 5 seconds for results to show up
 
+### Unpair device
+- `btu` + `device name`
+
 ### Status
 - See status of bluetooth connection and paired devices: `btstatus`
 
