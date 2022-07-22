@@ -12,27 +12,30 @@ Download the [Alfred workflow](https://github.com/vegardinho/alfred_bluetooth_co
 ![usage snippet](img/alfred_bluetooth_long.gif "Usage snippet")
 
 
-### Manage bluetooth
+### Commands
+
+
+#### Manage bluetooth
 - Turn bluetooth on: `bton`
 - Turn bluetooth off: `btoff`
 - Reset (disable, wait 1.5 seconds, enable: `btr`
 
-### Toggle device connections
+#### Toggle device connections
 - Connect/disconnect from device: `btd` + `device name`
 - By typing an argument, the workflow will automatically search through all devices prevously paired with the computer.
 
-### Manage favorite device
+#### Manage favorite device
 - Set favorite device: `btsetfavorite` + `device name`
 - Connect to favorite device with hotkey (`cmd-ctr-option-x` by default)
 
-### Pair new device
+#### Pair new device
 - `btp` + `device name`
 - Wait 5 seconds for results to show up
 
-### Unpair device
+#### Unpair device
 - `btu` + `device name`
 
-### Status
+#### Status
 - See status of bluetooth connection and paired devices: `btstatus`
 
 ### Safe mode
