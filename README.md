@@ -1,13 +1,15 @@
 # Alfred Workflow: Bluetooth Controller
 A powerful toolkit for managing your bluetooth connections. Includes Remote Trigger, to manage your Bluetooth devices on the big screen.
 
-### Installation
+
+## Installation
 
 Download the [Alfred workflow](https://github.com/vegardinho/alfred_bluetooth_controller/releases/latest) and double-click to install!
 
+
 ## Usage
 
-![usage snippet](alfred_bluetooth_long.gif "Usage snippet")
+![usage snippet](img/alfred_bluetooth_long.gif "Usage snippet")
 
 
 ### Manage bluetooth
@@ -36,10 +38,14 @@ Download the [Alfred workflow](https://github.com/vegardinho/alfred_bluetooth_co
 ### Safe mode
 Set environment variable `confirm` in workflow to `true` if you want to force user confirmation on toggle and deactivation commands. (Useful for iMacs and Mac Minis who that would have trouble turning Bluetooth on again without any input devices.)
 
-_All the listed commands have their own Remote Trigger._
+### Remote triggers
+Most, or all, the listed commands have their own Remote Trigger. (You're welcome to add ones that are missing.)
 
 ## Troubleshooting
 
 If you get errors when using the workflow referring to not being able to use `blueutil` as it cannot be checked, you will need to manually remove the quarantine attribute from the bundled binary.
-This can be done like so: `xattr -d com.apple.quarantine /Users/User Name/Library/Application\ Support/Alfred/Alfred.alfredpreferences/workflows/user.workflow.*/blueutil`
-(Substitute User Name with your OSX username).
+This can be done like so: 
+
+1. Open workflow folder in Terminal by right clicking workflow (as shown in image below) ![open-in-terminal](img/open-in-terminal.png "How to open directory in Terminal")
+2. Use the following command once in directory: `xattr -d com.apple.quarantine ./blueutil`
+

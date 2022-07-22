@@ -1,9 +1,6 @@
 #Ignore output file created by python
 *.json
 
-#Ignore gif files
-*.gif
-
 __pycache__/
 
 *.pyc
