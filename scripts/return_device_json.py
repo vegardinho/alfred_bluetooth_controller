@@ -5,15 +5,15 @@ import json
 import os
 from subprocess import check_output
 import sys
-import xml.etree.ElementTree as ET
 
-from get_favorite import get_fav_dev
+import get_favorite
+from get_display_name import get_custom_name
 
 # Workflow's cache directory for machine-specific data
 CACHE_DIR = os.getenv("alfred_workflow_cache")
 DEVICES_PATH = os.path.join(CACHE_DIR, "devices.json")
 
-FAV_DEV_ID = get_fav_dev()
+FAV_DEV_ID = get_favorite.get_fav_dev()
 
 def main():
 
@@ -48,7 +48,7 @@ def main():
             continue
 
         # Check if custom name
-        display_name = get_display_name(device["address"])
+        display_name = get_custom_name(device["address"])
         if display_name:
             device_name = display_name
 
@@ -67,14 +67,7 @@ def main():
     json.dump({"items": items}, sys.stdout)
 
 
-def get_display_name(address):
-    """Check cache file for custom file name"""
-    try:
-        plist_cmd = "plutil -extract DeviceCache.{}.displayName xml1 /Library/Preferences/com.apple.Bluetooth.plist -o -".format(address)
-        xml = check_output(plist_cmd.split())
-    except Exception as e:
-        return None
-    return ET.fromstring(xml).find('string').text
+
 
 
 def device_item(device_name, subtitle, device):
@@ -92,11 +85,12 @@ def device_item(device_name, subtitle, device):
              arg=device_name,
              subtitle=subtitle,
              autocomplete=device_name,
+             variables=dict(device_name=device_name),
              icon=dict(path= "./icons/bt_icon_" + ("green" if is_connected else "blue") + ".png"))
 
     if device["address"]:
         d["uid"] = device["address"]
-        d["variables"] = dict(uid=device["address"])
+        d["variables"]["uid"] = device["address"]
     return d
 
 
