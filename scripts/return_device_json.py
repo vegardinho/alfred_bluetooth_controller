@@ -3,8 +3,9 @@
 
 import json
 import os
-from subprocess import check_output
+from subprocess import check_output, run
 import sys
+import time
 
 import get_favorite
 from get_display_name import get_custom_name
@@ -15,8 +16,8 @@ DEVICES_PATH = os.path.join(CACHE_DIR, "devices.json")
 
 FAV_DEV_ID = get_favorite.get_fav_dev()
 
-def main():
 
+def main():
     """Run script."""
     # Script command
     subtitle = sys.argv[1]
@@ -27,9 +28,14 @@ def main():
     if not os.path.exists(CACHE_DIR):
         os.makedirs(CACHE_DIR)
 
-
     if not query:  # Get devices from blueutil
         cmd_args = get_args(subtitle)
+        # Ensure bluetooth has settled before pair search
+        if subtitle == "Pair with device":
+            power = check_output(['./blueutil', '--power']).decode().strip()
+            if power == '0':
+                run(['./blueutil', '--power', '1'])
+                time.sleep(1)
         js_bytes = check_output(cmd_args)
         js = js_bytes.decode()
         with open(DEVICES_PATH, "w") as fp:
@@ -61,13 +67,10 @@ def main():
     if not items:
         items.append(
             dict(title="No Devices Found",
-                subtitle = "Make sure the device is in search mode "
-                                 "and within range, and try again"))
+                 subtitle="Make sure the device is in search mode "
+                          "and within range, and try again"))
 
     json.dump({"items": items}, sys.stdout)
-
-
-
 
 
 def device_item(device_name, subtitle, device):
@@ -86,7 +89,7 @@ def device_item(device_name, subtitle, device):
              subtitle=subtitle,
              autocomplete=device_name,
              variables=dict(device_name=device_name),
-             icon=dict(path= "./icons/bt_icon_" + ("green" if is_connected else "blue") + ".png"))
+             icon=dict(path="./icons/bt_icon_" + ("green" if is_connected else "blue") + ".png"))
 
     if device["address"]:
         d["uid"] = device["address"]
