@@ -18,7 +18,8 @@ def connect(uid, dev_name):
 def get_status(uid):
     # Turn on bluetooth if turned off
     if run('./blueutil --power'.split(), stdout=PIPE).returncode == 0:
-        run('./blueutil --power 1; sleep 1'.split())
+        run('./blueutil --power 1'.split(), stdout=PIPE)
+        run('sleep 1'.split(), stdout=PIPE)
 
     # Disconnect if connected
     if run(f'./blueutil --is-connected {uid}'.split(), stdout=PIPE).returncode == 1:
