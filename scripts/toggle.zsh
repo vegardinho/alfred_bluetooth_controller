@@ -16,7 +16,7 @@ function change_status() {
 
 function reset() {
 	change_status 0
-	sleep 1
+	sleep 3
 	change_status 1
 }
 
