@@ -20,7 +20,7 @@ FAV_DEV_ID = get_favorite.get_fav_dev()
 def main():
     """Run script."""
     # Script command
-    subtitle = sys.argv[1]
+    mode = sys.argv[1]
     # User search query
     query = sys.argv[2] if len(sys.argv) > 2 else None
 
@@ -29,9 +29,9 @@ def main():
         os.makedirs(CACHE_DIR)
 
     if not query:  # Get devices from blueutil
-        cmd_args = get_args(subtitle)
+        cmd_args = get_args(mode)
         # Ensure bluetooth has settled before pair search
-        if subtitle == "Pair with device":
+        if mode == "Pair with device":
             power = check_output(['./blueutil', '--power']).decode().strip()
             if power == '0':
                 run(['./blueutil', '--power', '1'])
@@ -62,7 +62,7 @@ def main():
         if query and not query.lower() in device_name.lower():
             continue
 
-        items.append(device_item(device_name, subtitle, device))
+        items.append(device_item(device_name, mode, device))
 
     if not items:
         items.append(
@@ -73,15 +73,20 @@ def main():
     json.dump({"items": items}, sys.stdout)
 
 
-def device_item(device_name, subtitle, device):
+def device_item(device_name, mode, device):
     """Return an Alfred feedback ``dict`` for device/message."""
+    fav_logo_txt = ''
+    favorite = False
     is_connected = device["connected"]
-    if subtitle == "Set as favorite":
-        if device["address"] == FAV_DEV_ID:
-            subtitle = "Current favorite"
-        else:
-            subtitle = "Set as favorite"
-    elif subtitle != "Unpair":
+
+    if device["address"] == FAV_DEV_ID:
+        favorite = True
+        fav_logo_txt = '_favorite'
+
+    subtitle = mode
+    if mode == "Set as favorite":
+        subtitle = "Current favorite" if favorite else "Set as favorite"
+    elif mode == "Toggle device connection":
         subtitle = "Disconnect" if is_connected else "Connect"
 
     d = dict(title=device_name,
@@ -89,7 +94,7 @@ def device_item(device_name, subtitle, device):
              subtitle=subtitle,
              autocomplete=device_name,
              variables=dict(device_name=device_name),
-             icon=dict(path="./img/bt_icon_" + ("green" if is_connected else "blue") + ".png"))
+             icon=dict(path="./img/bt_icon_" + ("green" if is_connected else "blue") + fav_logo_txt + ".png"))
 
     if device["address"]:
         d["uid"] = device["address"]
