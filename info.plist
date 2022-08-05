@@ -456,7 +456,7 @@
 	<key>createdby</key>
 	<string>Vegard Landsverk</string>
 	<key>description</key>
-	<string>Toggle bluetooth with "bt", and connect to your devices with "btd"</string>
+	<string>The most complete workflow for managing bluetooth on your mac</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -1570,6 +1570,7 @@ fi</string>
 	</array>
 	<key>readme</key>
 	<string>NEW IN THIS EDITION:
+
 - Toggle command ('bttoggle') is back!
 - New logos for each keyword trigger.
 - Favorite device triggered by 'btfavorite' and 'cmd-ctrl-alt-f' (previously 'btx' and 'cmd-ctrl-alt-x').
