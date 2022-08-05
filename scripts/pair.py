@@ -39,7 +39,7 @@ def notify_pairing():
 
 def store_variables(text_ind):
     out = [
-        [f'Successfully paired with {DEV_NAME}', f'Connected to {DEV_NAME}'],
+        [f'Successfully paired with {DEV_NAME}'],
         [f'Failed to pair with bluetooth {DEV_NAME}',
          f'Make sure the device is in search mode and within range, and try again'],
     ]
