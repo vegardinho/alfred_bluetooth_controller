@@ -35,13 +35,13 @@ function toggle() {
 
 while getopts tp:r flag; do
   case "${flag}" in
-  t) toggle ;;
-  p) change_status "${OPTARG}" ;;
-  r) reset ;;
-  *) usage ;;
+    t) toggle ;;
+    p) change_status "${OPTARG}" ;;
+    r) reset ;;
+    *) usage ;;
   esac
 done
 
-if [ -z "${getops}" ]; then
+if [ -z "${flag}" ]; then
   usage
 fi
