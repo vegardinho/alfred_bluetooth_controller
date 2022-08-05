@@ -2,8 +2,6 @@ __pycache__/
 
 *.pyc
 
-info.plist 
-
 /*.png
 
 README.html
