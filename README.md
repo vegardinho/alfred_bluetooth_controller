@@ -77,8 +77,10 @@ Most, or all, the listed commands have their own Remote Trigger. (You're welcome
 
 ------
 
-If you get errors when using the workflow referring to not being able to use `blueutil` as it cannot be checked, you will need to manually remove the quarantine attribute from the bundled binary.
+If you get errors when using the workflow referring to not being able to use `blueutil` or `notificator` as it cannot be checked, you will need to manually remove the quarantine attribute from the bundled binary.
 This can be done like so: 
 
 1. Open workflow folder in Terminal by right clicking workflow (as shown in image below) ![open-in-terminal](img/open-in-terminal.png "How to open directory in Terminal")
-2. Use the following command once in directory: `xattr -d com.apple.quarantine ./blueutil`
+2. Use the following command once in directory: 
+   - Blueutil: `xattr -d com.apple.quarantine ./blueutil`
+   - Notificator: `xattr -d com.apple.quarantine ./notificator`
