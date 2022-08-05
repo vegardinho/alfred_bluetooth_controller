@@ -2,13 +2,16 @@
 # encoding: utf-8
 
 import os
-from subprocess import run, PIPE, check_output
+from subprocess import run, check_output, CalledProcessError
 from notify import notify
 
 
 def connect(uid, dev_name):
     notify_connecting(dev_name)
-    ret_val = get_status(uid)
+    try:
+        ret_val = get_status(uid)
+    except CalledProcessError:
+        ret_val = 2
     notify_finished(ret_val, dev_name)
 
 
