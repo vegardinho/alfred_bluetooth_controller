@@ -4,9 +4,8 @@ A powerful toolkit for managing your bluetooth connections. Includes Remote Trig
 the big screen.
 
 
-## Contents
 
----------------
+## Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -16,21 +15,20 @@ the big screen.
     - [Pair/Unpair Device](#pairunpair-device)
     - [Large-Type Bluetooth Status](#large-type-bluetooth-status)
     - [Safe Mode](#safe-mode)
-    - [Remote Trigger](#remote-trigger)
+    - [Remote Triggers](#remote-triggers)
 - [Troubleshooting](#troubleshooting)
 
-## Installation
+------
 
-----------
+## Installation
 
 Download the [Alfred workflow](https://github.com/vegardinho/alfred_bluetooth_controller/releases/latest) and
 double-click to install! If you encounter issues related to the blueutil or notificator scripts,
 see the [troubleshooting section](#troubleshooting).
 
+------
 
 ## Usage
-
-----------
 
 ### Commands
 
@@ -76,9 +74,9 @@ any input devices.)
 ### Remote triggers
 Most, or all, the listed commands have their own Remote Trigger. (You're welcome to add ones that are missing.)
 
-## Troubleshooting
+---------
 
-------
+## Troubleshooting
 
 If you get errors when using the workflow referring to not being able to use `blueutil` or `notificator` as it cannot be checked, you will need to manually remove the quarantine attribute from the bundled binary.
 This can be done like so: 
