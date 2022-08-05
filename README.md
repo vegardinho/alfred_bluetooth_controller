@@ -3,6 +3,7 @@
 A powerful toolkit for managing your bluetooth connections. Includes Remote Trigger, to manage your Bluetooth devices on
 the big screen.
 
+
 ## Contents
 
 ---------------
@@ -27,6 +28,7 @@ Download the [Alfred workflow](https://github.com/vegardinho/alfred_bluetooth_co
 double-click to install! If you encounter issues related to the blueutil or notificator scripts,
 see [troubleshooting section](#troubleshooting).
 
+
 ## Usage
 
 ----------
@@ -34,23 +36,33 @@ see [troubleshooting section](#troubleshooting).
 
 ### Manage Bluetooth Status
 
+=======
+![usage snippet](img/alfred_bluetooth_long.gif "Usage snippet")
+
+
+### Commands
+
+
+#### Manage bluetooth
+
 - Turn bluetooth on: `bton`
 - Turn bluetooth off: `btoff`
 - Reset (disable, wait 1.5 seconds, enable: `btr`
 
-### Toggle Device Connections
+#### Toggle Device Connections
 
 - Connect/disconnect from device: `btd` + `device name`
 - By typing an argument, the workflow will automatically search through all devices prevously paired with the computer.
 
-### Manage Favorite Device
+
+#### Manage favorite device
 
 - Set favorite device: `btsetfavorite` + `device name`
 - Connect to favorite device:
     - with hotkey: `cmd-ctr-option-f`
     - with keyword: `btf` + `device name`
 
-### Pair/Unpair Device
+#### Pair/Unpair Device
 
 - Pair:
     - `btd` + `device name`
@@ -58,7 +70,7 @@ see [troubleshooting section](#troubleshooting).
 - Unpair:
     - `btu` + `device name` + press modifier key `cmd`
 
-### Large-Type Bluetooth Status
+#### Large-Type Bluetooth Status
 
 - See status of bluetooth connection and paired devices.
 - `btstatus`
@@ -71,7 +83,6 @@ any input devices.)
 
 ### Remote triggers
 Most, or all, the listed commands have their own Remote Trigger. (You're welcome to add ones that are missing.)
-
 
 ## Troubleshooting
 
