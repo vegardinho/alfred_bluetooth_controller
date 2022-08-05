@@ -8,7 +8,6 @@ the big screen.
 
 ---------------
 
-- [Contents](#contents)
 - [Installation](#installation)
 - [Usage](#usage)
     - [Manage Bluetooth Status](#manage-bluetooth-status)
@@ -26,49 +25,42 @@ the big screen.
 
 Download the [Alfred workflow](https://github.com/vegardinho/alfred_bluetooth_controller/releases/latest) and
 double-click to install! If you encounter issues related to the blueutil or notificator scripts,
-see [troubleshooting section](#troubleshooting).
+see the [troubleshooting section](#troubleshooting).
 
 
 ## Usage
 
 ----------
-![usage snippet](img/alfred_bluetooth_long.gif "Usage snippet")
-
-### Manage Bluetooth Status
-
-=======
-![usage snippet](img/alfred_bluetooth_long.gif "Usage snippet")
-
 
 ### Commands
 
-
-#### Manage bluetooth
+#### Manage bluetooth status
 
 - Turn bluetooth on: `bton`
 - Turn bluetooth off: `btoff`
-- Reset (disable, wait 1.5 seconds, enable: `btr`
+- Toggle bluetooth status: `bttoggle`
+- Reset (disable, wait 1.5 seconds, enable: `btreset`
 
 #### Toggle Device Connections
 
 - Connect/disconnect from device: `btd` + `device name`
-- By typing an argument, the workflow will automatically search through all devices prevously paired with the computer.
+- Unpair device: `btd` + `device name` + press modifier key `cmd`
 
 
 #### Manage favorite device
 
 - Set favorite device: `btsetfavorite` + `device name`
-- Connect to favorite device:
+- Toggle connection with favorite device:
     - with hotkey: `cmd-ctr-option-f`
-    - with keyword: `btf` + `device name`
+    - with keyword: `btfavorite`
 
 #### Pair/Unpair Device
 
 - Pair:
-    - `btd` + `device name`
-    - Wait 5 seconds for results to show up.
+  - `btp` + `device name`
+  - Wait 5 seconds for results to show up.
 - Unpair:
-    - `btu` + `device name` + press modifier key `cmd`
+  - See [toggle device connections section](#toggle-device-connections).
 
 #### Large-Type Bluetooth Status
 
@@ -92,6 +84,7 @@ If you get errors when using the workflow referring to not being able to use `bl
 This can be done like so: 
 
 1. Open workflow folder in Terminal by right clicking workflow (as shown in image below) ![open-in-terminal](img/open-in-terminal.png "How to open directory in Terminal")
-2. Use the following command once in directory: 
+2. Use the following command once in directory:
    - Blueutil: `xattr -d com.apple.quarantine ./blueutil`
    - Notificator: `xattr -d com.apple.quarantine ./notificator`
+3. An alternative method is to open folder in Finder, locate the file(s), and right click, followed by `òpen`.
