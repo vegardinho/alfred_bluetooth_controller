@@ -89,7 +89,7 @@ def device_item(device_name, subtitle, device):
              subtitle=subtitle,
              autocomplete=device_name,
              variables=dict(device_name=device_name),
-             icon=dict(path="./icons/bt_icon_" + ("green" if is_connected else "blue") + ".png"))
+             icon=dict(path="./img/bt_icon_" + ("green" if is_connected else "blue") + ".png"))
 
     if device["address"]:
         d["uid"] = device["address"]
