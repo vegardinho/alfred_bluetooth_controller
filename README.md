@@ -1,24 +1,23 @@
-# Alfred Workflow: Bluetooth Controller
+# Alfred Workflow: Bluetooth Controller <!-- omit in toc -->
 
 A powerful toolkit for managing your bluetooth connections. Includes Remote Trigger, to manage your Bluetooth devices on
 the big screen.
 
-
-
-## Contents
+## Contents <!-- omit in toc -->
 
 - [Installation](#installation)
 - [Usage](#usage)
-    - [Manage Bluetooth Status](#manage-bluetooth-status)
+  - [Commands](#commands)
+    - [Manage bluetooth status](#manage-bluetooth-status)
     - [Toggle Device Connections](#toggle-device-connections)
-    - [Manage Favorite Device](#manage-favorite-device)
+    - [Manage favorite device](#manage-favorite-device)
     - [Pair/Unpair Device](#pairunpair-device)
     - [Large-Type Bluetooth Status](#large-type-bluetooth-status)
-    - [Safe Mode](#safe-mode)
-    - [Remote Triggers](#remote-triggers)
+  - [Safe Mode](#safe-mode)
+  - [Remote triggers](#remote-triggers)
 - [Troubleshooting](#troubleshooting)
 
-------
+---
 
 ## Installation
 
@@ -26,7 +25,7 @@ Download the [Alfred workflow](https://github.com/vegardinho/alfred_bluetooth_co
 double-click to install! If you encounter issues related to the blueutil or notificator scripts,
 see the [troubleshooting section](#troubleshooting).
 
-------
+---
 
 ## Usage
 
@@ -44,13 +43,12 @@ see the [troubleshooting section](#troubleshooting).
 - Connect/disconnect from device: `btd` + `device name`
 - Unpair device: `btd` + `device name` + press modifier key `cmd`
 
-
 #### Manage favorite device
 
 - Set favorite device: `btsetfavorite` + `device name`
 - Toggle connection with favorite device:
-    - with hotkey: `cmd-ctr-option-f`
-    - with keyword: `btfavorite`
+  - with hotkey: `cmd-ctr-option-f`
+  - with keyword: `btfavorite`
 
 #### Pair/Unpair Device
 
@@ -72,16 +70,18 @@ deactivation commands. (Useful for iMacs and Mac Minis who that would have troub
 any input devices.)
 
 ### Remote triggers
+
 Most, or all, the listed commands have their own Remote Trigger. (You're welcome to add ones that are missing.)
 
----------
+---
 
 ## Troubleshooting
 
-If you get errors when using the workflow referring to not being able to use `blueutil` or `notificator` as it cannot be checked, you will need to manually remove the quarantine attribute from the bundled binary.
-This can be done like so: 
+If you get errors when using the workflow referring to not being able to use `blueutil` or `notificator` as it cannot be checked, you will need to manually remove the quarantine attribute from the bundled binary:
 
-1. Open workflow folder in Terminal by right clicking workflow (as shown in image below) ![open-in-terminal](img/open-in-terminal.png "How to open directory in Terminal")
+
+1. Open workflow folder in Terminal by right clicking workflow (as shown in image below).
+<br />![open-in-terminal](img/open-in-terminal.png "How to open directory in Terminal")
 2. Use the following command once in directory:
    - Blueutil: `xattr -d com.apple.quarantine ./blueutil`
    - Notificator: `xattr -d com.apple.quarantine ./notificator`
