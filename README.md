@@ -16,6 +16,8 @@ the big screen.
   - [Safe Mode](#safe-mode)
   - [Remote triggers](#remote-triggers)
 - [Troubleshooting](#troubleshooting)
+- [Attribution](#attribution)
+- [Screenshots](#screenshots)
 
 ---
 
@@ -79,10 +81,23 @@ Most, or all, the listed commands have their own Remote Trigger. (You're welcome
 
 If you get errors when using the workflow referring to not being able to use `blueutil` or `notificator` as it cannot be checked, you will need to manually remove the quarantine attribute from the bundled binary:
 
-
 1. Open workflow folder in Terminal by right clicking workflow (as shown in image below).
-<br />![open-in-terminal](img/open-in-terminal.png "How to open directory in Terminal")
+   <br />![open-in-terminal](img/open-in-terminal.png "How to open directory in Terminal")
 2. Use the following command once in directory:
    - Blueutil: `xattr -d com.apple.quarantine ./blueutil`
    - Notificator: `xattr -d com.apple.quarantine ./notificator`
 3. An alternative method is to open folder in Finder, locate the file(s), and right click, followed by `òpen`.
+
+---
+
+## Attribution
+
+- [blueutil](https://github.com/toy/blueutil) binary is used for bluetooth functionality.
+- [notificator](https://github.com/vitorgalvao/notificator) binary is used for notifications.
+
+---
+
+## Screenshots
+
+![Screenshot of all options](img/screenshot_bt.png)
+![Screenshot of device toggle](img/screenshot_btd.png)
