@@ -466,6 +466,29 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./scripts/set_favorite.zsh</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D21378EC-6789-4DBE-8758-88286A11F4E7</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -511,29 +534,6 @@
 			<string>0C0071B3-C425-4582-B155-441C6CB2B674</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./scripts/set_favorite.zsh</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>D21378EC-6789-4DBE-8758-88286A11F4E7</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -678,6 +678,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>triggerid</key>
+				<string>Seach through and select device</string>
+				<key>triggername</key>
+				<string>Seach through and select device</string>
+				<key>workflowonly</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.remote</string>
+			<key>uid</key>
+			<string>83A1F49F-139B-404C-8DA7-D77927DB275C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -723,27 +744,6 @@
 			<string>2055BADE-BB0D-4496-B3ED-B1B048523CAA</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>triggerid</key>
-				<string>Seach through and select device</string>
-				<key>triggername</key>
-				<string>Seach through and select device</string>
-				<key>workflowonly</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.remote</string>
-			<key>uid</key>
-			<string>83A1F49F-139B-404C-8DA7-D77927DB275C</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1473,6 +1473,50 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>btstatus</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Show Bluetooth Status</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>D2C1AD97-C501-44BD-8D72-300D004E5979</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./scripts/large_type.zsh</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>87184558-3687-4BF2-A01E-6558453D8E56</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alignment</key>
 				<integer>0</integer>
 				<key>backgroundcolor</key>
@@ -1505,50 +1549,6 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./scripts/large_type.zsh</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>87184558-3687-4BF2-A01E-6558453D8E56</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>btstatus</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Show Bluetooth Status</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>D2C1AD97-C501-44BD-8D72-300D004E5979</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argument</key>
 				<string></string>
 				<key>argumenttype</key>
@@ -1571,11 +1571,8 @@ fi</string>
 	<key>readme</key>
 	<string>NEW IN THIS EDITION:
 
-- Toggle command ('bttoggle') is back!
-- New logos for each keyword trigger.
-- Favorite device triggered by 'btfavorite' and 'cmd-ctrl-alt-f' (previously 'btx' and 'cmd-ctrl-alt-x').
-- Unpair keyword trigger removed, now accessible thorugh modifier 'cmd' with 'btd' keyword trigger.
-- All scripts now external, making the plugin much less cluttered, as well as easier to mantain and develop.
+- Updated notificator binary.
+- Added missing workflow icon.
 
 
 
@@ -1917,7 +1914,7 @@ Enjoy!</string>
 		<string>confirm</string>
 	</array>
 	<key>version</key>
-	<string>3.0.0</string>
+	<string>3.0.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/vegardinho/alfred_bluetooth_controller</string>
 </dict>
