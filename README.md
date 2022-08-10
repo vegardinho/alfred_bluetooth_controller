@@ -86,7 +86,7 @@ If you get errors when using the workflow referring to not being able to use `bl
 2. Use the following command once in directory:
    - Blueutil: `xattr -d com.apple.quarantine ./blueutil`
    - Notificator: `xattr -d com.apple.quarantine ./notificator`
-3. An alternative method is to open folder in Finder, locate the file(s), and right click, followed by `òpen`.
+3. An alternative method is to open folder in Finder, locate the file(s), and right click, followed by `open`.
 
 ---
 
