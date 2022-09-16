@@ -1577,7 +1577,7 @@ fi</string>
 	<key>readme</key>
 	<string>NEW IN THIS EDITION:
 
-- Correct suggested commands and keywords in set favorite notification.
+- Fix notification not showing up on successful pair.
 
 
 
@@ -1919,7 +1919,7 @@ Enjoy!</string>
 		<string>confirm</string>
 	</array>
 	<key>version</key>
-	<string>3.0.3</string>
+	<string>3.0.4</string>
 	<key>webaddress</key>
 	<string>https://github.com/vegardinho/alfred_bluetooth_controller</string>
 </dict>
