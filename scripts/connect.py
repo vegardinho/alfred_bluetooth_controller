@@ -28,7 +28,7 @@ def get_status(uid):
     if check_output(f'./blueutil --is-connected {uid}'.split(), text=True).strip() == '1':
         # Report error if not successfull disconnect
         # print((f'./blueutil --disconnect {uid}'.split()).returncode)
-        if run(f'./blueutil --disconnect {uid}'.split()).returncode != 0:
+        if run(f'./blueutil --disconnect {uid} --wait-disconnect {uid}'.split()).returncode != 0:
             return 2
         return 1
 
