@@ -17,6 +17,7 @@ the big screen.
   - [Remote triggers](#remote-triggers)
 - [Attribution](#attribution)
 - [Remove quarantine with terminal](#remove-quarantine-with-terminal)
+- [</br>!"How to open directory in Terminal"](#br)
 - [Installation images](#installation-images)
 - [Screenshots](#screenshots)
 
@@ -98,13 +99,13 @@ Use the following command once in directory:
 
 - Blueutil: `xattr -d com.apple.quarantine ./blueutil`
 - Notificator: `xattr -d com.apple.quarantine ./notificator`
+  </br>!["How to open directory in Terminal"](img/open-in-terminal.png)
 
 ---
 
 ## Installation images
 
 !["How to open directory in Finder"](img/open-in-finder.png)
-!["How to open directory in Finder"](img/open-in-terminal.png)
 ![How to open binary file](img/open-manually.png)
 
 ---
