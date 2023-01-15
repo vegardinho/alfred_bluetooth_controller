@@ -15,17 +15,23 @@ the big screen.
     - [Large-Type Bluetooth Status](#large-type-bluetooth-status)
   - [Safe Mode](#safe-mode)
   - [Remote triggers](#remote-triggers)
-- [Troubleshooting](#troubleshooting)
 - [Attribution](#attribution)
+- [Remove quarantine with terminal](#remove-quarantine-with-terminal)
+- [Installation images](#installation-images)
 - [Screenshots](#screenshots)
 
 ---
 
 ## Installation
 
-Download the [Alfred workflow](https://github.com/vegardinho/alfred_bluetooth_controller/releases/latest) and
-double-click to install! If you encounter issues related to the blueutil or notificator scripts,
-see the [troubleshooting section](#troubleshooting).
+1. Download the [Alfred workflow](https://github.com/vegardinho/alfred_bluetooth_controller/releases/latest) and
+   double-click to install!
+2. Allow `blueutil` and `notificator` to run (remove the quarantine attribute from the bundled binary). This can alternatively be done [using the terminal](#Remove-quarantine-with-terminal).
+   1. Open workflow folder in Finder by right clicking workflow ([see image](#installation-images)).
+   2. Right-click on `blueutil` and click 'open' ([see image](#installation-images)).
+   3. Confirm open when dialog appears.
+   4. Repeat with `notificator` file.
+3. Enjoy!
 
 ---
 
@@ -43,7 +49,6 @@ see the [troubleshooting section](#troubleshooting).
 #### Toggle Device Connections
 
 - Connect/disconnect from device: `btd` + `device name`
-- Unpair device: `btd` + `device name` + press modifier key `cmd`
 
 #### Manage favorite device
 
@@ -51,6 +56,9 @@ see the [troubleshooting section](#troubleshooting).
 - Toggle connection with favorite device:
   - with hotkey: `cmd-ctr-option-f`
   - with keyword: `btfavorite`
+- Remove device as favorite:
+  - `btd` + `device name` + press modifier key `shift`
+  - `btsetfavorite` + `device name` + press modifier key `shift`
 
 #### Pair/Unpair Device
 
@@ -58,7 +66,7 @@ see the [troubleshooting section](#troubleshooting).
   - `btp` + `device name`
   - Wait 5 seconds for results to show up.
 - Unpair:
-  - See [toggle device connections section](#toggle-device-connections).
+  - `btd` + `device name` + press modifier key `cmd`
 
 #### Large-Type Bluetooth Status
 
@@ -77,23 +85,27 @@ Most, or all, the listed commands have their own Remote Trigger. (You're welcome
 
 ---
 
-## Troubleshooting
-
-If you get errors when using the workflow referring to not being able to use `blueutil` or `notificator` as it cannot be checked, you will need to manually remove the quarantine attribute from the bundled binary:
-
-1. Open workflow folder in Terminal by right clicking workflow (as shown in image below).
-   <br />![open-in-terminal](img/open-in-terminal.png "How to open directory in Terminal")
-2. Use the following command once in directory:
-   - Blueutil: `xattr -d com.apple.quarantine ./blueutil`
-   - Notificator: `xattr -d com.apple.quarantine ./notificator`
-3. An alternative method is to open folder in Finder, locate the file(s), and right click, followed by `open`.
-
----
-
 ## Attribution
 
 - [blueutil](https://github.com/toy/blueutil) binary is used for bluetooth functionality.
 - [notificator](https://github.com/vitorgalvao/notificator) binary is used for notifications.
+
+---
+
+## Remove quarantine with terminal
+
+Use the following command once in directory:
+
+- Blueutil: `xattr -d com.apple.quarantine ./blueutil`
+- Notificator: `xattr -d com.apple.quarantine ./notificator`
+
+---
+
+## Installation images
+
+!["How to open directory in Finder"](img/open-in-finder.png)
+!["How to open directory in Finder"](img/open-in-terminal.png)
+![How to open binary file](img/open-manually.png)
 
 ---
 
