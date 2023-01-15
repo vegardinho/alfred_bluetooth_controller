@@ -84,13 +84,33 @@ def device_item(device_name, mode, device):
         fav_logo_txt = '_favorite'
 
     subtitle = mode
+    mods = {
+        "command": {
+            "valid": True,
+            "arg": "unpair",
+            "subtitle": "Unpair"
+        }
+    }
+
+    if favorite:
+        mods["shift"] = {
+            "valid": True,
+            "arg": "remove_favorite",
+            "subtitle": "Remove as favorite"
+        }
+
     if mode == "Set as favorite":
+        arg = "set_favorite"
         subtitle = "Current favorite" if favorite else "Set as favorite"
     elif mode == "Toggle device connection":
         subtitle = "Disconnect" if is_connected else "Connect"
+        arg = "connect"
+    elif mode == "Pair with device":
+        arg = "pair"
 
     d = dict(title=device_name,
-             arg=device_name,
+             arg=arg,
+             mods=mods,
              subtitle=subtitle,
              autocomplete=device_name,
              variables=dict(device_name=device_name),

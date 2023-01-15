@@ -12,7 +12,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>0F508806-8A63-4AD8-BFD0-463BA675A860</string>
+				<string>FE6F7ED4-04BA-4867-9C46-86E321EBC72D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -38,7 +38,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>D21378EC-6789-4DBE-8758-88286A11F4E7</string>
+				<string>D33533C8-A48A-47C7-A55A-7AB55A21C889</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -47,15 +47,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>0F508806-8A63-4AD8-BFD0-463BA675A860</key>
-		<array/>
-		<key>1606E8FA-C53A-4C0B-981A-CC6219F1CE70</key>
-		<array/>
 		<key>1F55174A-6D3E-409A-9782-90196F55B6A4</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>56F791A2-43F6-4F0B-8213-5E0452BFB324</string>
+				<string>87EE72E5-0183-44E3-90BF-8536B062DE2F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -70,7 +66,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>1606E8FA-C53A-4C0B-981A-CC6219F1CE70</string>
+				<string>D33533C8-A48A-47C7-A55A-7AB55A21C889</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -78,23 +74,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+		</array>
+		<key>21200C80-C93D-4418-87AC-4B17155D065C</key>
+		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>B588AE59-92A5-41C6-9044-413C9E119F29</string>
+				<string>D33533C8-A48A-47C7-A55A-7AB55A21C889</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>5CE97093-FA3B-41D4-B5F2-11AF2F66F7B0</string>
-				<key>modifiers</key>
-				<integer>1048576</integer>
-				<key>modifiersubtext</key>
-				<string>Unpair</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -116,7 +105,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>86D0A863-4EB9-4723-811F-7660C092EF51</string>
+				<string>B8284AB5-03BF-4C51-9969-34D4BF2FF011</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -153,15 +142,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>56F791A2-43F6-4F0B-8213-5E0452BFB324</key>
-		<array/>
-		<key>5CE97093-FA3B-41D4-B5F2-11AF2F66F7B0</key>
-		<array/>
 		<key>70EC49E3-72D0-4EDE-B1DD-44C296BA5263</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>F22E0C2D-173E-4B6F-981B-2B1F7EFAB54B</string>
+				<string>D33533C8-A48A-47C7-A55A-7AB55A21C889</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -170,8 +155,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>8199FF70-93AD-4574-A2C5-DD0DA0CC0705</key>
-		<array/>
 		<key>83A1F49F-139B-404C-8DA7-D77927DB275C</key>
 		<array>
 			<dict>
@@ -185,13 +168,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>86D0A863-4EB9-4723-811F-7660C092EF51</key>
-		<array/>
-		<key>87184558-3687-4BF2-A01E-6558453D8E56</key>
+		<key>87EE72E5-0183-44E3-90BF-8536B062DE2F</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>27C73412-6EA3-4FCF-AB15-9EED260308D7</string>
+				<string>D33533C8-A48A-47C7-A55A-7AB55A21C889</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -204,7 +185,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>86D0A863-4EB9-4723-811F-7660C092EF51</string>
+				<string>B8284AB5-03BF-4C51-9969-34D4BF2FF011</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -217,6 +198,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>062465D0-44F1-4FF7-9F84-6979BEC4DF88</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9A543E07-4010-4BBA-8E69-1067F8B6251F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D33533C8-A48A-47C7-A55A-7AB55A21C889</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -268,7 +262,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>F22E0C2D-173E-4B6F-981B-2B1F7EFAB54B</string>
+				<string>C547933D-5FAE-4ECD-97FA-68C6AADCD629</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -293,7 +287,20 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8199FF70-93AD-4574-A2C5-DD0DA0CC0705</string>
+				<string>D33533C8-A48A-47C7-A55A-7AB55A21C889</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B8284AB5-03BF-4C51-9969-34D4BF2FF011</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D33533C8-A48A-47C7-A55A-7AB55A21C889</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -306,7 +313,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>0F508806-8A63-4AD8-BFD0-463BA675A860</string>
+				<string>FE6F7ED4-04BA-4867-9C46-86E321EBC72D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -315,13 +322,24 @@
 				<false/>
 			</dict>
 		</array>
-		<key>C588528A-F157-401D-BB24-FA1DCDB1BAFC</key>
-		<array/>
+		<key>C547933D-5FAE-4ECD-97FA-68C6AADCD629</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D33533C8-A48A-47C7-A55A-7AB55A21C889</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>C6BA9A45-F520-4BFB-A1C9-4612340B6F5D</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>86D0A863-4EB9-4723-811F-7660C092EF51</string>
+				<string>D33533C8-A48A-47C7-A55A-7AB55A21C889</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -330,13 +348,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>D21378EC-6789-4DBE-8758-88286A11F4E7</key>
-		<array/>
 		<key>D2C1AD97-C501-44BD-8D72-300D004E5979</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>87184558-3687-4BF2-A01E-6558453D8E56</string>
+				<string>21200C80-C93D-4418-87AC-4B17155D065C</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -345,11 +361,13 @@
 				<false/>
 			</dict>
 		</array>
+		<key>D33533C8-A48A-47C7-A55A-7AB55A21C889</key>
+		<array/>
 		<key>D74C560B-4F3D-4B55-B091-380FB6C9454E</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>87184558-3687-4BF2-A01E-6558453D8E56</string>
+				<string>D33533C8-A48A-47C7-A55A-7AB55A21C889</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -362,7 +380,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>C588528A-F157-401D-BB24-FA1DCDB1BAFC</string>
+				<string>D33533C8-A48A-47C7-A55A-7AB55A21C889</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -388,7 +406,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>56F791A2-43F6-4F0B-8213-5E0452BFB324</string>
+				<string>87EE72E5-0183-44E3-90BF-8536B062DE2F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -413,7 +431,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>C588528A-F157-401D-BB24-FA1DCDB1BAFC</string>
+				<string>9A543E07-4010-4BBA-8E69-1067F8B6251F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -426,7 +444,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>F22E0C2D-173E-4B6F-981B-2B1F7EFAB54B</string>
+				<string>C547933D-5FAE-4ECD-97FA-68C6AADCD629</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -437,13 +455,24 @@
 				<false/>
 			</dict>
 		</array>
-		<key>F22E0C2D-173E-4B6F-981B-2B1F7EFAB54B</key>
-		<array/>
 		<key>FC4168F1-6FF0-4CAE-B825-F380A2E06EC8</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>0F508806-8A63-4AD8-BFD0-463BA675A860</string>
+				<string>D33533C8-A48A-47C7-A55A-7AB55A21C889</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FE6F7ED4-04BA-4867-9C46-86E321EBC72D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D33533C8-A48A-47C7-A55A-7AB55A21C889</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -466,25 +495,92 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
 				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./scripts/set_favorite.zsh</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
+				<key>focusedappvariablename</key>
 				<string></string>
-				<key>type</key>
-				<integer>5</integer>
+				<key>hotkey</key>
+				<integer>3</integer>
+				<key>hotmod</key>
+				<integer>1835008</integer>
+				<key>hotstring</key>
+				<string>F</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>D21378EC-6789-4DBE-8758-88286A11F4E7</string>
+			<string>00AA6D41-B74C-413D-AA91-22CB23A8A328</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>connect_favorite</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>FE6F7ED4-04BA-4867-9C46-86E321EBC72D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>btfavorite</string>
+				<key>subtext</key>
+				<string>Connects if disconnected, and vice versa</string>
+				<key>text</key>
+				<string>Toggle Favorite Bluetooth Device</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>C028DDD9-1776-467A-B92F-44790785141B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>set_favorite</string>
+				<key>argumenttype</key>
+				<integer>3</integer>
+				<key>triggerid</key>
+				<string>Toggle Favorite Bluetooth Device</string>
+				<key>triggername</key>
+				<string>Toggle Favorite Bluetooth Device</string>
+				<key>workflowonly</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.remote</string>
+			<key>uid</key>
+			<string>FC4168F1-6FF0-4CAE-B825-F380A2E06EC8</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -559,140 +655,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>3</integer>
-				<key>hotmod</key>
-				<integer>1835008</integer>
-				<key>hotstring</key>
-				<string>F</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>00AA6D41-B74C-413D-AA91-22CB23A8A328</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./scripts/connect_favorite.py</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>0F508806-8A63-4AD8-BFD0-463BA675A860</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>btfavorite</string>
-				<key>subtext</key>
-				<string>Connects if disconnected, and vice versa</string>
-				<key>text</key>
-				<string>Toggle Favorite Bluetooth Device</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>C028DDD9-1776-467A-B92F-44790785141B</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argument</key>
 				<string></string>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>triggerid</key>
-				<string>Toggle Favorite Bluetooth Device</string>
+				<string>Bluetooth-off</string>
 				<key>triggername</key>
-				<string>Toggle Favorite Bluetooth Device</string>
+				<string>Bluetooth off</string>
 				<key>workflowonly</key>
 				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.remote</string>
 			<key>uid</key>
-			<string>FC4168F1-6FF0-4CAE-B825-F380A2E06EC8</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./scripts/connect.py</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>./scripts/connect.osa</string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>1606E8FA-C53A-4C0B-981A-CC6219F1CE70</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>triggerid</key>
-				<string>Seach through and select device</string>
-				<key>triggername</key>
-				<string>Seach through and select device</string>
-				<key>workflowonly</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.remote</string>
-			<key>uid</key>
-			<string>83A1F49F-139B-404C-8DA7-D77927DB275C</string>
+			<string>C6BA9A45-F520-4BFB-A1C9-4612340B6F5D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -744,6 +721,48 @@
 			<string>2055BADE-BB0D-4496-B3ED-B1B048523CAA</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>triggerid</key>
+				<string>Seach through and select device</string>
+				<key>triggername</key>
+				<string>Seach through and select device</string>
+				<key>workflowonly</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.remote</string>
+			<key>uid</key>
+			<string>83A1F49F-139B-404C-8DA7-D77927DB275C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>on</string>
+				<key>argumenttype</key>
+				<integer>3</integer>
+				<key>triggerid</key>
+				<string>Bluetooth on</string>
+				<key>triggername</key>
+				<string>Bluetooth on</string>
+				<key>workflowonly</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.remote</string>
+			<key>uid</key>
+			<string>DCBF6499-1523-4AA7-BE63-25524F8C0181</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -835,33 +854,15 @@ fi</string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>B588AE59-92A5-41C6-9044-413C9E119F29</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
+			<key>inboundconfig</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>./scripts/unpair.py</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string>./scripts/pair.osa</string>
-				<key>type</key>
-				<integer>0</integer>
+				<key>externalid</key>
+				<string>update</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>5CE97093-FA3B-41D4-B5F2-11AF2F66F7B0</string>
+			<string>B588AE59-92A5-41C6-9044-413C9E119F29</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -885,29 +886,6 @@ fi</string>
 			<string>4A7727CA-D8E5-4316-A3AE-9D81471F1F80</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./scripts/pair.py</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string>./scripts/pair.osa</string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>8199FF70-93AD-4574-A2C5-DD0DA0CC0705</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -961,46 +939,159 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./scripts/commands.zsh $argv</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
 				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D33533C8-A48A-47C7-A55A-7AB55A21C889</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>triggerid</key>
-				<string>Bluetooth-off</string>
-				<key>triggername</key>
-				<string>Bluetooth off</string>
-				<key>workflowonly</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>btstatus</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Show Bluetooth Status</string>
+				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.remote</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>C6BA9A45-F520-4BFB-A1C9-4612340B6F5D</string>
+			<string>D2C1AD97-C501-44BD-8D72-300D004E5979</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>./scripts/toggle.zsh -p 0</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
+				<key>alignment</key>
 				<integer>0</integer>
+				<key>backgroundcolor</key>
+				<string>#002C66E6</string>
+				<key>fadespeed</key>
+				<integer>0</integer>
+				<key>fillmode</key>
+				<integer>0</integer>
+				<key>font</key>
+				<string></string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>largetypetext</key>
+				<string>BLUETOOTH  STATUS
+================
+
+{query}</string>
+				<key>textcolor</key>
+				<string></string>
+				<key>wrapat</key>
+				<integer>50</integer>
+			</dict>
+			<key>inboundconfig</key>
+			<dict>
+				<key>externalid</key>
+				<string>large_type</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.output.largetype</string>
 			<key>uid</key>
-			<string>86D0A863-4EB9-4723-811F-7660C092EF51</string>
+			<string>27C73412-6EA3-4FCF-AB15-9EED260308D7</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>large_type</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>21200C80-C93D-4418-87AC-4B17155D065C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>bton</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Turn Bluetooth On</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>ED18B100-64A9-46AA-82B6-21A2C7182F4F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>on</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>9A543E07-4010-4BBA-8E69-1067F8B6251F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>toggle</string>
+				<key>argumenttype</key>
+				<integer>3</integer>
+				<key>triggerid</key>
+				<string>Bluetooth Toggle</string>
+				<key>triggername</key>
+				<string>Bluetooth Toggle</string>
+				<key>workflowonly</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.remote</string>
+			<key>uid</key>
+			<string>70EC49E3-72D0-4EDE-B1DD-44C296BA5263</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1020,6 +1111,23 @@ fi</string>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>4F339F03-6C77-4879-8F06-3BE04A228C41</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>off</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>B8284AB5-03BF-4C51-9969-34D4BF2FF011</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1052,6 +1160,27 @@ fi</string>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>969F32E4-6C96-4FD2-BB05-8A9687B2CF96</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>triggerid</key>
+				<string>Show Bluetooth Status</string>
+				<key>triggername</key>
+				<string>Show Bluetooth Status</string>
+				<key>workflowonly</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.remote</string>
+			<key>uid</key>
+			<string>D74C560B-4F3D-4B55-B091-380FB6C9454E</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1119,115 +1248,6 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>triggerid</key>
-				<string>Bluetooth on</string>
-				<key>triggername</key>
-				<string>Bluetooth on</string>
-				<key>workflowonly</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.remote</string>
-			<key>uid</key>
-			<string>DCBF6499-1523-4AA7-BE63-25524F8C0181</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./scripts/toggle.zsh -p 1</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>C588528A-F157-401D-BB24-FA1DCDB1BAFC</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>keyword</key>
-				<string>bton</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Turn Bluetooth On</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>ED18B100-64A9-46AA-82B6-21A2C7182F4F</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>triggerid</key>
-				<string>Bluetooth Toggle</string>
-				<key>triggername</key>
-				<string>Bluetooth Toggle</string>
-				<key>workflowonly</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.remote</string>
-			<key>uid</key>
-			<string>70EC49E3-72D0-4EDE-B1DD-44C296BA5263</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./scripts/toggle.zsh -t</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>F22E0C2D-173E-4B6F-981B-2B1F7EFAB54B</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
@@ -1243,6 +1263,23 @@ fi</string>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>DD532A4D-86C3-4874-89D6-47B4F961DCF7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>toggle</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>C547933D-5FAE-4ECD-97FA-68C6AADCD629</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1342,29 +1379,6 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>./scripts/toggle.zsh -r</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>56F791A2-43F6-4F0B-8213-5E0452BFB324</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
@@ -1380,6 +1394,23 @@ fi</string>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>2538A11F-3808-4DFE-8965-AB6CBCA46326</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>reset</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>87EE72E5-0183-44E3-90BF-8536B062DE2F</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1476,108 +1507,14 @@ fi</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>btstatus</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Show Bluetooth Status</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>D2C1AD97-C501-44BD-8D72-300D004E5979</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./scripts/large_type.zsh</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>87184558-3687-4BF2-A01E-6558453D8E56</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alignment</key>
-				<integer>0</integer>
-				<key>backgroundcolor</key>
-				<string>#002C66E6</string>
-				<key>fadespeed</key>
-				<integer>0</integer>
-				<key>fillmode</key>
-				<integer>0</integer>
-				<key>font</key>
-				<string></string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>largetypetext</key>
-				<string>BLUETOOTH  STATUS
-================
-
-{query}</string>
-				<key>textcolor</key>
-				<string></string>
-				<key>wrapat</key>
-				<integer>50</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.largetype</string>
-			<key>uid</key>
-			<string>27C73412-6EA3-4FCF-AB15-9EED260308D7</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>triggerid</key>
-				<string>Show Bluetooth Status</string>
-				<key>triggername</key>
-				<string>Show Bluetooth Status</string>
-				<key>workflowonly</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.remote</string>
-			<key>uid</key>
-			<string>D74C560B-4F3D-4B55-B091-380FB6C9454E</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>NEW IN THIS EDITION:
 
-- Fix notification not showing up on successful pair.
+- Reorganized alfred elements.
+- Ability to remove favorite (btd/btsetfavorite + shift).
+- New blueutil version (v3.9.1).
+- OneUpdater now triggered on every command.
 
 
 
@@ -1594,128 +1531,90 @@ Enjoy!</string>
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>250</real>
+			<real>15</real>
 		</dict>
 		<key>062465D0-44F1-4FF7-9F84-6979BEC4DF88</key>
 		<dict>
 			<key>xpos</key>
-			<real>335</real>
+			<real>290</real>
 			<key>ypos</key>
-			<real>1225</real>
+			<real>1015</real>
 		</dict>
 		<key>0C0071B3-C425-4582-B155-441C6CB2B674</key>
 		<dict>
 			<key>xpos</key>
-			<real>180</real>
+			<real>175</real>
 			<key>ypos</key>
-			<real>15</real>
-		</dict>
-		<key>0F508806-8A63-4AD8-BFD0-463BA675A860</key>
-		<dict>
-			<key>note</key>
-			<string>Connect to favorite</string>
-			<key>xpos</key>
-			<real>475</real>
-			<key>ypos</key>
-			<real>300</real>
-		</dict>
-		<key>1606E8FA-C53A-4C0B-981A-CC6219F1CE70</key>
-		<dict>
-			<key>note</key>
-			<string>Connect to device</string>
-			<key>xpos</key>
-			<real>485</real>
-			<key>ypos</key>
-			<real>550</real>
+			<real>260</real>
 		</dict>
 		<key>1F55174A-6D3E-409A-9782-90196F55B6A4</key>
 		<dict>
 			<key>xpos</key>
-			<real>475</real>
+			<real>420</real>
 			<key>ypos</key>
-			<real>1815</real>
+			<real>1325</real>
 		</dict>
 		<key>2055BADE-BB0D-4496-B3ED-B1B048523CAA</key>
 		<dict>
 			<key>note</key>
 			<string>Search through and select device</string>
 			<key>xpos</key>
-			<real>180</real>
+			<real>175</real>
 			<key>ypos</key>
-			<real>640</real>
+			<real>390</real>
+		</dict>
+		<key>21200C80-C93D-4418-87AC-4B17155D065C</key>
+		<dict>
+			<key>xpos</key>
+			<real>230</real>
+			<key>ypos</key>
+			<real>725</real>
 		</dict>
 		<key>2538A11F-3808-4DFE-8965-AB6CBCA46326</key>
 		<dict>
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>1745</real>
+			<real>1255</real>
 		</dict>
 		<key>27C73412-6EA3-4FCF-AB15-9EED260308D7</key>
 		<dict>
 			<key>xpos</key>
-			<real>695</real>
+			<real>1325</real>
 			<key>ypos</key>
-			<real>2000</real>
+			<real>705</real>
 		</dict>
 		<key>3566B163-5E0F-46CE-9C25-94638F4D8855</key>
 		<dict>
 			<key>xpos</key>
-			<real>475</real>
+			<real>425</real>
 			<key>ypos</key>
-			<real>1250</real>
+			<real>1035</real>
 		</dict>
 		<key>4A7727CA-D8E5-4316-A3AE-9D81471F1F80</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<real>30</real>
+			<real>35</real>
 			<key>ypos</key>
-			<real>875</real>
+			<real>550</real>
 		</dict>
 		<key>4F339F03-6C77-4879-8F06-3BE04A228C41</key>
 		<dict>
 			<key>xpos</key>
-			<real>35</real>
+			<real>30</real>
 			<key>ypos</key>
-			<real>1160</real>
-		</dict>
-		<key>56F791A2-43F6-4F0B-8213-5E0452BFB324</key>
-		<dict>
-			<key>note</key>
-			<string>Reset bluetooth status</string>
-			<key>xpos</key>
-			<real>755</real>
-			<key>ypos</key>
-			<real>1725</real>
-		</dict>
-		<key>5CE97093-FA3B-41D4-B5F2-11AF2F66F7B0</key>
-		<dict>
-			<key>note</key>
-			<string>Unpair device</string>
-			<key>xpos</key>
-			<real>485</real>
-			<key>ypos</key>
-			<real>715</real>
+			<real>950</real>
 		</dict>
 		<key>70EC49E3-72D0-4EDE-B1DD-44C296BA5263</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<real>340</real>
+			<real>965</real>
 			<key>ypos</key>
-			<real>1505</real>
-		</dict>
-		<key>8199FF70-93AD-4574-A2C5-DD0DA0CC0705</key>
-		<dict>
-			<key>note</key>
-			<string>Pair new device</string>
-			<key>xpos</key>
-			<real>485</real>
-			<key>ypos</key>
-			<real>875</real>
+			<real>900</real>
 		</dict>
 		<key>83A1F49F-139B-404C-8DA7-D77927DB275C</key>
 		<dict>
@@ -1724,39 +1623,35 @@ Enjoy!</string>
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>640</real>
+			<real>390</real>
 		</dict>
-		<key>86D0A863-4EB9-4723-811F-7660C092EF51</key>
+		<key>87EE72E5-0183-44E3-90BF-8536B062DE2F</key>
 		<dict>
-			<key>note</key>
-			<string>Turn off bluetooth</string>
 			<key>xpos</key>
-			<real>750</real>
+			<real>520</real>
 			<key>ypos</key>
-			<real>1140</real>
-		</dict>
-		<key>87184558-3687-4BF2-A01E-6558453D8E56</key>
-		<dict>
-			<key>note</key>
-			<string>Display bluetooth status</string>
-			<key>xpos</key>
-			<real>490</real>
-			<key>ypos</key>
-			<real>2000</real>
+			<real>1270</real>
 		</dict>
 		<key>969F32E4-6C96-4FD2-BB05-8A9687B2CF96</key>
 		<dict>
 			<key>xpos</key>
-			<real>210</real>
+			<real>180</real>
 			<key>ypos</key>
-			<real>1180</real>
+			<real>970</real>
+		</dict>
+		<key>9A543E07-4010-4BBA-8E69-1067F8B6251F</key>
+		<dict>
+			<key>xpos</key>
+			<real>230</real>
+			<key>ypos</key>
+			<real>850</real>
 		</dict>
 		<key>9F22F821-4107-4DF8-AF14-6322BACCE389</key>
 		<dict>
 			<key>xpos</key>
-			<real>340</real>
+			<real>290</real>
 			<key>ypos</key>
-			<real>1640</real>
+			<real>1155</real>
 		</dict>
 		<key>AC490F6A-5F3B-4167-89B8-8D13ABD54EE7</key>
 		<dict>
@@ -1765,30 +1660,30 @@ Enjoy!</string>
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>15</real>
+			<real>260</real>
 		</dict>
 		<key>B0CC9920-644D-4EA4-A83E-9F44918F3FFA</key>
 		<dict>
 			<key>xpos</key>
-			<real>340</real>
+			<real>285</real>
 			<key>ypos</key>
-			<real>1795</real>
+			<real>1305</real>
 		</dict>
 		<key>B0D7B171-71E1-432D-BB6E-2D14066CB49F</key>
 		<dict>
 			<key>xpos</key>
-			<real>225</real>
+			<real>180</real>
 			<key>ypos</key>
-			<real>1615</real>
+			<real>1125</real>
 		</dict>
 		<key>B2A13B8C-EA8D-4560-BA46-E18198CD3B77</key>
 		<dict>
 			<key>note</key>
 			<string>Pair with available devices</string>
 			<key>xpos</key>
-			<real>185</real>
+			<real>180</real>
 			<key>ypos</key>
-			<real>875</real>
+			<real>550</real>
 		</dict>
 		<key>B588AE59-92A5-41C6-9044-413C9E119F29</key>
 		<dict>
@@ -1797,114 +1692,117 @@ Enjoy!</string>
 			<key>note</key>
 			<string>OneUpdater. Check for update on received input, every 4 days.</string>
 			<key>xpos</key>
-			<real>855</real>
+			<real>1325</real>
 			<key>ypos</key>
-			<real>640</real>
+			<real>525</real>
+		</dict>
+		<key>B8284AB5-03BF-4C51-9969-34D4BF2FF011</key>
+		<dict>
+			<key>xpos</key>
+			<real>520</real>
+			<key>ypos</key>
+			<real>965</real>
 		</dict>
 		<key>C028DDD9-1776-467A-B92F-44790785141B</key>
 		<dict>
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>365</real>
+			<real>130</real>
 		</dict>
-		<key>C588528A-F157-401D-BB24-FA1DCDB1BAFC</key>
+		<key>C547933D-5FAE-4ECD-97FA-68C6AADCD629</key>
 		<dict>
-			<key>note</key>
-			<string>Turn on bluetooth</string>
 			<key>xpos</key>
-			<real>755</real>
+			<real>515</real>
 			<key>ypos</key>
-			<real>1430</real>
+			<real>1120</real>
 		</dict>
 		<key>C6BA9A45-F520-4BFB-A1C9-4612340B6F5D</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<real>335</real>
+			<real>960</real>
 			<key>ypos</key>
-			<real>1065</real>
-		</dict>
-		<key>D21378EC-6789-4DBE-8758-88286A11F4E7</key>
-		<dict>
-			<key>note</key>
-			<string>Set favorite device</string>
-			<key>xpos</key>
-			<real>475</real>
-			<key>ypos</key>
-			<real>15</real>
+			<real>305</real>
 		</dict>
 		<key>D2C1AD97-C501-44BD-8D72-300D004E5979</key>
 		<dict>
 			<key>xpos</key>
-			<real>35</real>
+			<real>30</real>
 			<key>ypos</key>
-			<real>2000</real>
+			<real>695</real>
+		</dict>
+		<key>D33533C8-A48A-47C7-A55A-7AB55A21C889</key>
+		<dict>
+			<key>note</key>
+			<string>Route commands to source scripts</string>
+			<key>xpos</key>
+			<real>1160</real>
+			<key>ypos</key>
+			<real>615</real>
 		</dict>
 		<key>D74C560B-4F3D-4B55-B091-380FB6C9454E</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<real>270</real>
+			<real>965</real>
 			<key>ypos</key>
-			<real>2065</real>
+			<real>1015</real>
 		</dict>
 		<key>DCBF6499-1523-4AA7-BE63-25524F8C0181</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<real>335</real>
+			<real>960</real>
 			<key>ypos</key>
-			<real>1355</real>
+			<real>415</real>
 		</dict>
 		<key>DD532A4D-86C3-4874-89D6-47B4F961DCF7</key>
 		<dict>
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>1595</real>
+			<real>1105</real>
 		</dict>
 		<key>E684A78A-72CA-43FD-B911-9A45FC33ECC0</key>
 		<dict>
 			<key>xpos</key>
-			<real>230</real>
+			<real>180</real>
 			<key>ypos</key>
-			<real>1765</real>
+			<real>1275</real>
 		</dict>
 		<key>ED18B100-64A9-46AA-82B6-21A2C7182F4F</key>
 		<dict>
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>1430</real>
+			<real>820</real>
 		</dict>
 		<key>EE29FA26-7129-4E3D-9084-F402120BF8F1</key>
 		<dict>
 			<key>xpos</key>
-			<real>475</real>
+			<real>425</real>
 			<key>ypos</key>
-			<real>1660</real>
-		</dict>
-		<key>F22E0C2D-173E-4B6F-981B-2B1F7EFAB54B</key>
-		<dict>
-			<key>note</key>
-			<string>Toggle bluetooth status</string>
-			<key>xpos</key>
-			<real>755</real>
-			<key>ypos</key>
-			<real>1580</real>
+			<real>1175</real>
 		</dict>
 		<key>FC4168F1-6FF0-4CAE-B825-F380A2E06EC8</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<real>230</real>
+			<real>960</real>
 			<key>ypos</key>
-			<real>415</real>
+			<real>190</real>
+		</dict>
+		<key>FE6F7ED4-04BA-4867-9C46-86E321EBC72D</key>
+		<dict>
+			<key>xpos</key>
+			<real>300</real>
+			<key>ypos</key>
+			<real>90</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -1919,7 +1817,7 @@ Enjoy!</string>
 		<string>confirm</string>
 	</array>
 	<key>version</key>
-	<string>3.0.4</string>
+	<string>4</string>
 	<key>webaddress</key>
 	<string>https://github.com/vegardinho/alfred_bluetooth_controller</string>
 </dict>
