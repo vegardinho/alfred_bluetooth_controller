@@ -15,11 +15,11 @@ the big screen.
     - [Large-Type Bluetooth Status](#large-type-bluetooth-status)
   - [Safe Mode](#safe-mode)
   - [Remote triggers](#remote-triggers)
-- [Attribution](#attribution)
-- [Remove quarantine with terminal](#remove-quarantine-with-terminal)
-- [</br>!"How to open directory in Terminal"](#br)
-- [Installation images](#installation-images)
+- [Troubleshooting](#troubleshooting)
+  - [Remove quarantine with terminal](#remove-quarantine-with-terminal)
+  - [Installation images](#installation-images)
 - [Screenshots](#screenshots)
+- [Attribution](#attribution)
 
 ---
 
@@ -86,24 +86,19 @@ Most, or all, the listed commands have their own Remote Trigger. (You're welcome
 
 ---
 
-## Attribution
+## Troubleshooting
 
-- [blueutil](https://github.com/toy/blueutil) binary is used for bluetooth functionality.
-- [notificator](https://github.com/vitorgalvao/notificator) binary is used for notifications.
-
----
-
-## Remove quarantine with terminal
+### Remove quarantine with terminal
 
 Use the following command once in directory:
 
 - Blueutil: `xattr -d com.apple.quarantine ./blueutil`
-- Notificator: `xattr -d com.apple.quarantine ./notificator`
-  </br>!["How to open directory in Terminal"](img/open-in-terminal.png)
+- Notificator: `xattr -d com.apple.quarantine ./notificator`</br>
+![How to open directory in Terminal](img/open-in-terminal.png)
 
 ---
 
-## Installation images
+### Installation images
 
 !["How to open directory in Finder"](img/open-in-finder.png)
 ![How to open binary file](img/open-manually.png)
@@ -114,3 +109,10 @@ Use the following command once in directory:
 
 ![Screenshot of all options](img/screenshot_bt.png)
 ![Screenshot of device toggle](img/screenshot_btd.png)
+
+---
+
+## Attribution
+
+- [blueutil](https://github.com/toy/blueutil) binary is used for bluetooth functionality.
+- [notificator](https://github.com/vitorgalvao/notificator) binary is used for notifications.
