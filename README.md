@@ -27,11 +27,12 @@ the big screen.
 
 1. Download the [Alfred workflow](https://github.com/vegardinho/alfred_bluetooth_controller/releases/latest) and
    double-click to install!
-2. Allow `blueutil` and `notificator` to run (remove the quarantine attribute from the bundled binary). This can alternatively be done [using the terminal](#Remove-quarantine-with-terminal).
+2. Allow `blueutil` and `notificator` to run (remove the quarantine attribute from the bundled binary).
    1. Open workflow folder in Finder by right clicking workflow ([see image](#installation-images)).
    2. Right-click on `blueutil` and click 'open' ([see image](#installation-images)).
    3. Confirm open when dialog appears.
    4. Repeat with `notificator` file.
+   5. This can alternatively be done [using the terminal](#remove-quarantine-with-terminal).
 3. Enjoy!
 
 ---
