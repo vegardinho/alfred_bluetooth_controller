@@ -16,7 +16,8 @@ the big screen.
   - [Safe Mode](#safe-mode)
   - [Remote triggers](#remote-triggers)
 - [Troubleshooting](#troubleshooting)
-  - [Remove quarantine with terminal](#remove-quarantine-with-terminal)
+  - [Allow Alfred to control bluetooth](#allow-alfred-to-control-bluetooth)
+  - [Remove quarantine using terminal](#remove-quarantine-using-terminal)
   - [Installation images](#installation-images)
 - [Screenshots](#screenshots)
 - [Attribution](#attribution)
@@ -26,14 +27,15 @@ the big screen.
 ## Installation
 
 1. Download the [Alfred workflow](https://github.com/vegardinho/alfred_bluetooth_controller/releases/latest) and
-   double-click to install!
+   double-click to install.
 2. Allow `blueutil` and `notificator` to run (remove the quarantine attribute from the bundled binary).
    1. Open workflow folder in Finder by right clicking workflow ([see image](#installation-images)).
    2. Right-click on `blueutil` and click 'open' ([see image](#installation-images)).
    3. Confirm open when dialog appears.
    4. Repeat with `notificator` file.
-   5. This can alternatively be done [using the terminal](#remove-quarantine-with-terminal).
-3. Enjoy!
+   5. This can alternatively be done [using the terminal](#remove-quarantine-using-terminal).
+3. [Allow Alfred to control bluetooth](#allow-alfred-to-control-bluetooth).
+4. Enjoy!
 
 ---
 
@@ -89,13 +91,20 @@ Most, or all, the listed commands have their own Remote Trigger. (You're welcome
 
 ## Troubleshooting
 
-### Remove quarantine with terminal
+If the workflow is not working as expected, try the following:
+
+### Allow Alfred to control bluetooth
+
+Go to `System Preferences -> Privacy & Security -> Bluetooth` and add the Alfred version you are using (in this case, Alfred 5). If you have already added Alfred, ensure it is turned on.</br>
+![Allow bluetooth in System Preferences](img/security_bluetooth.png)
+
+### Remove quarantine using terminal
 
 Use the following command once in directory:
 
 - Blueutil: `xattr -d com.apple.quarantine ./blueutil`
 - Notificator: `xattr -d com.apple.quarantine ./notificator`</br>
-![How to open directory in Terminal](img/open-in-terminal.png)
+  ![How to open directory in Terminal](img/open-in-terminal.png)
 
 ---
 
