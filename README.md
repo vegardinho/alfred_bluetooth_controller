@@ -19,7 +19,7 @@ the big screen.
   - [Allow Alfred to control bluetooth](#allow-alfred-to-control-bluetooth)
   - [Remove quarantine using terminal](#remove-quarantine-using-terminal)
   - [Install Command Line Tools](#install-command-line-tools)
-  - [Installation images](#installation-images)
+- [Installation images](#installation-images)
 - [Screenshots](#screenshots)
 - [Attribution](#attribution)
 
@@ -113,7 +113,7 @@ If you experience the error `xcrun: error: invalid active developer path`, Comma
 
 ---
 
-### Installation images
+## Installation images
 
 !["How to open directory in Finder"](img/open-in-finder.png)
 ![How to open binary file](img/open-manually.png)
