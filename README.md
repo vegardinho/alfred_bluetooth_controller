@@ -18,6 +18,7 @@ the big screen.
 - [Troubleshooting](#troubleshooting)
   - [Allow Alfred to control bluetooth](#allow-alfred-to-control-bluetooth)
   - [Remove quarantine using terminal](#remove-quarantine-using-terminal)
+  - [Install Command Line Tools](#install-command-line-tools)
   - [Installation images](#installation-images)
 - [Screenshots](#screenshots)
 - [Attribution](#attribution)
@@ -105,6 +106,10 @@ Use the following command once in directory:
 - Blueutil: `xattr -d com.apple.quarantine ./blueutil`
 - Notificator: `xattr -d com.apple.quarantine ./notificator`</br>
   ![How to open directory in Terminal](img/open-in-terminal.png)
+
+### Install Command Line Tools
+
+If you experience the error `xcrun: error: invalid active developer path`, Command Line Tools is likely not installed properly. More info, as well as instructions on how to install it, can be found here: https://apple.stackexchange.com/a/254381
 
 ---
 

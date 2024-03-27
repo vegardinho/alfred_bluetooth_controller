@@ -4,6 +4,8 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.vegardlandsverk.bluetoothcontroller</string>
+	<key>category</key>
+	<string>Tools</string>
 	<key>connections</key>
 	<dict>
 		<key>00AA6D41-B74C-413D-AA91-22CB23A8A328</key>
@@ -1803,7 +1805,7 @@ Enjoy!</string>
 	<key>variables</key>
 	<dict>
 		<key>confirm</key>
-		<string></string>
+		<string>false</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
