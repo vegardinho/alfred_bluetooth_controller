@@ -1074,6 +1074,21 @@ fi</string>
 			<key>config</key>
 			<dict>
 				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>CDDFDE00-56B4-41A7-B5A8-0DEB6ADA7549</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
 				<string>toggle</string>
 				<key>argumenttype</key>
 				<integer>3</integer>
@@ -1140,9 +1155,9 @@ fi</string>
 						<key>matchcasesensitive</key>
 						<false/>
 						<key>matchmode</key>
-						<integer>0</integer>
+						<integer>6</integer>
 						<key>matchstring</key>
-						<string>false</string>
+						<string></string>
 						<key>outputlabel</key>
 						<string>skip</string>
 						<key>uid</key>
@@ -1292,9 +1307,9 @@ fi</string>
 						<key>matchcasesensitive</key>
 						<false/>
 						<key>matchmode</key>
-						<integer>0</integer>
+						<integer>6</integer>
 						<key>matchstring</key>
-						<string>false</string>
+						<string></string>
 						<key>outputlabel</key>
 						<string>skip</string>
 						<key>uid</key>
@@ -1423,9 +1438,9 @@ fi</string>
 						<key>matchcasesensitive</key>
 						<false/>
 						<key>matchmode</key>
-						<integer>0</integer>
+						<integer>6</integer>
 						<key>matchstring</key>
-						<string>false</string>
+						<string></string>
 						<key>outputlabel</key>
 						<string>skip</string>
 						<key>uid</key>
@@ -1509,7 +1524,7 @@ fi</string>
 	<key>readme</key>
 	<string>NEW IN THIS EDITION:
 
-- Fix blueutil on M1 macs.
+- Environment variable 'confirm' is now set by workflow user configuration.
 
 
 
@@ -1630,7 +1645,7 @@ Enjoy!</string>
 		<key>969F32E4-6C96-4FD2-BB05-8A9687B2CF96</key>
 		<dict>
 			<key>xpos</key>
-			<real>180</real>
+			<real>175</real>
 			<key>ypos</key>
 			<real>970</real>
 		</dict>
@@ -1721,6 +1736,13 @@ Enjoy!</string>
 			<key>ypos</key>
 			<real>305</real>
 		</dict>
+		<key>CDDFDE00-56B4-41A7-B5A8-0DEB6ADA7549</key>
+		<dict>
+			<key>xpos</key>
+			<real>440</real>
+			<key>ypos</key>
+			<real>890</real>
+		</dict>
 		<key>D2C1AD97-C501-44BD-8D72-300D004E5979</key>
 		<dict>
 			<key>xpos</key>
@@ -1801,18 +1823,29 @@ Enjoy!</string>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
-	<array/>
-	<key>variables</key>
-	<dict>
-		<key>confirm</key>
-		<string>false</string>
-	</dict>
-	<key>variablesdontexport</key>
 	<array>
-		<string>confirm</string>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<false/>
+				<key>required</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+			</dict>
+			<key>description</key>
+			<string>E.g. to avoid accidentally disconnecting from your devices.</string>
+			<key>label</key>
+			<string>Prompt confirmation before turning off bluetooth</string>
+			<key>type</key>
+			<string>checkbox</string>
+			<key>variable</key>
+			<string>confirm</string>
+		</dict>
 	</array>
 	<key>version</key>
-	<string>4.0.2</string>
+	<string>4.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/vegardinho/alfred_bluetooth_controller</string>
 </dict>
