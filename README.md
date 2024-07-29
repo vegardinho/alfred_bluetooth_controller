@@ -29,14 +29,14 @@ the big screen.
 
 1. Download the [Alfred workflow](https://github.com/vegardinho/alfred_bluetooth_controller/releases/latest) and
    double-click to install.
-2. Allow `blueutil` and `notificator` to run (remove the quarantine attribute from the bundled binary).
+2. Allow `notificator` to run (remove the quarantine attribute from the bundled binary).
    1. Open workflow folder in Finder by right clicking workflow ([see image](#installation-images)).
-   2. Right-click on `blueutil` and click 'open' ([see image](#installation-images)).
+   2. Right-click on `notificator` and click 'open' ([see image](#installation-images)).
    3. Confirm open when dialog appears.
-   4. Repeat with `notificator` file.
-   5. This can alternatively be done [using the terminal](#remove-quarantine-using-terminal).
-3. [Allow Alfred to control bluetooth](#allow-alfred-to-control-bluetooth).
-4. Enjoy!
+   4. This can alternatively be done [using the terminal](#remove-quarantine-using-terminal).
+3. Run [`Resolve Dependencies`](https://www.alfredapp.com/help/kb/dependencies/) in Alfred Preferences.
+4. [Allow Alfred to control bluetooth](#allow-alfred-to-control-bluetooth).
+5. Enjoy!
 
 ---
 
@@ -80,7 +80,7 @@ the big screen.
 
 ### Safe Mode
 
-Set environment variable `confirm` in workflow to `true` if you want to force user confirmation on toggle and
+Set workflow configuration variable `confirm` in workflow to `true` if you want to force user confirmation on toggle and
 deactivation commands. (Useful for iMacs and Mac Minis who that would have trouble turning Bluetooth on again without
 any input devices.)
 
@@ -115,6 +115,7 @@ If you experience the error `xcrun: error: invalid active developer path`, Comma
 
 ## Installation images
 
+(Note: in the second image, the binary should be `notificator`, not `blueutil`.)
 !["How to open directory in Finder"](img/open-in-finder.png)
 ![How to open binary file](img/open-manually.png)
 

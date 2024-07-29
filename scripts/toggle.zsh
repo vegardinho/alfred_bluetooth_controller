@@ -6,15 +6,17 @@ function usage() {
 }
 
 function change_status() {
-  ./blueutil -p "$1"
+  blueutil -p "$1"
 
-  if [ "$1" -eq 0 ]; then
-    new_status="OFF"
+  if [ $? != 0 ]; then
+    new_status="Failed to change bluetooth status. Ensure configuration is correct and blueutil installed."
+  elif [ "$1" -eq 0 ]; then
+    new_status="Bluetooth OFF"
   else
-    new_status="ON"
+    new_status="Bluetooth ON"
   fi
 
-  ./notificator --message "Bluetooth $new_status" --sound Frog
+  ./notificator --message "$new_status" --sound Frog
 }
 
 function reset() {
@@ -24,7 +26,7 @@ function reset() {
 }
 
 function toggle() {
-  stat=$(./blueutil -p)
+  stat=$(blueutil -p)
 
   if [ "$stat" -eq 1 ]; then
     change_status 0

@@ -32,9 +32,9 @@ def main():
         cmd_args = get_args(mode)
         # Ensure bluetooth has settled before pair search
         if mode == "Pair with device":
-            power = check_output(['./blueutil', '--power']).decode().strip()
+            power = check_output(['blueutil', '--power']).decode().strip()
             if power == '0':
-                run(['./blueutil', '--power', '1'])
+                run(['blueutil', '--power', '1'])
                 time.sleep(1)
         js_bytes = check_output(cmd_args)
         js = js_bytes.decode()
@@ -124,7 +124,7 @@ def device_item(device_name, mode, device):
 
 def get_args(subtitle):
     """Make ``blueutil`` command based on subtitle."""
-    cmd_args = ["./blueutil", "--format", "json"]
+    cmd_args = ["blueutil", "--format", "json"]
     if subtitle == "Pair with device":
         cmd_args.extend(["--inquiry", "5"])
     else:

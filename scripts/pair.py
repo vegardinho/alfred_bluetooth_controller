@@ -13,11 +13,11 @@ DEV_NAME = os.environ['device_name']
 # 			1	Error
 def pair():
     # Turn on bluetooth if turned off
-    if run('./blueutil --power'.split(), stdout=PIPE).returncode == 0:
-        run('./blueutil --power 1; sleep 1'.split())
+    if run('blueutil --power'.split(), stdout=PIPE).returncode == 0:
+        run('blueutil --power 1; sleep 1'.split())
 
     # Disconnect if connected
-    if run(f'./blueutil --pair {UID}'.split(), stdout=PIPE).returncode != 0:
+    if run(f'blueutil --pair {UID}'.split(), stdout=PIPE).returncode != 0:
         # Report error if not successfull pair
         return 1
 

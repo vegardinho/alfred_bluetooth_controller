@@ -20,20 +20,20 @@ def connect(uid, dev_name):
 # 			2	Error
 def get_status(uid):
     # Turn on bluetooth if turned off
-    if check_output('./blueutil --power'.split(), text=True).strip() == '0':
-        run('./blueutil --power 1'.split())
+    if check_output('blueutil --power'.split(), text=True).strip() == '0':
+        run('blueutil --power 1'.split())
         run('sleep 1'.split())
 
     # Disconnect if connected
-    if check_output(f'./blueutil --is-connected {uid}'.split(), text=True).strip() == '1':
+    if check_output(f'blueutil --is-connected {uid}'.split(), text=True).strip() == '1':
         # Report error if not successfull disconnect
-        # print((f'./blueutil --disconnect {uid}'.split()).returncode)
-        if run(f'./blueutil --disconnect {uid} --wait-disconnect {uid}'.split()).returncode != 0:
+        # print((f'blueutil --disconnect {uid}'.split()).returncode)
+        if run(f'blueutil --disconnect {uid} --wait-disconnect {uid}'.split()).returncode != 0:
             return 2
         return 1
 
     # Try to connect
-    if check_output(f'./blueutil --connect {uid}'.split(), text=True).strip() == '1':
+    if check_output(f'blueutil --connect {uid}'.split(), text=True).strip() == '1':
         return 2
 
     return 0

@@ -27,11 +27,11 @@ def call_notification(text_ind):
 #           1   Error
 def unpair():
     # Turn off blueutooth if off
-    if run('./blueutil --power'.split(), stdout=PIPE).returncode == 0:
-        run('./blueutil --power 1; sleep 1'.split(), stdout=PIPE)
+    if run('blueutil --power'.split(), stdout=PIPE).returncode == 0:
+        run('blueutil --power 1; sleep 1'.split(), stdout=PIPE)
 
     # Try to unpair
-    if run(f'./blueutil --unpair {UID}'.split(), stdout=PIPE).returncode == 0:
+    if run(f'blueutil --unpair {UID}'.split(), stdout=PIPE).returncode == 0:
         return 0
     return 1
 
