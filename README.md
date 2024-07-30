@@ -16,9 +16,11 @@ the big screen.
   - [Safe Mode](#safe-mode)
   - [Remote triggers](#remote-triggers)
 - [Troubleshooting](#troubleshooting)
-  - [Allow Alfred to control bluetooth](#allow-alfred-to-control-bluetooth)
+  - [Notifications not working, or notificator error](#notifications-not-working-or-notificator-error)
+  - [Error `xcrun: error: invalid active developer path`](#error-xcrun-error-invalid-active-developer-path)
   - [Remove quarantine using terminal](#remove-quarantine-using-terminal)
-  - [Install Command Line Tools](#install-command-line-tools)
+  - [Allow Alfred to control bluetooth](#allow-alfred-to-control-bluetooth)
+  - [Why do I need to install blueutil with Homebrew?](#why-do-i-need-to-install-blueutil-with-homebrew)
 - [Installation images](#installation-images)
 - [Screenshots](#screenshots)
 - [Attribution](#attribution)
@@ -29,14 +31,11 @@ the big screen.
 
 1. Download the [Alfred workflow](https://github.com/vegardinho/alfred_bluetooth_controller/releases/latest) and
    double-click to install.
-2. Allow `notificator` to run (remove the quarantine attribute from the bundled binary).
-   1. Open workflow folder in Finder by right clicking workflow ([see image](#installation-images)).
-   2. Right-click on `notificator` and click 'open' ([see image](#installation-images)).
-   3. Confirm open when dialog appears.
-   4. This can alternatively be done [using the terminal](#remove-quarantine-using-terminal).
-3. Run [`Resolve Dependencies`](https://www.alfredapp.com/help/kb/dependencies/) in Alfred Preferences.
-4. [Allow Alfred to control bluetooth](#allow-alfred-to-control-bluetooth).
-5. Enjoy!
+2. Run [Resolve Dependencies](https://www.alfredapp.com/help/kb/dependencies/) in Alfred Preferences.
+3. [Allow Alfred to control bluetooth](#allow-alfred-to-control-bluetooth).
+4. Enjoy!
+
+Please see [troubleshooting section](#troubleshooting) if you experience any issues, and post an issue if the problem persists. Description of commands can be found below.
 
 ---
 
@@ -92,24 +91,34 @@ Most, or all, the listed commands have their own Remote Trigger. (You're welcome
 
 ## Troubleshooting
 
-If the workflow is not working as expected, try the following:
+### Notifications not working, or notificator error
 
-### Allow Alfred to control bluetooth
+Have you granted [Alfred access to controlling bluetooth](#allow-alfred-to-control-bluetooth)? If you still experience issues after granting access, these problems probably stems from the `notificator` binary being blocked by Gatekeeper. We therefore need to allow it to run (remove the quarantine attribute from the bundled binary):
 
-Go to `System Preferences -> Privacy & Security -> Bluetooth` and add the Alfred version you are using (in this case, Alfred 5). If you have already added Alfred, ensure it is turned on.</br>
-![Allow bluetooth in System Preferences](img/security_bluetooth.png)
+1.  Open workflow folder in Finder by right clicking workflow ([see image](#installation-images)).
+2.  Right-click on `notificator` and click 'open' ([see image](#installation-images)).
+3.  Confirm open when dialog appears.
+4.  This can alternatively be done [using the terminal](#remove-quarantine-using-terminal).
+
+### Error `xcrun: error: invalid active developer path`
+
+If you experience the error `xcrun: error: invalid active developer path`, Command Line Tools is likely not installed properly. More info, as well as instructions on how to install it, can be found here: https://apple.stackexchange.com/a/254381
 
 ### Remove quarantine using terminal
 
 Use the following command once in directory:
 
-- Blueutil: `xattr -d com.apple.quarantine ./blueutil`
 - Notificator: `xattr -d com.apple.quarantine ./notificator`</br>
   ![How to open directory in Terminal](img/open-in-terminal.png)
 
-### Install Command Line Tools
+### Allow Alfred to control bluetooth
 
-If you experience the error `xcrun: error: invalid active developer path`, Command Line Tools is likely not installed properly. More info, as well as instructions on how to install it, can be found here: https://apple.stackexchange.com/a/254381
+Go to `System Preferences -> Privacy & Security -> Bluetooth` and add the Alfred version you are using (e.g., Alfred 5). If you have already added Alfred, ensure it is turned on.</br>
+![Allow bluetooth in System Preferences](img/security_bluetooth.png)
+
+### Why do I need to install blueutil with Homebrew?
+
+Many users with silicon chip macs experienced issues with the local binaries provided in the workflow. It also required manual removal of quarantine for many users, and relied on workflow updates for every new release of `blueutil`. After the implementation of Alfred's new [Resolve Dependecies feature], use of Homebrew installed tools suddenly became a lot more user friendly. I decided the time had come for letting Homebrew manage `blueutil`.
 
 ---
 

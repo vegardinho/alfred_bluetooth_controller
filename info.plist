@@ -1282,7 +1282,9 @@ fi</string>
 	<key>readme</key>
 	<string>NEW IN THIS EDITION:
 
-- Environment variable 'confirm' is now set by workflow user configuration.
+- Workflow now uses Homebrew-installed blueutil instead of binary in workflow directory. 
+
+IMPORTANT: this requires existing users to install blueutil with Homebrew, either manually, or thorugh Alfred's new Resolve Depependencies feature. Please see troubleshooting section and installation instructions in README for more information.
 
 
 
@@ -1582,8 +1584,6 @@ Enjoy!</string>
 		<key>action</key>
 		<string>none</string>
 	</dict>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
 	<string>4.1</string>
 	<key>webaddress</key>
