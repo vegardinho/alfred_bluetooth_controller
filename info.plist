@@ -409,7 +409,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Bluetooth Controller Beta</string>
+	<string>Bluetooth Controller</string>
 	<key>objects</key>
 	<array>
 		<dict>
