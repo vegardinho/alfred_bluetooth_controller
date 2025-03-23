@@ -594,27 +594,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>triggerid</key>
-				<string>Seach through and select device</string>
-				<key>triggername</key>
-				<string>Seach through and select device</string>
-				<key>workflowonly</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.remote</string>
-			<key>uid</key>
-			<string>83A1F49F-139B-404C-8DA7-D77927DB275C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -660,6 +639,27 @@
 			<string>2055BADE-BB0D-4496-B3ED-B1B048523CAA</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>triggerid</key>
+				<string>Seach through and select device</string>
+				<key>triggername</key>
+				<string>Seach through and select device</string>
+				<key>workflowonly</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.remote</string>
+			<key>uid</key>
+			<string>83A1F49F-139B-404C-8DA7-D77927DB275C</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1282,9 +1282,7 @@ fi</string>
 	<key>readme</key>
 	<string>NEW IN THIS EDITION:
 
-- Workflow now uses Homebrew-installed blueutil instead of binary in workflow directory. 
-
-IMPORTANT: this requires existing users to install blueutil with Homebrew, either manually, or thorugh Alfred's new Resolve Depependencies feature. Please see troubleshooting section and installation instructions in README for more information.
+- Fixes bug in 4.2 that causes constant updates.
 
 
 
@@ -1585,7 +1583,7 @@ Enjoy!</string>
 		<string>none</string>
 	</dict>
 	<key>version</key>
-	<string>4.1</string>
+	<string>4.2.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/vegardinho/alfred_bluetooth_controller</string>
 </dict>
