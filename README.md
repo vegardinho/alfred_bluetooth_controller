@@ -31,9 +31,36 @@ the big screen.
 
 1. Download the [Alfred workflow](https://github.com/vegardinho/alfred_bluetooth_controller/releases/latest) and
    double-click to install.
-2. Run [Resolve Dependencies](https://www.alfredapp.com/help/kb/dependencies/) in Alfred Preferences.
-3. [Allow Alfred to control bluetooth](#allow-alfred-to-control-bluetooth).
-4. Enjoy!
+2. Install [blueutil](http://www.frederikseiffert.de/blueutil/):
+  - Using package manager [Homebrew](https://brew.sh/):
+
+      ```sh
+      # install
+      brew install blueutil
+      
+      # update
+      brew update
+      brew upgrade blueutil
+      
+      # uninstall
+      brew remove blueutil
+      ```
+
+  - Using package manager [MacPorts](https://www.macports.org/):
+
+      ```sh
+      # install
+      port install blueutil
+      
+      # update
+      port selfupdate
+      port upgrade blueutil
+      
+      # uninstall
+      port uninstall blueutil
+      ```
+4. [Allow Alfred to control bluetooth](#allow-alfred-to-control-bluetooth).
+5. Enjoy!
 
 Please see [troubleshooting section](#troubleshooting) if you experience any issues, and post an issue if the problem persists. Description of commands can be found below.
 
